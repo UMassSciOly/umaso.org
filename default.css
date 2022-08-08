@@ -6,7 +6,7 @@ body, html {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 .text {
@@ -282,6 +282,26 @@ span.interact .bg-img-desc {
 
 }
 
+/* about */
+
+.about {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: url("https://cpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/3/3413/files/2018/12/SirexNoctilioPair-yvfnwh.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+}
+
 /* contact */
 
 span.contact {
@@ -316,7 +336,6 @@ span.contact .divider {
     list-style-type: none;
     overflow: hidden;
     font-size: 12px;
-    
 }
 
 .foot li {
@@ -417,6 +436,18 @@ span.contact .divider {
 }
 
 @media only screen and (max-width: 800px) {
+    
+    /* hide nav bar */
+
+    ul.nav li a {
+        visibility: hidden;
+        opacity: 0;
+        transition: 100ms;
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
 
     /* hide nav bar */
 
@@ -424,6 +455,22 @@ span.contact .divider {
         visibility: hidden;
         opacity: 0;
         transition: 100ms;
+    }
+
+    /* cover fix */
+
+    div.cover {
+        height: 150%;
+    }
+
+}
+
+@media only screen and (max-height: 300px) {
+
+    /* cover fix */
+
+    div.cover {
+        height: 300%;
     }
 
 }
