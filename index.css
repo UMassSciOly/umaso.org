@@ -1,0 +1,543 @@
+/* general */
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+.text {
+    text-align: left;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* cover */
+
+div.cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+div.cover .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("https://wallpaperaccess.com/full/1625191.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgb(136, 28, 28);
+    opacity: 40%;
+
+    z-index: 0;
+}
+
+/* nav bar */
+
+ul.nav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li.pad {
+    display: block;
+    padding: 20px 0 20px 15%;
+}
+
+ul.nav li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    transition: 100ms;
+}
+
+ul.nav li a:hover {
+    opacity: 50%;
+}
+
+/* cover title */
+
+div.cover .cv-title {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+
+    font-size: 0;
+}
+
+div.cover .logo {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+
+    background-image: url("temp-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+span.date-loc {
+    position: relative;
+    display: inline-block;
+}
+
+span.date-loc div {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;  
+}
+
+span.cv-buttons {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+span.cv-buttons div {
+    display: inline-block;
+    text-align: center;
+}
+
+span.cv-buttons .b-space {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+span.cv-buttons a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 40px;
+
+    text-decoration: none;
+    color: white;
+    border: solid 1px;
+    font-size: 20px;
+
+    transition: 200ms;
+}
+
+span.cv-buttons a:hover {
+    opacity: 50%;
+}
+
+/* intro */
+
+span.intro {
+    display: block;
+    text-align: left;
+    background-color: rgb(136, 28, 28);
+    font-size: 0;
+    padding: 4% 0;
+    color: white;
+}
+
+span.intro .half {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+span.intro .itr-title {
+    text-align: left;
+    margin-left: 15%;
+    width: 180px;
+
+    font-size: 36px;
+    font-weight: 800;
+
+    padding: 0 20px 0 0;
+}
+
+span.intro .itr-desc {
+    text-align: left;  
+    font-size: 18px;
+
+    padding: 0 0 0 20px;
+}
+
+/* tournament */
+
+span.tournament {
+    display: block;
+    padding: 8% 15%;
+}
+
+span.tournament .title {
+    width: 100%;
+    font-weight: 800;
+    text-align: left;
+    font-size: 36px;
+    padding: 15px 0;
+    color: rgb(136, 28, 28);
+    border-bottom: solid 3px gray;
+}
+
+span.tournament .header {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+/* interact */
+
+span.interact {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    height: 75%;
+    font-size: 0;
+    color: white;
+    background-color: rgb(136, 28, 28);
+}
+
+span.interact .half {
+    position: relative;
+    font-size: 18px;
+    height: auto;
+    padding: 5%;
+    vertical-align: top;
+    
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+span.interact .half::-webkit-scrollbar {
+    display: none;
+}
+
+span.interact .bg-img1 { 
+    background-image: url("https://cdn.sci.news/images/enlarge2/image_3527_2e-Herbig-Haro-24.jpg"); 
+}
+span.interact .bg-img2 {
+    background-image: url("https://photojournal.jpl.nasa.gov/jpegMod/PIA03708_modest.jpg");
+    left: 50%;
+}
+
+span.interact .bg-img {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 75%;
+
+    filter: brightness(40%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span.interact .register {
+    display: inline-block;
+    width: 40%;
+    font-size: 18px;
+}
+
+span.interact .volunteer {
+    display: inline-block;
+    width: 40%;
+    font-size: 18px;
+}
+
+span.interact .title {
+    font-size: 36px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+span.interact .bg-img-desc {
+    padding: 20px 0 0 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 10px;
+}
+
+/* about */
+
+.about {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* contact */
+
+span.contact {
+    position: relative;
+    display: inline-block;
+    padding: 8% 15%;
+    width: 70%;
+
+    background-color: rgb(33, 39, 33);
+    color: white;
+    font-size: 0;
+}
+
+span.contact .title {
+    font-size: 36px;
+    font-weight: 800;
+    padding: 5px;
+}
+
+span.contact .divider {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.foot {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.foot li {
+    float: left;
+    padding-right: 20px;
+}
+
+.foot a {
+    text-decoration: underline;
+    color: white;
+
+    transition: 100ms;
+}
+
+.foot a:hover {
+    opacity: 50%;
+}
+
+#privacy-policy {
+    height: 0;
+    overflow: hidden;
+}
+
+#privacy-policy:target {
+    height: fit-content;
+}
+
+#privacy-policy .title, #privacy-policy .text {
+    padding-left: 0;
+}
+
+/* learn more buttons */
+
+.learn-more a {
+    display: block;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 100px;
+
+    transition: 300ms;
+}
+
+    /* intro */
+
+    span.intro .learn-more {
+        margin-left: calc(15% + 220px);
+        margin-top: 20px;
+    }
+
+    span.intro .learn-more a {
+        color: white;
+        border: solid white 2px;
+        text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    }
+
+    span.intro .learn-more a:hover {
+        text-decoration-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* tournament */
+
+    span.tournament .learn-more {
+        margin-top: 20px;
+    }
+
+    span.tournament .learn-more a {
+        color: black;
+        border: solid black 2px;
+        text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+    }
+
+    span.tournament .learn-more a:hover {
+        text-decoration-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* interact */
+
+    div.register .learn-more, div.volunteer .learn-more {
+        margin-top: 20px;
+    }
+
+    div.register .learn-more a, div.volunteer .learn-more a  {
+        color: white;
+        border: solid white 2px;
+        text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    }
+
+    div.register .learn-more a:hover, div.volunteer .learn-more a:hover {
+        text-decoration-color: rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+/* responsive */
+
+@media only screen and (max-width: 1000px)
+{
+    /* title shorter */
+
+    span.date-loc .divider {
+        display: none;
+    }
+
+    span.date-loc div {
+        display: block;
+        padding: 10px;
+    }
+    
+    span.date-loc {
+        padding: 20px;
+    }
+
+    /* intro stacks */
+
+    span.intro {
+        padding: 10% 0;
+    }
+    span.intro .half {
+        display: block;
+        width: 70%;
+        padding: 20px 15%;
+    }
+
+    span.intro .itr-title {
+        padding: 0;
+    }
+
+    /* interact stacks */
+
+    span.interact {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 150%;
+    }
+    
+    span.interact .half {
+        display: block;
+        font-size: 18px;
+        width: 100%;
+        height: 50%;
+        padding: 5% 15%;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;    
+        box-sizing: border-box;         
+
+    }
+
+    span.interact .bg-img {
+        display: block;
+        width: 100%;
+        height: 75%;
+    }
+
+    span.interact .bg-img2 {
+        left: 0;
+        top: 50%;
+    }
+
+    span.interact .title {
+        text-align: left;
+    }
+
+    span.intro .learn-more {
+        font-size: 18px;
+        margin-left: 15%;
+        margin-top: 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    
+    /* hide nav bar */
+
+    ul.nav li a {
+        visibility: hidden;
+        opacity: 0;
+        transition: 100ms;
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
+
+    /* hide nav bar */
+
+    ul.nav li a {
+        visibility: hidden;
+        opacity: 0;
+        transition: 100ms;
+    }
+
+    /* cover fix */
+
+    div.cover {
+        height: 150%;
+    }
+
+}
+
+@media only screen and (max-height: 300px) {
+
+    /* cover fix */
+
+    div.cover {
+        height: 300%;
+    }
+
+}
