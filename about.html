@@ -22,21 +22,101 @@
         <div class="title">
             About Us
         </div>
-        <div class="text" style="padding-top: 15px; padding-left: 0;">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer vestibulum maximus dui eu ullamcorper. In ut eros turpis. Quisque efficitur mi vitae est aliquam, in aliquam erat bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nec leo at odio ultrices sagittis dignissim egestas dui. Ut in varius magna, sed varius dui. Vivamus eget sapien odio. Ut porttitor justo nulla, in gravida erat vulputate non. Nulla facilisi. Donec ac placerat metus. 
+    </span>
+
+    <ul class="tabs" style="padding-bottom: 15px;">
+        <li><button onclick="missionDisplay()" id="missionButton" class="nav-active">Mission</button></li>
+        <li><button onclick="teamDisplay()" id="teamButton" class="nav-inactive">Team</button></li>
+        <li><button onclick="volunteersDisplay()" id="volunteersButton" class="nav-inactive">Volunteers</button></li>
+    </ul>
+
+    <span id="mission" class="active">
+        <div class="text">
+            
+            this is where we talk about how its our first year doing scioly woo hoo ! ! ! 
+            we're a team of students at umass etc etc
+            <br>
+            maybe we can add a team pic here at some point too. that might be cool
+
+        </div>
+        <div class="header">Our Mission</div>
+        <div class="text">
+
+            I don't have lorem ipsum cuz im literally on a plane rn so uh I'm just going to type "It's morbin time." over and over and hopefully that's fine
+
+        </div>
+        <ul>
+            <li>
+                <b>first goal.</b> 
+                It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. 
+            </li>
+            <li>
+                <b>second goal.</b> 
+                It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. 
+            </li>
+            <li>
+                <b>third goal.</b> 
+                It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. It's morbin time. 
+            </li>
+        </ul>
+    </span>
+
+    <span id="team" class="hidden">
+        <div class="text">
+
+            so a couple things: <br>
+            1. I can make sections here pretty easily if that might be better <br>
+            2. I dont plan on keeping the hover effect; that's just to see where the end of each panel is.
+            we can totally give each person a different background color or something tho. <br>
+            3. jalal's 2 pfp thing shouldn't be too hard with css keyframes if we're doing that. 
+            I still dont completely get it though lmao like if its on a timer or on hover or whatever
+
+        </div>
+
+        <div class="panel">
+            <div class="profile-pic" id="pfp-1"></div>
+            <div class="pfp-title">John Bagel</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-2"></div>
+            <div class="pfp-title">Sam Bagel</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-3"></div>
+            <div class="pfp-title">Jim Bagel</div>
+            <div class="pfp-desc">
+                Jim Bagel has contributed significantly to the UMASO team.
+                He definitely did stuff, and that stuff really was done. His work really
+                really inspired things. Jim was definitely one of the members of UMASO.
+            </div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-4"></div>
+            <div class="pfp-title">Kanye Bagel</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-5"></div>
+            <div class="pfp-title">Dwayne the "Bagel" Johnson</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-6"></div>
+            <div class="pfp-title">Pablo Diego Jose Francisco de Paula Juan Maria de los Bagels</div>
+        </div>
+
+    </span>
+
+    <span id="volunteers" class="hidden">
+        <div class="text">
+            
+            this would look pretty much the same as the team section 
+            (unless we want to something different- which honestly I would prefer cuz I dont want to store a ridiculous amount of images lmao)
+            <br>
+            I'm gonna start off by hiding this when the website first launches though regardless
+        
         </div>
     </span>
-    
-    <span class="mission">
-        <div class="our-mission">
-            Our mission is to do the <u>tournament</u> thing. also among us
-        </div>
-    </span>
-    <span class="plan">
-        hello hello this is where we talk about our plan for how we will achieve our mission
-        <br>
-        Morbi et hendrerit justo, sit amet finibus magna. Donec imperdiet neque odio. Nam maximus vestibulum sem sit amet fringilla. Sed tellus ligula, congue ac erat id, posuere dapibus massa. Sed sit amet augue eget lorem gravida vulputate. Proin quis ipsum quis sem commodo interdum vitae eget nulla. Maecenas massa erat, mollis id magna a, congue condimentum odio. Fusce in risus vestibulum, tristique mi quis, pharetra enim. Nullam ac tortor nec odio tincidunt tempor vitae in diam. Sed consequat congue lectus, vel tempor enim varius at. Nullam quis molestie velit, vel congue nisi. Integer tristique et dui sed mattis. Aenean pellentesque eros eget congue aliquet. Suspendisse consequat metus tellus, at porta erat placerat a. Nulla consectetur feugiat arcu in lacinia. 
-    </span>
+
+    <span style="display: block; width: 100%; height: 20px;"></span> <!-- padding is weird for some reason.. -->
 
 </span>
 
@@ -44,6 +124,43 @@
     <li>&copy; University of Massachusetts Amherst Science Olympiad 2022-23</li>
     <li class="privacy-pol"><a href="index.html#privacy-policy">Privacy Policy</a></li>
 </ul>
+
+<script>
+
+// maybe make separate js doc later. also code can prob be shortened but im kinda dumb lol
+
+var missionContent = document.getElementById("mission"),
+    teamContent = document.getElementById("team"),
+    volunteersContent = document.getElementById("volunteers");
+
+var missionButton = document.getElementById("missionButton"),
+    teamButton = document.getElementById("teamButton"),
+    volunteersButton = document.getElementById("volunteersButton");
+
+function hideAll() {
+    missionContent.classList = teamContent.classList = volunteersContent.classList = "hidden";
+    missionButton.classList = teamButton.classList = volunteersButton.classList = "nav-inactive";
+}
+
+function missionDisplay() {
+    hideAll();
+    missionContent.classList="active";
+    missionButton.classList="nav-active";
+}
+
+function teamDisplay() {
+    hideAll();
+    teamContent.classList="active";
+    teamButton.classList="nav-active";
+}
+
+function volunteersDisplay() {
+    hideAll();
+    volunteersContent.classList="active";
+    volunteersButton.classList="nav-active";
+}
+
+</script>
 
 </body>
 </html>
