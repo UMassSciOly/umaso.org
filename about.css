@@ -1,3 +1,5 @@
+/** general **/
+
 span.description {
     display: block;
     width: 70%;
@@ -13,27 +15,181 @@ span.description {
     border-bottom: solid 3px gray;
 }
 
-span.mission {
-    display: block;
-    width: calc(70% - 80px);
-    margin-left: 15%;
-    padding: 40px;
-    background-color: rgb(136, 28, 28);
+.text { 
+    padding-left: 0; /* rest of style is in default.css */
 }
 
-.our-mission {
+.header {
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(136, 28, 28);
+    padding: 10px 0;
+}
+
+/** tabs nav bar **/
+
+ul.tabs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    width: 70%;
+    margin-left: 15%;
+}
+
+ul.tabs li {
+    float: left;
+}
+
+ul.tabs button {
+    border: none;
+    background-color: white;
+    padding: 10px 0;
+    margin: 0 20px 0 0 ;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+ul.tabs button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.active {
+    height: auto;
+}
+
+.hidden {
+    height: 0;
+    padding: 0;
+}
+
+ul.tabs button.nav-active {
+    border-bottom: 2px solid rgb(136, 28, 28);
+}
+
+ul.tabs li button.nav-inactive {
+    border-bottom: none;
+}
+
+/** sections **/
+
+#mission, #team, #volunteers {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    overflow: hidden;
+}
+
+/** team, volunteers panels **/
+
+.panel {
+    position: relative;
+    display: block;
+    float: left;
     text-align: center;
-    padding: 15px 0;
-    font-size: 40px;
-    font-weight: 800;
-    color: white;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;    
+    
+    margin: 0;
+    font-size: 0;
+    width: 25%;
+    height: 300px;
+    background-color: none;
+
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+
+    transition: 300ms;
 }
 
-.plan {
+.panel::-webkit-scrollbar {
+    display: none;
+}
+
+.panel:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.panel div.profile-pic {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    margin: 30px 0 0 0;
+
+    width: min(80%, 200px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 100%;
+}
+
+.panel div.profile-pic::after {
+    content: "";
     display: block;
-    width: calc(70% - 80px);
-    margin-left: 15%;
-    margin-bottom: 30px;
-    padding: 40px;
-    background-color: rgb(162, 170, 173);
+    padding: 50% 0; /** coolest css hack **/
+}
+
+.panel .pfp-title {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 15px 10% 5px 10%;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.panel .pfp-desc{
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 5px 10% 30px 10%;
+
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+}
+
+/* profile picture src */
+#pfp-1 {background-image: url("pfps/bagel.jpg");}
+#pfp-2 {background-image: url("pfps/bagel.jpg");}
+#pfp-3 {background-image: url("pfps/bagel.jpg");}
+#pfp-4 {background-image: url("pfps/bagel.jpg");}
+#pfp-5 {background-image: url("pfps/bagel.jpg");}
+#pfp-6 {background-image: url("pfps/bagel.jpg");}
+
+/* responsive */
+
+@media only screen and (max-width: 800px) {
+
+    /* reduce bullet indents in mission */
+
+    #mission ul {
+        padding-left: 18px;
+    }
+
+    /* box stacking in team, volunteer */
+
+    .panel {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* box stacking in team, volunteer */
+
+    .panel {
+        width: 100%;
+    }
+
 }
