@@ -34,12 +34,73 @@ div.cover .bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-color:rgb(136, 28, 28);
-    opacity: 40%;
+    filter: brightness(40%);
 
     z-index: 0;
 }
 
 /* nav bar */
+
+ul.mobile-nav {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+ul.mobile-nav li {
+    display: hidden;
+    width: 0;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+
+ul.mobile-nav li.extend-button {
+    display: none;
+    visibility: hidden;
+    width: 100px;
+}
+
+ul.mobile-nav a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    transition: 100ms;
+}
+
+/* visual bug with unicode &#9776; fix */
+ul.mobile-nav li.extend-button a {
+    padding: 18.6px 20px;
+}
+
+ul.mobile-nav:hover li {
+    background-color: rgb(33, 39, 33);
+    width: 200px;
+    transition: 500ms ease-in-out;
+}
+
+ul.mobile-nav:hover li.extend-button {
+    background-color: rgb(136, 28, 28);
+}
+
+ul.mobile-nav li.extend-button:hover {
+    cursor: pointer;
+}
+
+ul.mobile-nav li.main-button a:hover {
+    background-color: rgb(136, 28, 28);
+    transition: 100ms;
+}
 
 ul.nav {
     position: relative;
@@ -76,6 +137,10 @@ ul.nav li a:hover {
     opacity: 50%;
 }
 
+#collapsable {
+    display: none;
+}
+
 /* cover title */
 
 div.cover .cv-title {
@@ -96,7 +161,7 @@ div.cover .logo {
     width: 100%;
     height: 200px;
 
-    background-image: url("temp-logo.png");
+    background-image: url("UMASO-wordmark-transparent.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -440,6 +505,14 @@ span.contact .divider {
         padding: 20px;
     }
 
+    /* wordmark turns into logo */
+    div.cover .logo {
+        background-image: url("UMASO-logo-color2-resize.png");
+        width: 100%;
+        height: 200px;
+        padding-bottom: 0;
+    }
+
     /* intro stacks */
 
     span.intro {
@@ -502,14 +575,17 @@ span.contact .divider {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     
     /* hide nav bar */
 
     ul.nav li a {
-        visibility: hidden;
-        opacity: 0;
-        transition: 100ms;
+        display: none;
+    }
+
+    ul.mobile-nav li.extend-button {
+        display: block;
+        visibility: visible;
     }
 
 }
@@ -519,9 +595,13 @@ span.contact .divider {
     /* hide nav bar */
 
     ul.nav li a {
-        visibility: hidden;
-        opacity: 0;
-        transition: 100ms;
+        display: none;
+    }
+
+
+    ul.mobile-nav li.extend-button {
+        display: block;
+        visibility: visible;
     }
 
     /* cover fix */

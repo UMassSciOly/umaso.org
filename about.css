@@ -1,88 +1,4 @@
-/** general **/
-
-span.description {
-    display: block;
-    width: 70%;
-    padding: 20px 15%;
-}
-
-.title {
-    text-align: left;
-    padding: 15px 0;
-    font-size: 36px;
-    font-weight: 800;
-    color: rgb(136, 28, 28);
-    border-bottom: solid 3px gray;
-}
-
-.text { 
-    padding-left: 0; /* rest of style is in default.css */
-}
-
-.header {
-    font-weight: 500;
-    font-size: 24px;
-    color: rgb(136, 28, 28);
-    padding: 10px 0;
-}
-
-/** tabs nav bar **/
-
-ul.tabs {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-    width: 70%;
-    margin-left: 15%;
-}
-
-ul.tabs li {
-    float: left;
-}
-
-ul.tabs button {
-    border: none;
-    background-color: white;
-    padding: 10px 0;
-    margin: 0 20px 0 0 ;
-    font-size: 18px;
-    transition: 300ms;
-}
-
-ul.tabs button:hover {
-    opacity: 50%;
-    cursor: pointer;
-}
-
-.active {
-    height: auto;
-}
-
-.hidden {
-    height: 0;
-    padding: 0;
-}
-
-ul.tabs button.nav-active {
-    border-bottom: 2px solid rgb(136, 28, 28);
-}
-
-ul.tabs li button.nav-inactive {
-    border-bottom: none;
-}
-
-/** sections **/
-
-#mission, #team, #volunteers {
-    display: block;
-    width: 70%;
-    margin-left: 15%;
-    overflow: hidden;
-}
-
-/** team, volunteers panels **/
+/* team, volunteers panels */
 
 .panel {
     position: relative;
@@ -133,7 +49,7 @@ ul.tabs li button.nav-inactive {
 .panel div.profile-pic::after {
     content: "";
     display: block;
-    padding: 50% 0; /** coolest css hack **/
+    padding: 50% 0; /* coolest css hack */
 }
 
 .panel .pfp-title {

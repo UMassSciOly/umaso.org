@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University of Massachusetts Amherst Science Olympiad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,300b,500,800&display=swap">
+</head>
+<body>
+
+<span id="content">
+
+    <ul class="nav">
+        <li class="pad"></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tournament.html">Tournament</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="pad right"></li>
+        <li class="right"><a class="logo" href="index.html"><img src="UMASO-logo-default.png"></a></li>
+    </ul>
+
+    <ul class="mobile-nav">
+        <li class="extend-button"><a>&#9776;</a></li>
+        <li class="main-button"><a href="about.html">About</a></li>
+        <li class="main-button"><a href="tournament.html">Tournament</a></li>
+        <li class="main-button"><a href="register.html">Register</a></li>
+        <li class="main-button"><a href="volunteer.html">Volunteer</a></li>
+        <li class="main-button"><a href="#contact">Contact</a></li>
+    </ul>
+
+    <span class="description">
+        <div class="title">
+            Tournament
+        </div>
+    </span>
+
+    <ul class="tabs" style="padding-bottom: 15px;">
+        <li><button onclick="detailsDisplay()" id="detailsButton" class="nav-active">Details</button></li>
+        <li><button onclick="updatesDisplay()" id="updatesButton" class="nav-inactive">Updates</button></li>
+    </ul>
+
+    <span id="details" class="active">
+        <div class="header" style="padding-top: 5px;">Format</div>
+        <div class="text">
+
+            among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. 
+
+        </div>
+        <div class="header">Events</div>
+        <div class="text">
+
+            among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. 
+
+        </div>
+        <div class="header">Competition Rules</div>
+        <div class="text">
+
+            among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. 
+
+        </div>
+    </span>
+
+    <span id="updates" class="hidden">
+        <div class="text" style="padding-top: 5px;">
+            <a href="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-17889-deannorris-624-1376578170.jpg" target="_blank" rel="noopener">
+                Here</a> is the link to a master doc of all updates.
+        </div>
+        <div class="update-date">67 August 1886</div>
+        <div class="header">NEW FALL GUYS ALBUM JUST DROPPED!!!!</div>
+        <div class="text">
+
+            this is where we actually keep track!!!
+            among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. among us. 
+
+        </div>
+    </span>
+
+    <!-- can't pad sections because it messes up the js -->
+    <span style="display: block; width: 100%; height: 20px;"></span>
+
+</span>
+
+<ul id="footer">
+    <li>&copy; University of Massachusetts Amherst Science Olympiad 2022-23</li>
+    <li class="privacy-pol"><a href="index.html#privacy-policy">Privacy Policy</a></li>
+</ul>
+
+<script>
+
+    // maybe make separate js doc later. also code can prob be shortened but im kinda dumb lol
+    
+    var detailsContent = document.getElementById("details"),
+        updatesContent = document.getElementById("updates");
+    
+    var detailsButton = document.getElementById("detailsButton"),
+        updatesButton = document.getElementById("updatesButton");
+    
+    function hideAll() {
+        detailsContent.classList = updatesContent.classList = "hidden";
+        detailsButton.classList = updatesButton.classList = "nav-inactive";
+    }
+    
+    function detailsDisplay() {
+        hideAll();
+        detailsContent.classList="active";
+        detailsButton.classList="nav-active";
+    }
+    
+    function updatesDisplay() {
+        hideAll();
+        updatesContent.classList="active";
+        updatesButton.classList="nav-active";
+    }
+    
+</script>
+
+</body>
+</html>
