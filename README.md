@@ -1,4 +1,4 @@
 # SMBHair.github.io
-  University of Massachusetts Science Olympiad website source code
+  University of Massachusetts Amherst Science Olympiad website source code
 
 logo designs by Jack Guo
