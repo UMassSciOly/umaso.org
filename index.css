@@ -121,6 +121,10 @@ ul.nav li.pad {
     padding: 20px 0 20px 15%;
 }
 
+ul.nav li.right {
+    float: right;
+}
+
 ul.nav li a {
     display: block;
     text-align: center;
