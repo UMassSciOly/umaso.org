@@ -1,3 +1,13 @@
+/* team photo */
+.team-photo {
+    text-align: center;
+}
+
+/* mission li spacing change */
+#mission li {
+    padding: 10px 0;
+}
+
 /* team, volunteers panels */
 
 .panel {
@@ -75,12 +85,12 @@
 }
 
 /* profile picture src */
-#pfp-1 {background-image: url("pfps/bagel.jpg");}
-#pfp-2 {background-image: url("pfps/bagel.jpg");}
-#pfp-3 {background-image: url("pfps/bagel.jpg");}
-#pfp-4 {background-image: url("pfps/bagel.jpg");}
-#pfp-5 {background-image: url("pfps/bagel.jpg");}
-#pfp-6 {background-image: url("pfps/bagel.jpg");}
+#pfp-1 {background-image: url("");}
+#pfp-2 {background-image: url("");}
+#pfp-3 {background-image: url("");}
+#pfp-4 {background-image: url("");}
+#pfp-5 {background-image: url("");}
+#pfp-6 {background-image: url("");}
 
 /* responsive */
 
