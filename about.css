@@ -1,5 +1,17 @@
 /* team photo */
 .team-photo {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.team-photo img {
+    width: min(100%, 800px);
+}
+
+.team-photo .text {
+    display: block;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -81,16 +93,22 @@
 
     font-size: 12px;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
 }
 
 /* profile picture src */
-#pfp-1 {background-image: url("");}
-#pfp-2 {background-image: url("");}
-#pfp-3 {background-image: url("");}
-#pfp-4 {background-image: url("");}
-#pfp-5 {background-image: url("");}
-#pfp-6 {background-image: url("");}
+#pfp-1 {background-image: url("pfps/Jalal_Essal.jpg");}
+#pfp-2 {background-image: url("pfps/Ben_Kuchma.jpg");}
+#pfp-3 {background-image: url("pfps/Nayrie_Patel.jpg");}
+#pfp-4 {background-image: url("pfps/Larry_Jin.jpg");}
+#pfp-5 {background-image: url("pfps/Jack_Guo.jpeg");}
+#pfp-6 {background-image: url("pfps/Noah_Ford.jpg");}
+#pfp-7 {background-image: url("pfps/Erin_Kim.jpg");}
+#pfp-8 {background-image: url("pfps/Victor_Chen.jpg");}
+#pfp-9 {background-image: url("pfps/Ahmed_Saliev.JPG");}
+#pfp-10 {background-image: url("pfps/Gian_Sabia.jpg");}
+#pfp-11 {background-image: url("pfps/Elina_Chen.jpg");}
+#pfp-12 {background-image: url("pfps/Divyesh_Biswas.jpg");}
 
 /* responsive */
 
