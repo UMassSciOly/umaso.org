@@ -66,43 +66,73 @@
             </li>
         </ul>
         <div class="team-photo">
-            <xmp><team photo will go here></xmp>
+            <img src="team_photo-compressed.jpg">
+            <div class="text">A few of the prodigious members of UMASO, gathered at the Teenage Mutant Ninja Turtles statues on the 21st floor of DuBois Library!</div>
         </div>
     </span>
 
     <span id="team" class="hidden">
-        <xmp>(still waiting on people to get in pfp...........)</xmp>
-        <!-- 
+
         <div class="panel">
             <div class="profile-pic" id="pfp-1"></div>
-            <div class="pfp-title">John Bagel</div>
+            <div class="pfp-title">Jalal Essal</div>
+            <div class="pfp-desc">Neuroscience, 2026</div>
         </div>
         <div class="panel">
             <div class="profile-pic" id="pfp-2"></div>
-            <div class="pfp-title">Sam Bagel</div>
+            <div class="pfp-title">Ben Kuchma</div>
+            <div class="pfp-desc">Physics + Computer Science, 2025</div>
         </div>
         <div class="panel">
             <div class="profile-pic" id="pfp-3"></div>
-            <div class="pfp-title">Jim Bagel</div>
-            <div class="pfp-desc">
-                Jim Bagel has contributed significantly to the UMASO team.
-                He definitely did stuff, and that stuff really was done. His work really
-                really inspired things. Jim was definitely one of the members of UMASO.
-            </div>
+            <div class="pfp-title">Nayrie Patel</div>
+            <div class="pfp-desc">Environmental Science, 2026</div>
         </div>
         <div class="panel">
             <div class="profile-pic" id="pfp-4"></div>
-            <div class="pfp-title">Kanye Bagel</div>
+            <div class="pfp-title">Larry Jin</div>
+            <div class="pfp-desc">Mechanical Engineering, 2026</div>
         </div>
         <div class="panel">
             <div class="profile-pic" id="pfp-5"></div>
-            <div class="pfp-title">Dwayne the "Bagel" Johnson</div>
+            <div class="pfp-title">Jack Guo</div>
+            <div class="pfp-desc">Mechanical Engineering, 2026</div>
         </div>
         <div class="panel">
             <div class="profile-pic" id="pfp-6"></div>
-            <div class="pfp-title">Pablo Diego Jose Francisco de Paula Juan Maria de los Bagels</div>
+            <div class="pfp-title">Noah Ford</div>
+            <div class="pfp-desc">Mathematics + Computer Science, 2026</div>
         </div>
-        --> 
+        <div class="panel">
+            <div class="profile-pic" id="pfp-7"></div>
+            <div class="pfp-title">Erin Kim</div>
+            <div class="pfp-desc">Biomedical Engineering, 2026</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-8"></div>
+            <div class="pfp-title">Victor Chen</div>
+            <div class="pfp-desc">Computer Science, 2026</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-9"></div>
+            <div class="pfp-title">Ahmed Saliev</div>
+            <div class="pfp-desc">Biology, 2026</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-10"></div>
+            <div class="pfp-title">Gian Sabia</div>
+            <div class="pfp-desc">Computer Science, 2026</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-11"></div>
+            <div class="pfp-title">Elina Chen</div>
+            <div class="pfp-desc">Finance, 2025</div>
+        </div>
+        <div class="panel">
+            <div class="profile-pic" id="pfp-12"></div>
+            <div class="pfp-title">Divyesh Biswas</div>
+            <div class="pfp-desc">Computer Engineering, 2026</div>
+        </div>
     </span>
 
     <span id="volunteers" class="hidden">
@@ -128,38 +158,36 @@
 
 <script>
 
-// maybe make separate js doc later. also code can prob be shortened but im kinda dumb lol
+    var missionContent = document.getElementById("mission"),
+        teamContent = document.getElementById("team"),
+        volunteersContent = document.getElementById("volunteers");
 
-var missionContent = document.getElementById("mission"),
-    teamContent = document.getElementById("team"),
-    volunteersContent = document.getElementById("volunteers");
+    var missionButton = document.getElementById("missionButton"),
+        teamButton = document.getElementById("teamButton"),
+        volunteersButton = document.getElementById("volunteersButton");
 
-var missionButton = document.getElementById("missionButton"),
-    teamButton = document.getElementById("teamButton"),
-    volunteersButton = document.getElementById("volunteersButton");
+    function hideAll() {
+        missionContent.classList = teamContent.classList = volunteersContent.classList = "hidden";
+        missionButton.classList = teamButton.classList = volunteersButton.classList = "nav-inactive";
+    }
 
-function hideAll() {
-    missionContent.classList = teamContent.classList = volunteersContent.classList = "hidden";
-    missionButton.classList = teamButton.classList = volunteersButton.classList = "nav-inactive";
-}
+    function missionDisplay() {
+        hideAll();
+        missionContent.classList="active";
+        missionButton.classList="nav-active";
+    }
 
-function missionDisplay() {
-    hideAll();
-    missionContent.classList="active";
-    missionButton.classList="nav-active";
-}
+    function teamDisplay() {
+        hideAll();
+        teamContent.classList="active";
+        teamButton.classList="nav-active";
+    }
 
-function teamDisplay() {
-    hideAll();
-    teamContent.classList="active";
-    teamButton.classList="nav-active";
-}
-
-function volunteersDisplay() {
-    hideAll();
-    volunteersContent.classList="active";
-    volunteersButton.classList="nav-active";
-}
+    function volunteersDisplay() {
+        hideAll();
+        volunteersContent.classList="active";
+        volunteersButton.classList="nav-active";
+    }
 
 </script>
 
