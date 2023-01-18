@@ -286,6 +286,27 @@ span.tournament .title {
     border-bottom: solid 3px gray;
 }
 
+/* sponsors */
+
+span.sponsors {
+    display: block;
+    padding: 0% 15% 4% 15%;
+}
+
+span.sponsors .title {
+    width: 100%;
+    font-weight: 800;
+    text-align: left;
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+span.sponsors .sponsor-logos img {
+    display: inline;
+    vertical-align: middle;
+    width: 32%;
+}
+
 /* interact */
 
 span.interact {
@@ -608,6 +629,17 @@ span.contact .divider {
     ul.mobile-nav li.extend-button {
         display: block;
         visibility: visible;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* sponsor logos stack*/
+
+    span.sponsors .sponsor-logos img {
+        width: 75%;
+        padding: 10px 0;
     }
 
 }
