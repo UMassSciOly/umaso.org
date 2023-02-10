@@ -304,7 +304,8 @@ span.sponsors .title {
 span.sponsors .sponsor-logos img {
     display: inline;
     vertical-align: middle;
-    width: 32%;
+    text-align: center;
+    width: 24%;
 }
 
 /* interact */
@@ -638,7 +639,7 @@ span.contact .divider {
     /* sponsor logos stack*/
 
     span.sponsors .sponsor-logos img {
-        width: 75%;
+        width: 49%;
         padding: 10px 0;
     }
 
