@@ -16,18 +16,41 @@ body, html {
 }
 
 .text a {
-    color: rgb(208, 205, 255);
+    /* color: rgb(208, 205, 255); */
+    color: black;
     transition: 200ms;
 }
 
 .text a:hover {
-    opacity: 80%;
+    opacity: 50%;
 }
 
 .header {
     font-size: 24px;
     font-weight: 500;
     padding: 5px 0px;
+}
+
+.button {
+    display: inline-block;
+}
+
+.button a {
+    display: inline-block;
+    padding: 20px;
+    width: fit-content;
+    margin-top: 5px;
+    transition: 200ms;
+    
+    cursor: pointer;
+    font-weight: 500;
+    border: solid rgb(33, 39, 33);
+    color: rgb(33, 39, 33);
+}
+
+.button a:hover {
+    background-color: rgb(33, 39, 33);
+    color: white;
 }
 
 /* cover */
@@ -219,7 +242,7 @@ span.cv-buttons .b-space {
 span.cv-buttons a {
     display: inline-block;
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 80px;
 
     text-decoration: none;
     color: white;
@@ -645,7 +668,7 @@ span.contact .divider {
 
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 550px) {
 
     /* hide nav bar */
 
