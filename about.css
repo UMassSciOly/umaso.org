@@ -96,6 +96,15 @@
     text-align: center;
 }
 
+th {
+    border-bottom:rgb(136, 28, 28) solid 1px;
+    padding: 10px 10px 5px 10px;
+}
+
+td {
+    padding: 2px 20px;
+}
+
 /* profile picture src */
 #pfp-1 {background-image: url("pfps/Jalal_Essal.jpg");}
 #pfp-2 {background-image: url("pfps/Ben_Kuchma.jpg");}
@@ -111,6 +120,7 @@
 #pfp-12 {background-image: url("pfps/Divyesh_Biswas.jpg");}
 #pfp-13 {background-image: url("pfps/Gideon_Tzafriri.jpg");}
 #pfp-14 {background-image: url("pfps/Kiruba_Shalin.jpg");}
+#pfp-15 {background-image: url("pfps/Robert_Li.jpg");}
 
 /* responsive */
 
