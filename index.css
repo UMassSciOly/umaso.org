@@ -17,7 +17,7 @@ body, html {
 
 .text a {
     /* color: rgb(208, 205, 255); */
-    color: black;
+    color: rgb(136, 28, 28);
     transition: 200ms;
 }
 
@@ -420,7 +420,7 @@ span.contact {
     padding: 8% 15%;
     width: 70%;
 
-    background-color: rgb(33, 39, 33);
+    background-color: rgb(40, 40, 40);
     color: white;
     font-size: 0;
 }
@@ -664,6 +664,13 @@ span.contact .divider {
     span.sponsors .sponsor-logos img {
         width: 49%;
         padding: 10px 0;
+    }
+
+    span.cv-buttons div {
+        display: block; 
+        float: none; 
+        width: 100%;
+        margin-bottom: 10px;
     }
 
 }
