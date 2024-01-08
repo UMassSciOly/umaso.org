@@ -105,6 +105,10 @@ td {
     padding: 2px 20px;
 }
 
+tr {
+    height: 65px;
+}
+
 /* profile picture src */
 #pfp-1 {background-image: url("pfps/Jalal_Elsallal.jpeg");}
 #pfp-2 {background-image: url("pfps/Ben_Kuchma.jpg");}
@@ -126,6 +130,7 @@ td {
 #pfp-18 {background-image: url("pfps/Ellen_Chan.png")}
 #pfp-19 {background-image: url("pfps/Felix_Manuel_Pantoja.jpeg")}
 #pfp-20 {background-image: url("pfps/Tiffany_Zheng.jpeg")}
+#pfp-21 {background-image: url("pfps/Trisha_Truong.JPG")}
 
 /* responsive */
 

@@ -328,7 +328,8 @@ span.sponsors .sponsor-logos img {
     display: inline;
     vertical-align: middle;
     text-align: center;
-    width: 24%;
+    width: 40%;
+    padding: 10px;
 }
 
 /* interact */
@@ -662,8 +663,8 @@ span.contact .divider {
     /* sponsor logos stack*/
 
     span.sponsors .sponsor-logos img {
-        width: 49%;
-        padding: 10px 0;
+        width: 60%;
+        padding: 20px;
     }
 
     span.cv-buttons div {
