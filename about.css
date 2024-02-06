@@ -110,6 +110,7 @@ tr {
 }
 
 /* profile picture src */
+#pfp-0 {background-image: url("UMASO-logo-default.png")}
 #pfp-1 {background-image: url("pfps/Jalal_Elsallal.jpeg");}
 #pfp-2 {background-image: url("pfps/Ben_Kuchma.jpg");}
 #pfp-3 {background-image: url("pfps/Nayrie_Patel.jpg");}
