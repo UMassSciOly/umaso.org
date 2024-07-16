@@ -405,6 +405,56 @@ span.interact .bg-img-desc {
     font-size: 10px;
 }
 
+/* carousel */
+.carousel {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    animation: slide 10s infinite linear;
+  }
+  
+  .carousel-slides li {
+    width: 100%; /* adjust the width as needed according to the image size */
+  }
+  
+  .carousel-slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .carousel-navigation button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+  .carousel-navigation button:hover {
+    opacity: 0.7;
+  }
+  
+
+
 /* about */
 
 .about {
