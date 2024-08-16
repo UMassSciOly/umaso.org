@@ -1,7 +1,7 @@
 # UMASO.org
 
-University of Massachusetts Amherst Science Olympiad website source code
+University of Massachusetts Amherst Science Olympiad website
 
-logo designs by Jack Guo
+Currently being redesigned for 2024-2025
 
-currently being updated for UMASO 2024
+Logo and website design by Jack Guo, website development by Larry Jin and Victor Chen
