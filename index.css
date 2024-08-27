@@ -1,5 +1,6 @@
 @import 'main.css';
 @import 'blocks.css';
+@import 'grids.css';
 
 main {
     padding: 0 10%;
