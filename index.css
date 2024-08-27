@@ -1,0 +1,6 @@
+@import 'main.css';
+@import 'blocks.css';
+
+main {
+    padding: 0 10%;
+}
