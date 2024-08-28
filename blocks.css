@@ -1,7 +1,9 @@
 .full-width {
     width: 100%;
-    background-color: #d0d0d0;
+    background-color: white;
     padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 /* shared styles for flexboxes */
@@ -50,4 +52,9 @@
     .split-30-70 .right, .split-70-30 .left {
         flex: 0 0 70%;
     }
+}
+
+.section-header {
+    text-align: center;
+    margin: 20px 0px 40px 0px;
 }
