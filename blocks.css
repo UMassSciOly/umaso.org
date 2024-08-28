@@ -8,6 +8,9 @@
 .split-30-70, .split-70-30 {
     display: flex;
     flex-wrap: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0px;
 }
 
 /* 30-70 split section */
