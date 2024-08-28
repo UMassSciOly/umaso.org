@@ -2,6 +2,8 @@
 @import 'blocks.css';
 @import 'grids.css';
 
+@import 'hero.css';
+
 main {
     padding: 0;
 }
