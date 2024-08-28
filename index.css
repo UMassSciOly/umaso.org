@@ -6,12 +6,6 @@ main {
     padding: 0;
 }
 
-@media screen and (min-width: 768px) {
-    main {
-        padding: 0 5%;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     main {
         padding: 0 10%;
