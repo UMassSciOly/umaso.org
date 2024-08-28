@@ -1,7 +1,7 @@
 .sponsor-image-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 50px;
 }
 
 .sponsor-image-grid .grid-item img {
