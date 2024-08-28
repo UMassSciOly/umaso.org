@@ -13,30 +13,33 @@
     margin: 20px 0px;
 }
 
+.spaced-content {
+    padding: 20px;
+}
+
 /* 30-70 split section */
 .split-30-70 .left {
     flex: 1 0 100%;
     background-color: #f0f0f0;
-    padding: 20px;
 }
 
 .split-30-70 .right {
     flex: 1 0 100%;
     background-color: #e0e0e0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 /* 70-30 split section */
 .split-70-30 .left {
     flex: 1 0 100%;
     background-color: #e0e0e0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .split-70-30 .right {
     flex: 1 0 100%;
     background-color: #f0f0f0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 @media screen and (min-width: 768px) {
