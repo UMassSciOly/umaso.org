@@ -2,7 +2,7 @@
     width: 100%;
     background-color: white;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
 .split-30-70, .split-70-30 {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 20px 0px;
 }
