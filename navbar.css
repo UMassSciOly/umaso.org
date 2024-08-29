@@ -1,0 +1,98 @@
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.navbar-content {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.navbar-logo {
+    width: 50px;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links ul li {
+    margin: 0 15px;
+}
+
+.navbar-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-content {
+        width: 80%;
+    }
+}
+
+/* Mobile Styles */
+/* .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+} */
+
+/* Hide links by default on mobile */
+/* .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-links a {
+    color:aquamarine;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+*/
+  
