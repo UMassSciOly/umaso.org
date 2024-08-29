@@ -4,6 +4,7 @@
 
 @import 'hero.css';
 @import 'navbar.css';
+@import 'footer.css';
 
 main {
     padding: 0;
