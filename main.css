@@ -6,10 +6,26 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-image: linear-gradient(#111111, #001A54);
+    background-image: linear-gradient(#111111, #15163B);
 }
 
 img {
     max-width: 100%;
     display: block;
 }
+
+h2 {
+    margin: 10px;
+}
+
+#sponsor-subtitle {
+    color: #808080;
+}
+
+/* color scheme:
+- red: #F5373B
+- blue: #3C9FD9
+- light gray: #f0f0f0
+- gray: #e0e0e0 
+- dark gray: #808080
+- dark navy/purple: #15163B*/
