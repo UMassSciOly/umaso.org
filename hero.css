@@ -1,6 +1,6 @@
 .hero-banner {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     min-height: 500px;
     background-image: url('img/banner-compressedx2.jpg');
     background-size: cover;
