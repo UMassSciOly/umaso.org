@@ -3,6 +3,7 @@
 @import 'grids.css';
 
 @import 'hero.css';
+@import 'navbar.css';
 
 main {
     padding: 0;
