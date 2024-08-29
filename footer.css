@@ -4,6 +4,14 @@
     margin-top: auto;
 }
 
+#footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
 .footer-content {
     max-width: 100%;
     margin: 0 auto;
@@ -14,13 +22,13 @@
     color: #fff;
 }
 
-.logo {
+.footer-content .logo {
     font-size: 24px;
     font-weight: bold;
     margin-right: 20px;
 }
 
-.logo img {
+.footer-content .logo img {
     width: 500px;
 }
 
@@ -29,23 +37,15 @@
     flex-direction: column;
 }
 
-.page-links, .social-links {
+.footer-links .page-links, .footer-links .social-links {
     display: flex;
     gap: 15px;
     margin-top: 10px;
 }
 
-.page-links a, .social-links a {
+.footer-links .page-links a, .footer-links .social-links a {
     color: #f0f0f0;
     text-decoration: none;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #999;
 }
 
 @media screen and (min-width: 1024px) {
