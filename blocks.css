@@ -15,6 +15,13 @@
     margin: 20px 0px;
 }
 
+.split-30-70 img, .split-70-30 img {
+    max-width: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .spaced-content {
     padding: 20px;
 }
