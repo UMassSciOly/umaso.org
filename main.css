@@ -6,7 +6,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-image: linear-gradient(#111111, #15163B);
+    background-image: linear-gradient(#000000, #000000 20%,#15163B);
 }
 
 img {

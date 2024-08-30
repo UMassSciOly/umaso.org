@@ -12,14 +12,38 @@
     text-align: center;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    background-color: #333;
+    background-color: #000000;
     padding: 10px 20px;
     border-radius: 10px;
     overflow: hidden;
+    z-index: 3;
+}
+
+.navbar-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0vh;
+    width: 100%;
+    z-index: 2;
+    transition: 0.4s;
+    background-color: #000000;
+}
+
+.navbar-back.active-menu {
+    height: 100vh;
 }
 
 .navbar-logo {
     width: 50px;
+}
+
+.navbar-links {
+    opacity: 0;
+}
+
+.navbar-links.active-menu {
+    opacity: 1;
 }
 
 .navbar-links ul {
@@ -39,9 +63,38 @@
     font-size: 18px;
 }
 
+.navbar-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.active-menu #bar1 {
+    transform: translate(0, 11px) rotate(45deg);
+}
+
+.active-menu #bar2 {
+    opacity: 0;
+}
+
+.active-menu #bar3 {
+    transform: translate(0, -11px) rotate(-45deg);
+}
+
 @media screen and (min-width: 1024px) {
+    .navbar-links {
+        opacity: 1;
+    }
+
     .navbar-content {
         width: 80%;
+    }
+
+    .navbar-toggle {
+        opacity: 0;
     }
 }
 
