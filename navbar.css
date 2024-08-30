@@ -15,7 +15,8 @@
     padding: 10px 20px;
     border-radius: 10px;
     z-index: 3;
-    background-color: transparent;
+    max-height: 72px;
+    background-color: black;
 }
 
 .navbar-back {
@@ -26,7 +27,7 @@
     width: 100%;
     z-index: 2;
     transition: 0.4s ease-in;
-    background-color: #000000;
+    background-color: black;
 }
 
 .navbar-back.active-menu {
@@ -34,7 +35,7 @@
 }
 
 .navbar-logo {
-    width: 50px;
+    width: 50px;    
 }
 
 .navbar-links {
@@ -44,6 +45,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .navbar-links.hidden {
@@ -85,11 +87,20 @@
     margin: 5px 15px;
     height: 100%;
     text-align: left;
+    white-space: nowrap;
 }
 
 .navbar-links ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.navbar-toggle {
+    cursor:pointer;
+    user-select: none;
+    width: 100%;
+    position: relative;
+    transition: 0.4s;
 }
 
 .navbar-toggle div {
@@ -128,6 +139,7 @@
 
     .navbar-toggle {
         opacity: 0;
+        display: none;
     }
 
     .navbar-fade {
