@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
     <link rel="icon" type="image/x-icon" href="img/umaso/UMASO-logo-color2-resize.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="blocks.css">
+    <link rel="stylesheet" href="grids.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="index.css">
     <script src="js/script.js"></script>
 </head>
 <body>
 <header>
     <!-- nav bar -->
-    <section>
+    <section id="nav">
         <div class="navbar">
             <div class="navbar-content">
                 <div class="navbar-logo">
@@ -19,10 +25,10 @@
                 </div>
                 <div class="navbar-links">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#tournament">Tournament Info</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#something">Something Else</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Tournament Info</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Something Else</a></li>
                     </ul>
                 </div>
                 <div class="navbar-toggle" onclick="toggle()">
@@ -38,23 +44,37 @@
 </header>
 <main>
     <!-- hero banner -->
-    <section>
+    <section id="hero">
         <div class="hero-banner">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="img/banner-compressedx2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/umasoteampic2024.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/umasoteampic2023.jpg">
+                </div>
+            </div>
+
             <div class="hero-content">
                 <div class="logo">
                     <img src="img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
                 </div>
                 <p>February 15th, 2025</p>
                 <div class="cta">
-                    <a href="#" class="cta-button">Learn More</a>
-                    <a href="#" class="cta-button">Learn More</a>
+                    <a href="#" class="cta-button">Register</a>
+                    <a href="#" class="cta-button">Volunteer</a>
+                    <a href="#" class="cta-button" id="learn-more">Learn More</a>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- what is umaso -->
-    <section>
+    <section id="about">
         <div class="split-30-70">
             <div class="left">
                 <div class="spaced-content">
@@ -72,7 +92,7 @@
     </section>
 
     <!-- tournament info -->
-    <section>
+    <section id="tournament">
         <div class="split-70-30">
             <div class="left">
                 <div class="spaced-content">
@@ -86,13 +106,13 @@
     </section>
 
     <!-- sponsors -->
-    <section>
+    <section id="sponsors">
         <div class="full-width">
             <div class="section-header">
                 <h2>
                     OUR EPIC SPONSORS
                 </h2>
-                <p id="sponsor-subtitle">
+                <p class="sponsor-subtitle">
                     If you are interested in sponsoring UMASO, please contact us here!
                 </p>
             </div>
@@ -110,8 +130,33 @@
 </main>
 <footer>
     <!-- footer -->
+     <section id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+            </div>
+            <div class="footer-links">
+                <div class="page-links">
+                    <a href="#">Home</a>
+                    <a href="#">Tourney</a>
+                    <a href="#">News</a>
+                    <a href="#">Among us section</a>
+                </div>
+                <div class="social-links">
+                    <a href="#">Discord</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            made with extreme hatred and anger by the umaso team
+        </div>
+     </section>
 
 </footer>
+
+<script src="slides.js"></script>
 
 </body>
 </html>

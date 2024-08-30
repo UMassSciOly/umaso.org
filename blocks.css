@@ -4,6 +4,7 @@
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
+    margin: 20px 0px;
 }
 
 /* shared styles for flexboxes */
@@ -13,6 +14,13 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0px;
+}
+
+.split-30-70 img, .split-70-30 img {
+    max-width: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .spaced-content {
