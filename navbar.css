@@ -73,6 +73,7 @@
     opacity: 1;
     font-size: 25px;
     height: 24vh;
+    max-height: 250px;
 }
 
 .navbar-links ul.horizontal {
