@@ -38,10 +38,13 @@ function toggle() {
         navbar_list.classList.toggle("horizontal")
     }, 400);
 
-    const navbar_container = document.getElementsByClassName("navbar-content");
-    for (const element of navbar_container) {
-        element.classList.toggle("active-menu")
-    }
+    const navbar_container = document.getElementsByClassName("navbar-content")[0];
+    navbar_container.classList.toggle("active-menu");
+    // const container_delay = navbar_container.classList.contains("active-menu") ? 400 : 100;
+    // setTimeout(() => {
+    //     navbar_container.classList.toggle("active-menu");
+    // }, container_delay);
+
     const navbar_back = document.getElementsByClassName("navbar-back");
     for (const element of navbar_back) {
         element.classList.toggle("active-menu")
