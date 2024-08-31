@@ -101,7 +101,7 @@
 }
 
 .navbar-links ul li a:hover {
-    transition: 0.1s ease;
+    transition: 0.4s ease;
     color: #d62121;
 }
 
