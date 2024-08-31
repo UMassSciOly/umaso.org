@@ -23,6 +23,22 @@ h2 {
     color: #808080;
 }
 
+#about .split-30-70 .left {
+    background-color: #F5373B;
+}
+
+#about .split-30-70 .right {
+    background-color: #F5373B;
+}
+
+#tournament .split-70-30 .left {
+    background-color: #3C9FD9;
+}
+
+#tournament .split-70-30 .right {
+    background-color: #3C9FD9;
+}
+
 /* color scheme:
 - red: #F5373B
 - blue: #3C9FD9
