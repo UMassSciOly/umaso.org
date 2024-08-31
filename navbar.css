@@ -72,7 +72,7 @@
 .navbar-links.active-menu ul {
     opacity: 1;
     font-size: 25px;
-    height: 25vh;
+    height: 24vh;
 }
 
 .navbar-links ul.horizontal {
@@ -93,6 +93,11 @@
 .navbar-links ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.navbar-links ul li a:hover {
+    transition: 0.1s ease;
+    color: #d62121;
 }
 
 .navbar-toggle {
