@@ -46,13 +46,13 @@ function startSlideshow() {
 
 function slideLeft() {
     clearInterval(slideInterval);
-    showSlide(slideIndex += -1);
+    showSlide(slideIndex += 1);
     startSlideshow();
 }
 
 function slideRight() {
     clearInterval(slideInterval);
-    showSlide(slideIndex += 1);
+    showSlide(slideIndex += -1);
     startSlideshow();
 }
 
