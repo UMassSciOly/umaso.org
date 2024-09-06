@@ -38,10 +38,22 @@ function showSlide(n) {
 }
 
 function startSlideshow() {
-    slideInterval = setInterval(function () {
+    slideInterval = setInterval(() => {
         slideIndex++;
         showSlide(slideIndex);
     }, 3000);
+}
+
+function slideLeft() {
+    clearInterval(slideInterval);
+    showSlide(slideIndex += -1);
+    startSlideshow();
+}
+
+function slideRight() {
+    clearInterval(slideInterval);
+    showSlide(slideIndex += 1);
+    startSlideshow();
 }
 
 showSlide(slideIndex);
