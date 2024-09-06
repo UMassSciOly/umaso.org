@@ -16,7 +16,7 @@
     /* width: 100%; */
     /* height: auto; */
     max-height: 150px;
-    max-width: 80%;
+    max-width: 50%;
     display: block;
     object-fit: contain;
 }
@@ -25,10 +25,16 @@
     .sponsor-image-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .sponsor-image-grid .grid-item img {
+        max-width: 60%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .sponsor-image-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .sponsor-image-grid .grid-item img {
+        max-width: 80%;
     }
 }

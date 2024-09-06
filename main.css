@@ -18,31 +18,3 @@ img {
 h2 {
     margin: 10px;
 }
-
-#sponsors .sponsor-subtitle {
-    color: #808080;
-}
-
-#about .split-30-70 .left {
-    background-color: #F5373B;
-}
-
-#about .split-30-70 .right {
-    background-color: #F5373B;
-}
-
-#tournament .split-70-30 .left {
-    background-color: #3C9FD9;
-}
-
-#tournament .split-70-30 .right {
-    background-color: #3C9FD9;
-}
-
-/* color scheme:
-- red: #F5373B
-- blue: #3C9FD9
-- light gray: #f0f0f0
-- gray: #e0e0e0 
-- dark gray: #808080
-- dark navy/purple: #15163B*/
