@@ -2,26 +2,12 @@
     position: relative;
     height: 70vh;
     min-height: 500px;
-    /* background-image: url('img/banner-compressedx2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;
 }
-
-/* .hero-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-} */
 
 .slideshow-container {
     width: 100%;
@@ -87,7 +73,7 @@
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
-    transition: background-color 0.2s ease;
+    transition: 0.5s ease;
 }
 
 .hero-content .cta-button:hover {
