@@ -54,6 +54,7 @@
 
 .navbar-links.hidden {
     opacity: 0;
+    /* transition: opacity 0.4s; */
 }
 
 .navbar-links.active-menu {
@@ -98,10 +99,10 @@
 .navbar-links ul li a {
     color: #fff;
     text-decoration: none;
+    transition: 0.4s ease;
 }
 
 .navbar-links ul li a:hover {
-    transition: 0.4s ease;
     color: #d62121;
 }
 
