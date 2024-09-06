@@ -1,11 +1,18 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-const learnButton = document.getElementById("learn-more");
-const learnButtonHrefs = [
+const btn = document.getElementById("cta-btn")
+
+const btnText = [
+    "Register",
+    "text2",
+    "text3"
+]
+
+const btnHref = [
     "#test1",
     "#test2",
     "#test3"
-];
+]
 
 function showSlide(n) {
     if (n >= slides.length) {slideIndex = 0}
@@ -22,8 +29,12 @@ function showSlide(n) {
     }
 
     slides[slideIndex].classList.add("active");
-
-    learnButton.href = learnButtonHrefs[slideIndex];
+    btn.style.opacity = '0';
+    setTimeout(() => {
+        btn.textContent = btnText[slideIndex];
+        btn.href = btnHref[slideIndex];
+        btn.style.opacity = '1';
+    }, 300);
 }
 
 function startSlideshow() {
