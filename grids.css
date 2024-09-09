@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+    padding: 40px 0 20px 0;
+    border-radius: 10px;
 }
 
 .sponsor-image-grid .grid-item {

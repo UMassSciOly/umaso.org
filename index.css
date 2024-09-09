@@ -5,7 +5,7 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        padding: 0 10%;
+        padding: 0 5%;
         font-size: 16px;
     }
 }
@@ -17,25 +17,47 @@ main {
     }
 }
 
-#sponsors .sponsor-subtitle {
-    color: #808080;
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
+
+/* #sponsors .sponsor-subtitle {
+    color: #808080;
+} */
 
 #about .split-30-70 .left {
     background-color: #ed5053;
 }
 
 #about .split-30-70 .right {
-    background-color: #ed5053;
-    /* color: white; */
+    /* background-color: #ed5053; */
+    background-color: rgb(136, 28, 28);
+    background-color: #b82318;
+    color: white;
 }
 
 #tournament .split-70-30 .left {
-    background-color: #9674e1;
+    /* background-color: #9674e1; */
+    background-color: white;
+    color: rgb(136, 28, 28);
+    color: #b82318;
 }
 
 #tournament .split-70-30 .right {
     background-color: #9674e1;
+}
+
+#sponsors .full-width {
+    background-color: rgb(136, 28, 28);
+    background-color: #b82318;
+    color: white;
+}
+
+#sponsors .full-width .sponsor-image-grid {
+    background-color: white;
 }
 
 /* color scheme:

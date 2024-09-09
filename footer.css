@@ -1,5 +1,5 @@
 #footer {
-    background-color: #000;
+    background-color: none;
     padding: 20px 40px;
     margin-top: auto;
 }
@@ -29,7 +29,7 @@
 }
 
 .footer-content .logo img {
-    width: 500px;
+    width: 300px;
 }
 
 .footer-links {
@@ -46,6 +46,12 @@
 .footer-links .page-links a, .footer-links .social-links a {
     color: #f0f0f0;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-content {
+        max-width: 90%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
