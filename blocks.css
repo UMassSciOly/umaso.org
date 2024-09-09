@@ -7,6 +7,20 @@
     margin: 20px 0px;
 }
 
+.img-block {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.img-block img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transform: none;
+}
+
 /* shared styles for flexboxes */
 .split-30-70, .split-70-30 {
     display: flex;
@@ -80,4 +94,3 @@
         padding: 40px;
     }
 }
-
