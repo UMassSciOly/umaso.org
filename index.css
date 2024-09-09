@@ -1,19 +1,19 @@
 main {
     padding: 0;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
     main {
         padding: 0 10%;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     main {
         padding: 0 10%;
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -22,20 +22,20 @@ main {
 }
 
 #about .split-30-70 .left {
-    background-color: #F5373B;
+    background-color: #ed5053;
 }
 
 #about .split-30-70 .right {
-    background-color: #ff7173;
+    background-color: #ed5053;
     /* color: white; */
 }
 
 #tournament .split-70-30 .left {
-    background-color: #3C9FD9;
+    background-color: #9d7fe0;
 }
 
 #tournament .split-70-30 .right {
-    background-color: #3C9FD9;
+    background-color: #5e419c;
 }
 
 /* color scheme:

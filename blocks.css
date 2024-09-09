@@ -11,67 +11,73 @@
 .split-30-70, .split-70-30 {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;
     overflow: hidden;
-    margin: 20px 0px;
+    justify-content: space-between;
 }
 
 .split-30-70 img, .split-70-30 img {
-    max-width: none;
+    max-height: 300px;
+    width: 100%;
     object-fit: cover;
-    max-width: 90%;
-    height: 90%;
-    transform: translateY(6.25%);
-    margin: auto;
-    border-radius: 20px;
+    transform: none;
 }
 
 .spaced-content {
     padding: 25px;
 }
 
-/* 30-70 split section */
-.split-30-70 .left {
-    flex: 1 0 100%;
-    background-color: #f0f0f0;
+.spaced-content h2 {
+    margin-bottom: 10px;
 }
 
-.split-30-70 .right {
-    flex: 1 0 100%;
-    background-color: #e0e0e0;
-}
-
-/* 70-30 split section */
-.split-70-30 .left {
-    flex: 1 0 100%;
-    background-color: #e0e0e0;
-}
-
+/* all split section */
+.split-30-70 .left,
+.split-30-70 .right,
+.split-70-30 .left,
 .split-70-30 .right {
     flex: 1 0 100%;
-    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0px;
+    order: 2;
 }
 
-@media screen and (min-width: 768px) {
-    .split-30-70 .left, .split-70-30 .right {
-        flex: 0 0 30%;
-    }
-    
-    .split-30-70 .right, .split-70-30 .left {
-        flex: 0 0 70%;
-    }
-
-    .split-70-30 .right img {
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        transform: none;
-        margin: 0px;
-        border-radius: 0px;
-    }
+/*smaller sections*/
+.split-30-70 .left, .split-70-30 .right {
+    order: 1;
 }
 
 .section-header {
     text-align: center;
     margin: 20px 0px 40px 0px;
 }
+
+@media screen and (min-width: 768px) {
+    .split-30-70, .split-70-30 {
+        margin: 10px 0px;
+    }
+
+    .split-30-70 .left, .split-70-30 .right {
+        flex: 0 0 42.5%;
+        order: 1;
+    }
+    
+    .split-30-70 .right, .split-70-30 .left {
+        flex: 0 0 55%;
+        order: 1;
+    }
+
+    .split-30-70 img, .split-70-30 img {
+        /* max-width: 100%; */
+        /* width: 100%; */
+        height: 100%;
+        max-height: 100%;
+        /* transform: none; */
+        /* margin: 0px; */
+    }
+
+    .spaced-content {
+        padding: 40px;
+    }
+}
+
