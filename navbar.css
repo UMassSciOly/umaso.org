@@ -16,7 +16,8 @@
     border-radius: 10px;
     z-index: 4;
     max-height: 72px;
-    background-color: black;
+    /* background-color: black; */
+    background-color: none;
 }
 
 .navbar-back {
@@ -141,7 +142,7 @@
     }
 
     .navbar-content {
-        width: 80%;
+        width: 90%;
     }
 
     .navbar-toggle {
@@ -150,5 +151,11 @@
         cursor: pointer;
         user-select: none;
         pointer-events: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-content {
+        width: 80%;
     }
 }
