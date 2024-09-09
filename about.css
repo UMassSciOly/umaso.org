@@ -61,7 +61,35 @@
 }
 
 /* profile grid */
+.profile {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    text-align: center;
+    margin: 20px;
+}
 
+.profile img {
+    border-radius: 50%;
+}
+
+.profile h3 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.profile p {
+    font-size: 14px;
+}
+
+.profile-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
 @media screen and (min-width: 768px) {
     .profile-btns button {
