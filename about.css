@@ -1,0 +1,87 @@
+/* mission */
+
+.mission-statement {
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+}
+
+#mission-toggle {
+    margin: 0px auto;
+    width: fit-content;
+    color: black;
+    transition: 0.4s ease-out;
+    font-size: 20px;
+}
+
+#mission-toggle.active {
+    transform: rotate(180deg);
+    color: #ed5053;
+}
+
+.mission-statement ul {
+    /* display: inline-block; */
+    transition: 0.4s ease-out;
+    margin-left: 20px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.4s ease-out;
+}
+
+.mission-statement ul.active {
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* profiles menu buttons */
+
+.profile-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.profile-btns button {
+    all: unset;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    background-color: white;
+}
+
+.profile-btns button:hover {
+    background-color: #d9d8f9;
+}
+
+.profile-btns button:active {
+    background-color: #a29ef1;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3), 0 1px 5px 0 rgba(0,0,0,0.29);
+}
+
+/* profile grid */
+
+
+@media screen and (min-width: 768px) {
+    .profile-btns button {
+        padding: 7px 15px;
+        margin: 0px 15px;
+    }
+
+    #mission-toggle {
+        display: none;
+    }
+
+    .mission-statement ul {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile-btns button {
+        padding: 10px 20px;
+        margin: 0px 20px;
+    }
+}
