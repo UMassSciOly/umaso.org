@@ -14,7 +14,7 @@
     grid-template-columns: auto 1fr auto;
     padding: 10px 20px;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 4;
     max-height: 72px;
     background-color: black;
 }
@@ -29,7 +29,7 @@
     left: 0;
     height: 0vh;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     transition: 0.4s ease-in;
     background-color: black;
 }
@@ -135,7 +135,7 @@
     transform: translate(0, -11px) rotate(-45deg);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .navbar-links {
         transition: 0.4s;
     }

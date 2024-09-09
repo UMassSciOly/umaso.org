@@ -1,5 +1,5 @@
-const to_desktop_media_query = window.matchMedia("(min-width: 1024px)");
-const to_mobile_media_query = window.matchMedia("(max-width: 1024px)");
+const to_desktop_media_query = window.matchMedia("(min-width: 768px)");
+const to_mobile_media_query = window.matchMedia("(max-width: 768px)");
 to_desktop_media_query.addEventListener("change", handle_desktop);
 to_mobile_media_query.addEventListener("change", handle_mobile);
 

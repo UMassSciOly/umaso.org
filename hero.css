@@ -127,7 +127,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .hero-content {
         /* position: absolute;
         top: auto;
