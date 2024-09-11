@@ -54,7 +54,7 @@
     background-color: #d9d8f9;
 }
 
-.profile-btns button:active {
+.profile-btns button.active {
     background-color: #a29ef1;
     color: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3), 0 1px 5px 0 rgba(0,0,0,0.29);
@@ -82,6 +82,78 @@
 
 .profile p {
     font-size: 14px;
+}
+
+.event-profile {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    align-content: flex-start;
+}
+
+.event-profile2 {
+    /* width: 300px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* flex-flow: wrap; */
+    /* flex-wrap: wrap; */
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.event-profile h3 {
+    margin: 10px 0px;
+}
+
+.event-profile2 .ES-section {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: right;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+}
+
+.event-profile .ES-section, .event-profile .TR-section{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: flex-start;
+}
+
+.event-member {
+    margin: 7px 5px;
+    flex-flow: wrap;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+
+.ES-section .event-member {
+    background-color: #f87f81;
+}
+
+.TR-section .event-member {
+    background-color: #bab7f0;
 }
 
 .profile-grid {
