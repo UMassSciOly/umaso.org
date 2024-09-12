@@ -1,7 +1,7 @@
 .full-width {
     width: 100%;
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0px;
@@ -59,7 +59,7 @@
 }
 
 .split-30-70 .left {
-    box-shadow: 0 -6px 20px rgba(0,0,0, 0.3);
+    box-shadow: 0 -2px 40px rgba(0,0,0, 0.6);
 }
 
 /*smaller sections*/

@@ -5,7 +5,14 @@
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+/* html {
+    overflow: hidden;
+    height: 100%;
+} */
+
 body {
+    /* overflow: auto;
+    height: 100%; */
     background-image: linear-gradient(#000000, #171a54);
 }
 

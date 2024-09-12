@@ -41,17 +41,26 @@ main {
 #about .split-30-70 {
     /* background-color: #ed5053; */
     background-color: #201b44;
+    /* background-image: linear-gradient(-45deg, #201b44, #655f92); */
+    background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%);
     color: white;
 }
 
 #tournament .split-70-30 {
     /* background-color: #ed5053; */
     background-color: #201b44;
+    background-image: linear-gradient(45deg, #201b44, #655f92);
+    color: white;
+}
+
+#tournament .split-70-30 h2 {
+    color: #ff3a44;
     color: white;
 }
 
 #about .split-30-70 h2 {
     color: #ff3a44;
+    color: white;
 }
 
 /* #tournament .split-70-30 .left {
@@ -65,9 +74,12 @@ main {
 } */
 
 #sponsors .full-width {
-    background-color: rgb(136, 28, 28);
-    background-color: #b82318;
+    background-color: #201b44;
     color: white;
+}
+
+#sponsors .full-width h2 {
+    color: #ff3a44;
 }
 
 #sponsors .full-width .sponsor-image-grid {
