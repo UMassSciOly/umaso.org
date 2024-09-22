@@ -74,7 +74,8 @@ main {
 } */
 
 #sponsors .full-width {
-    background-color: #201b44;
+    /* background-color: #595481; */
+    background-image: linear-gradient(45deg, #341a5a, #674489);
     color: white;
 }
 
@@ -84,6 +85,12 @@ main {
 
 #sponsors .full-width .sponsor-image-grid {
     background-color: white;
+}
+
+#registration .split-70-30 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #201b44, #655f92);
+    color: white;
 }
 
 /* color scheme:

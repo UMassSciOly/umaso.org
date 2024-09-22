@@ -33,7 +33,6 @@ class EventInfo {
     constructor(name, is_trial, ES, TR) {
         console.log([name, is_trial])
         this.name = name + (is_trial === "TRUE" ? "*" : "");
-        // this.is_trial = is_trial;
         this.ES = ES.split(".");
         this.TR = TR.split(".");
     }
@@ -65,7 +64,6 @@ async function load_organizer_profiles() {
         let img_path = "./img/pfp/default.png";
         if (organizer.file_name in pfp_extension_map) {
             img_path = `./img/pfp/${organizer.file_name}.png`;
-            // img_path = `./img/pfp/${organizer.file_name}.${pfp_extension_map[organizer.file_name]}`;
         }
         create_organizer_profile(organizer, img_path, false);
     }
@@ -76,12 +74,13 @@ function create_organizer_profile(organizer, img_path, is_hidden) {
     const profile_img = document.createElement("img");
     const profile_title = document.createElement("h3");
     const profile_text = document.createElement("p");
+
     profile_container.classList.add("profile", "grid-item");
     if (is_hidden) {
         profile_container.classList.add("hidden");
     }
+
     profile_container.dataset.id = "organizer";
-    // profile_container.style.opacity = 0;
     profile_img.src = img_path;
     profile_title.innerHTML = organizer.name;
     profile_text.innerHTML = organizer.info;
@@ -129,6 +128,7 @@ function create_event_profile(event_obj, is_hidden) {
     if (is_hidden) {
         profile_container.classList.add("hidden");
     }
+
     profile_container.dataset.id = "event-member";
     event_title_container.classList.add("event-title");
     ES_container.classList.add("ES-section");
