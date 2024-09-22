@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="about.css">
-    <script src="js/script.js"></script>
-    <script src="js/about.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
@@ -26,14 +24,14 @@
         <div class="navbar">
             <div class="navbar-content">
                 <div class="navbar-logo grid-item">
-                    <a href="#" class="logo"><img src="img/umaso/Main-Logo-White.svg"></a>
+                    <a href="index.html" class="logo"><img src="img/umaso/Main-Logo-White.svg"></a>
                 </div>
                 <div class="navbar-links grid-item hidden">
                     <ul id="navbar-link-list" class="horizontal">
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">Tournament Info</a></li>
                         <li><a href="#">News</a></li>
-                        <li><a href="#">Something Else</a></li>
+                        <!-- <li><a href="#">Something Else</a></li> -->
                     </ul>
                 </div>
                 <div class="navbar-toggle grid-item" onclick="toggle()">
@@ -49,16 +47,19 @@
 </header>
 <main>
     <section id="mission">
-        <div class="img-block">
-            <img src="img/banner-compressedx2.jpg">
-        </div>
         <div class="mission-statement full-width">
+            <div class="img-block">
+                <img src="img/team_photo_2024.jpg">
+            </div>
             <div class="section-header">
-                <h2>Our Mission</h2>
-                <p>Holy yap fest</p>
+                <h1>Our Mission</h1>
             </div>
             <p>Having competed in and volunteered at regional, invitational, state, and national level Science Olympiad competitions, the impassioned members of UMASO understand the intricacies of different styles of tournaments and what makes an event memorable. We aim to draw on these experiences to bring a novel Science Olympiad experience to high school teams in New England through a tournament that is inclusive and hands-on.</p>
-            <div id="mission-toggle" onclick="toggle_mission()">▼</div>
+            <div id="mission-toggle" onclick="toggle_mission()">
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span>
+            </div>
             <!-- <div id="mission-toggle" onclick="toggle_mission()">See more</div> -->
             <ul id="mission-details">
                 <li><b>Inclusive</b>: Although eastern Massachusetts teams have historically been given local opportunities to compete in many invitationals, western Massachusetts teams have been underrepresented. We change this by offering a high-quality annual tournament in Amherst, promoting STEM to high schools that would find this opportunity to be unique and impactful.</li>
@@ -69,12 +70,12 @@
     <section id="people">
         <div class="profiles full-width">
             <div class="profile-btns">
-                <button onmousedown="toggle_profiles(this)" class="active">Organizers</button>
-                <button onmousedown="toggle_profiles(this)">ESes & TRs</button>
-                <button onmousedown="toggle_profiles(this)">Graveyard</button>
+                <button onmousedown="toggle_profiles(this)" class="active" data-id="organizer">Organizers</button>
+                <button onmousedown="toggle_profiles(this)" data-id="event-member">ESes & TRs</button>
+                <!-- <button onmousedown="toggle_profiles(this)" data-id="">Graveyard</button> -->
             </div>
             <div class="profile-grid">
-                <div class="profile grid-item">
+                <!-- <div class="profile grid-item">
                     <img src="img/pfp/Ben_Kuchma.jpg">
                     <h3>Ben Kuchma</h3>
                     <p>Physics + Computer Science 2025</p>
@@ -149,16 +150,22 @@
                     <div class="TR-section"></div>
                 </div>
                 <div class="event-profile2 grid-item">
-                    <h3>Anatomy & Physiology</h3>
-                    <div class="ES-section">
-                        <div class="event-member">Eddie Zhao</div>
-                        <div class="event-member">Elaine Qu</div>
-                        <div class="event-member">Sahana Potu</div>
-                        <div class="event-member">Joe Biden</div>
-                        <div class="event-member">John Bidenson</div>
-                        <div class="event-member">Jo Bidn</div>
+                    <div class="event-title">
+                        <h1>Anatomy & Physiology</h1>
                     </div>
-                </div>
+                    <div>
+                        <div class="ES-section">
+                            <div class="event-member">Eddie Zhao</div>
+                            <div class="event-member">Elaine Qu</div>
+                            <div class="event-member">Sahana Potu</div>
+                        </div>
+                        <div class="TR-section">
+                            <div class="event-member">Eddie Zhao</div>
+                            <div class="event-member">Elaine Qu</div>
+                            <div class="event-member">Sahana Potu</div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -189,5 +196,9 @@
         </div>
     </section>
 </footer>
+
+<script src="js/script.js"></script>
+<script src="js/about.js"></script>
+
 </body>
 </html>
