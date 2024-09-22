@@ -1,0 +1,11 @@
+#title .full-width {
+    background-image: url("img/banner-compressedx2.jpg");
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: cover;
+    padding: 30px 50px;
+}
+
+#title .full-width h1 {
+    font-size: 40px;
+}
