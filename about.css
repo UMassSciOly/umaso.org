@@ -64,9 +64,10 @@
 .profile {
     width: 150px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-flow: wrap; */
+    flex-direction: column;
     text-align: center;
     margin: 20px;
 }
