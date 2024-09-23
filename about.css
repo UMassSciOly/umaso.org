@@ -20,6 +20,10 @@
     font-size: 40px;
 }
 
+#mission {
+    margin-bottom: 20px;
+}
+
 #mission-toggle {
     margin: 0px auto;
     width: fit-content;
