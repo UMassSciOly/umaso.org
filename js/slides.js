@@ -1,25 +1,28 @@
 let slideIndex = 0;
 const slides = document.getElementsByClassName("slide");
-const btn = document.getElementById("cta-btn")
+const btn = document.getElementById("cta-btn");
 
 const btnText = [
     "Register",
     "text2",
     "text3"
-]
+];
 
 const btnHref = [
     "#test1",
     "#test2",
     "#test3"
-]
+];
 
-function showSlide(n) {
+let lastSlideTime = 0;
+const slideDelay = 500;
+
+function showSlide(n, initial = false) {
     if (n >= slides.length) {slideIndex = 0}
     if (n < 0) {slideIndex = slides.length-1}
 
     for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active", "previous");
+        slides[i].classList.remove("active", "previous", "initial");
     }
 
     if (slideIndex > 0) {
@@ -28,7 +31,12 @@ function showSlide(n) {
         slides[slides.length - 1].classList.add("previous");
     }
 
-    slides[slideIndex].classList.add("active");
+    if (initial) {
+        slides[slideIndex].classList.add("initial");
+    } else {
+        slides[slideIndex].classList.add("active");
+    }
+
     btn.style.opacity = '0';
     setTimeout(() => {
         btn.textContent = btnText[slideIndex];
@@ -37,7 +45,10 @@ function showSlide(n) {
     }, 300);
 }
 
+let slideInterval;
+
 function startSlideshow() {
+    clearInterval(slideInterval);
     slideInterval = setInterval(() => {
         slideIndex++;
         showSlide(slideIndex);
@@ -45,16 +56,30 @@ function startSlideshow() {
 }
 
 function slideLeft() {
-    clearInterval(slideInterval);
-    showSlide(slideIndex += 1);
-    startSlideshow();
+    const now = Date.now();
+    if (now - lastSlideTime >= slideDelay) {
+        clearInterval(slideInterval);
+        showSlide(slideIndex += 1);
+        startSlideshow();
+        lastSlideTime = now;
+    }
 }
 
 function slideRight() {
-    clearInterval(slideInterval);
-    showSlide(slideIndex += -1);
-    startSlideshow();
+    const now = Date.now(); // there has to be a better way :skull:
+    if (now - lastSlideTime >= slideDelay) {
+        clearInterval(slideInterval);
+        showSlide(slideIndex += -1);
+        startSlideshow();
+        lastSlideTime = now;
+    }
 }
 
-showSlide(slideIndex);
-startSlideshow();
+showSlide(slideIndex, true);
+
+// start slideshow after a delay, so that initial page lasts longer
+setTimeout(() => {
+    slides[slideIndex].classList.remove("initial");
+    slides[slideIndex].classList.add("active");
+    startSlideshow();
+}, 100);

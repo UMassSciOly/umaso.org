@@ -73,6 +73,12 @@
     transform: translateX(-100%);
 }
 
+.slide.initial {
+    opacity: 0.5;
+    transform: translateX(0);
+    transition: none;
+}
+
 .slide.active {
     opacity: 0.5;
     transform: translateX(0);
@@ -121,6 +127,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     transition: 0.5s ease;
+    border-radius: 10px;
 }
 
 .hero-content .cta-button:hover {

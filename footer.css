@@ -1,6 +1,5 @@
 #footer {
     background-color: none;
-    background-image: linear-gradient(#171a54, #000000);
     padding: 20px 40px;
     margin-top: auto;
 }
@@ -15,7 +14,7 @@
 
 .footer-content {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,6 +46,11 @@
 .footer-links .page-links a, .footer-links .social-links a {
     color: #f0f0f0;
     text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.footer-links .page-links a:hover, .footer-links .social-links a:hover {
+    color: #d62121;
 }
 
 @media screen and (min-width: 768px) {
