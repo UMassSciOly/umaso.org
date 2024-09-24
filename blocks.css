@@ -82,17 +82,17 @@
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-    overflow: hidden;
 }
 
 .small-banner img {
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     max-height: 300px;
     width: 100%;
     object-fit: cover;
     transform: none;
     filter: brightness(50%);
+    box-shadow: 0 -2px 20px rgba(0,0,0, 0.6);
 }
 
 .small-banner h1 {

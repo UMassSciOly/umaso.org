@@ -37,7 +37,10 @@ function showSlide(n, initial = false) {
         slides[slideIndex].classList.add("active");
     }
 
-    btn.style.opacity = '0';
+    if (!initial) {
+        btn.style.opacity = '0';
+    }
+    
     setTimeout(() => {
         btn.textContent = btnText[slideIndex];
         btn.href = btnHref[slideIndex];
