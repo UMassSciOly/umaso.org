@@ -93,6 +93,7 @@
     object-fit: cover;
     transform: none;
     filter: brightness(50%);
+    box-shadow: 0 -2px 40px rgba(0,0,0, 0);
 }
 
 .small-banner h1 {

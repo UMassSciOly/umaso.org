@@ -5,6 +5,20 @@
     transition: height 0.4s ease-out;
 }
 
+#mission .full-width {
+    padding: 0;
+    margin: 0px 0px;
+    border-radius: 20px;
+}
+
+#mission p {
+    margin: 0 20px;
+}
+
+#mission-details {
+    margin: 20px 40px;
+}
+
 /* .mission-statement .img-block h2 {
     position: absolute;
     top: 50%;
