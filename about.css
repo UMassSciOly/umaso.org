@@ -17,10 +17,6 @@
     margin: 10px 0px 0px;
 }
 
-#mission-details {
-    /* margin: 0px 40px; */
-}
-
 #mission-details.active {
     margin-bottom: 20px;
 }
