@@ -85,14 +85,12 @@
 }
 
 .small-banner img {
-    border-radius: 20px;
-    overflow: hidden;
-    max-height: 300px;
-    width: 100%;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
     transform: none;
     filter: brightness(50%);
-    box-shadow: 0 -2px 20px rgba(0,0,0, 0.6);
+    
 }
 
 .small-banner h1 {
@@ -103,6 +101,16 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     color: white;
+}
+
+.small-banner .banner-img {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 -2px 20px rgba(0,0,0, 0.6);
+    background-color: black;
+    object-fit: cover;
 }
 
 /* .small-banner h3 {
