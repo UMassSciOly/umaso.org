@@ -59,7 +59,7 @@ function startSlideshow() {
 }
 
 function slideLeft() {
-    const now = Date.now();
+    const now = Date.now(); // there has to be a better way :skull:
     if (now - lastSlideTime >= slideDelay) {
         clearInterval(slideInterval);
         showSlide(slideIndex += 1);
@@ -69,7 +69,7 @@ function slideLeft() {
 }
 
 function slideRight() {
-    const now = Date.now(); // there has to be a better way :skull:
+    const now = Date.now();
     if (now - lastSlideTime >= slideDelay) {
         clearInterval(slideInterval);
         showSlide(slideIndex += -1);
@@ -80,7 +80,7 @@ function slideRight() {
 
 showSlide(slideIndex, true);
 
-// start slideshow after a delay, so that initial page lasts longer
+// fix initial slide transition on firefox, edge
 setTimeout(() => {
     slides[slideIndex].classList.remove("initial");
     slides[slideIndex].classList.add("active");
