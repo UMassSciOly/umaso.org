@@ -69,7 +69,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition: none;
+    transition: 0.5s ease-in-out;
     transform: translateX(-100%);
 }
 
@@ -82,12 +82,10 @@
 .slide.active {
     opacity: 0.5;
     transform: translateX(0);
-    transition: 0.5s ease-in-out;
 }
 
 .slide.previous {
     transform: translateX(100%);
-    transition: 0.5s ease-in-out;
 }
 
 .slide img {

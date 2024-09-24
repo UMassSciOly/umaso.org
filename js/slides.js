@@ -80,7 +80,7 @@ function slideRight() {
 
 showSlide(slideIndex, true);
 
-// fix initial slide transition on firefox, edge
+// attempt to fix initial slide transition on firefox, edge
 setTimeout(() => {
     slides[slideIndex].classList.remove("initial");
     slides[slideIndex].classList.add("active");
