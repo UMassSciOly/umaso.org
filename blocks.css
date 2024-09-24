@@ -105,6 +105,17 @@
     color: white;
 }
 
+/* .small-banner h3 {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-weight: 400;
+} */
+
 @media screen and (min-width: 768px) {
     .split-30-70, .split-70-30 {
         margin: 20px 0px;

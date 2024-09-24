@@ -13,12 +13,16 @@
     background-image: linear-gradient(transparent, white, white, white, white, white); /* eheheh ehhehehhhhhhehehe hhehehehhe -Larry */
 }
 
-#mission p {
-    margin: 0 20px;
+.mission-statement p {
+    margin: 10px 0px 0px;
 }
 
 #mission-details {
-    margin: 20px 40px;
+    /* margin: 0px 40px; */
+}
+
+#mission-details.active {
+    margin-bottom: 20px;
 }
 
 /* .mission-statement .img-block h2 {
@@ -34,6 +38,10 @@
 
 .mission-statement h1 {
     font-size: 40px;
+}
+
+.mission-text {
+    padding: 10px 40px;
 }
 
 #mission {
@@ -245,12 +253,28 @@
         max-height: 500px;
         opacity: 1;
     }
+
+    #mission-details {
+        margin: 20px 30px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .profile-btns button {
         padding: 10px 20px;
         margin: 0px 20px;
+    }
+
+    .mission-statement p {
+        margin: 10px 0px 0px;
+    }
+
+    #mission-details {
+        margin: 10px 30px 40px;
+    }
+
+    .small-banner h1 {
+        font-size: 50px;
     }
 
     /* .event-profile2 {
