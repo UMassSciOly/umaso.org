@@ -4,14 +4,14 @@ const btn = document.getElementById("cta-btn");
 
 const btnText = [
     "Register",
-    "text2",
-    "text3"
+    "Who We Are",
+    "Follow Us on Insta!"
 ];
 
 const btnHref = [
-    "#test1",
-    "#test2",
-    "#test3"
+    "tournament.html#registration",
+    "about.html",
+    "https://www.instagram.com/umass.scioly/"
 ];
 
 let lastSlideTime = 0;
