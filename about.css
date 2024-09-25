@@ -32,8 +32,9 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 } */
 
-.mission-statement h1 {
-    font-size: 40px;
+.section-title {
+    margin-top: 10px;
+    font-size: 30px;
 }
 
 .mission-text {
@@ -109,6 +110,14 @@
 }
 
 /* profile grid */
+.profiles {
+    text-align: center;
+}
+
+.profiles h2 {
+    margin-bottom: 25px;
+}
+
 .profile {
     width: 150px;
     display: flex;
@@ -233,6 +242,21 @@
 
 .profile-grid .visible {
     opacity: 1;
+}
+
+.small-banner h1 {
+    font-size: 40px;
+}
+
+.title .small-banner{
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+#mission .mission-statement {
+    margin-top: 20px;
+    background-image: none;
+    background-color: white;
 }
 
 @media screen and (min-width: 768px) {
