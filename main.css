@@ -17,4 +17,5 @@ img {
 
 header, main, footer {
     margin: 0;
+    padding: 0;
 }
