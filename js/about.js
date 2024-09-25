@@ -39,21 +39,21 @@ class EventInfo {
 }
 
 async function load_organizers() {
-    const response = await fetch("organizer_info.csv");
+    const response = await fetch("/organizer_info.csv");
     const response_text = await response.text();
     const organizers = response_text.split("\n").map(row => new Organizer(...row.trim().split(",")));
     return organizers.slice(1);
 }
 
 async function load_events() {
-    const response = await fetch("event-members.csv");
+    const response = await fetch("/event-members.csv");
     const response_text = await response.text();
     const events = response_text.split("\n").map(row => new EventInfo(...row.trim().split(",")));
     return events.slice(1);
 }
 
 async function load_pfp_extension_map() {
-    const response = await fetch("pfp_img_list.json");
+    const response = await fetch("/pfp_img_list.json");
     return response.json();
 }
 
@@ -61,9 +61,9 @@ async function load_organizer_profiles() {
     const pfp_extension_map = await load_pfp_extension_map();
     const organizer_list = await organizers;
     for (const organizer of organizer_list) {
-        let img_path = "./img/pfp/default.png";
+        let img_path = "/img/pfp/default.png";
         if (organizer.file_name in pfp_extension_map) {
-            img_path = `./img/pfp/${organizer.file_name}.png`;
+            img_path = `/img/pfp/${organizer.file_name}.png`;
         }
         create_organizer_profile(organizer, img_path, false);
     }
