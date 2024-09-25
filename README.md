@@ -1,7 +1,10 @@
-# UMASO.org
+# UMASO Website
 
-University of Massachusetts Amherst Science Olympiad website source code
+New version of the UMASO website. Currently in development.
+- website-revamp branch will be the "development" branch
+- main branch will be the production branch (github pages deploys that branch automatically)
+- old-website is just for saving the old website
 
-logo designs by Jack Guo
+During development, make branches for each feature off of the website-revamp branch. Commit and push often to avoid too many merge conflicts. Also pull regularly if you feel that someone else is editing.
 
-currently being updated for UMASO 2024
+Merge conflicts can be settled in github.

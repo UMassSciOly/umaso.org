@@ -1,519 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>University of Massachusetts Amherst Science Olympiad</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
+    <title>UMASO</title>
+    <link rel="icon" type="image/x-icon" href="img/umaso/Main-Logo-White.svg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="blocks.css">
+    <link rel="stylesheet" href="grids.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,300b,500,800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
+<header>
+    <!-- nav bar -->
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-logo grid-item">
+                    <a href="index.html" class="logo"><img src="img/umaso/Main-Logo-White.svg"></a>
+                </div>
+                <div class="navbar-links grid-item hidden">
+                    <ul id="navbar-link-list" class="horizontal">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tournament.html">Tournament Info</a></li>
+                        <!-- <li><a href="#">News</a></li> -->
+                        <!-- <li><a href="#">Something Else</a></li> -->
+                    </ul>
+                </div>
+                <div class="navbar-toggle grid-item" onclick="toggle()">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                </div>
+            </div>
+            <div class="navbar-back"></div>
+        </div>
+    </section>
 
-<span id="content">
+</header>
+<main>
+    <section id="mission">
+        <div class="title full-width">
+            <div class="small-banner">
+                <h1>About Us</h1>
+                <div class="banner-img">
+                    <img src="img/team_photo_2024.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="mission-statement full-width">
+            <div class="mission-text">
+                <h2 class="section-title">Our Mission</h2>
+                <p>Having competed in and volunteered at regional, invitational, state, and national level Science Olympiad competitions, the impassioned members of UMASO understand the intricacies of different styles of tournaments and what makes an event memorable. We aim to draw on these experiences to bring a novel Science Olympiad experience to high school teams in New England through a tournament that is inclusive and hands-on.</p>
+                <div id="mission-toggle" onclick="toggle_mission()">
+                    <span class="material-symbols-outlined">
+                        keyboard_arrow_down
+                    </span>
+                </div>
+                <!-- <div id="mission-toggle" onclick="toggle_mission()">See more</div> -->
+                <ul id="mission-details">
+                    <li><b>Inclusive</b>: Although eastern Massachusetts teams have historically been given local opportunities to compete in many invitationals, western Massachusetts teams have been underrepresented. We change this by offering a high-quality annual tournament in Amherst, promoting STEM to high schools that would find this opportunity to be unique and impactful.</li>
+                    <li><b>Hands-on</b>: Many Science Olympiad tournaments and teams have historically focused more on book-knowledge while neglecting the experiential portions of different events. We place special emphasis on the importance of stations and build events in our tournament to promote a hands-on learning process.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="people">
+        <div class="profiles full-width">
+            <h2 class="section-title">Our Team</h2>
+            <div class="profile-btns">
+                <button onmousedown="toggle_profiles(this)" class="active" data-id="organizer">Organizers</button>
+                <button onmousedown="toggle_profiles(this)" data-id="event-member">ESes & TRs</button>
+                <!-- <button onmousedown="toggle_profiles(this)" data-id="">Graveyard</button> -->
+            </div>
+            <div class="profile-grid">
+                <!-- <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="profile grid-item">
+                    <img src="img/pfp/Ben_Kuchma.jpg">
+                    <h3>Ben Kuchma</h3>
+                    <p>Physics + Computer Science 2025</p>
+                </div>
+                <div class="event-profile grid-item">
+                    <h3>Anatomy & Physiology</h3>
+                    <div class="ES-section">
+                        <div class="event-member">Eddie Zhao</div>
+                        <div class="event-member">Elaine Qu</div>
+                        <div class="event-member">Sahana Potu</div>
+                    </div>
+                    <div class="TR-section">
+                        <div class="event-member">Joe Biden</div>
+                        <div class="event-member">John Bidenson</div>
+                        <div class="event-member">Jo Bidn</div>
+                    </div>
+                </div>
+                <div class="event-profile grid-item">
+                    <h3>Geological Mapping</h3>
+                    <div class="ES-section"><div class="event-member">Raymond Gao</div></div>
+                    <div class="TR-section"><div class="event-member">Raymond Gao</div></div>
+                </div>
+                <div class="event-profile grid-item">
+                    <h3>Geological Mapping</h3>
+                    <div class="ES-section">
+                        <div class="event-member">Eric Xiang</div>
+                        <div class="event-member">Phoebe Han</div>
+                        <div class="event-member">Raymond Gao</div>
+                    </div>
+                    <div class="TR-section">
+                        <div class="event-member">Raymond Gao</div>
+                    </div>
+                </div>
+                <div class="event-profile grid-item">
+                    <h3>Geological Mapping</h3>
+                    <div class="ES-section"></div>
+                    <div class="TR-section"></div>
+                </div>
+                <div class="event-profile2 grid-item">
+                    <div class="event-title">
+                        <h1>Anatomy & Physiology</h1>
+                    </div>
+                    <div>
+                        <div class="ES-section">
+                            <div class="event-member">Eddie Zhao</div>
+                            <div class="event-member">Elaine Qu</div>
+                            <div class="event-member">Sahana Potu</div>
+                        </div>
+                        <div class="TR-section">
+                            <div class="event-member">Eddie Zhao</div>
+                            <div class="event-member">Elaine Qu</div>
+                            <div class="event-member">Sahana Potu</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+            </div>
+            <div class="footer-links">
+                <div class="page-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="tournament.html">Tournament Info</a>
+                    <!-- <a href="#">Among us section</a> -->
+                </div>
+                <div class="social-links">
+                    <!-- <a href="#">Discord</a> -->
+                    <a href="https://www.instagram.com/umass.scioly/">Instagram</a>
+                    <!-- <a href="#">LinkedIn</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <!-- <p>made with unsatiable hatred and anger by the umaso team &#129505;</p> -->
+            <p>© University of Massachusetts Amherst Science Olympiad 2022-2025</p>
+        </div>
+    </section>
+</footer>
 
-    <ul class="nav">
-        <li class="pad"></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tournament.html">Tournament</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li class="pad right"></li>
-        <li class="right"><a class="logo" href="index.html"><img src="UMASO-logo-default.png"></a></li>
-    </ul>
+<script src="js/script.js"></script>
+<script src="js/about.js"></script>
 
-    <ul class="mobile-nav" tabindex="0">
-        <li class="extend-button"><a>&#9776;</a></li>
-        <li class="main-button"><a href="about.html">About</a></li>
-        <li class="main-button"><a href="tournament.html">Tournament</a></li>
-        <li class="main-button"><a href="register.html">Register</a></li>
-        <li class="main-button"><a href="volunteer.html">Volunteer</a></li>
-        <li class="main-button"><a href="#contact">Contact</a></li>
-    </ul>
-    
-    <span class="description">
-        <div class="title">
-            About Us
-        </div>
-    </span>
-
-    <ul class="tabs" style="padding-bottom: 15px;">
-        <li><button onclick="missionDisplay()" id="missionButton" class="nav-active">Mission</button></li>
-        <li><button onclick="teamDisplay()" id="teamButton" class="nav-inactive">Organizers</button></li>
-        <!-- volunteers is hidden -->
-        <li><button onclick="volunteersDisplay()" id="volunteersButton" class="nav-inactive">Event Supervisors</button></li>
-    </ul>
-
-    <span id="mission" class="active">
-        <div class="header">Our Mission</div>
-        <div class="text">
-
-            Having competed in and volunteered at regional, invitational, state, and national level Science Olympiad competitions, the impassioned members of UMASO understand the intricacies of different styles of tournaments and what makes an event memorable. We aim to draw on these experiences to bring a novel Science Olympiad experience to high school teams in New England through a tournament that is <b>inclusive</b> and <b>hands-on</b>. 
-
-        </div>
-        <ul>
-            <li>
-
-                <b>Inclusive</b>: 
-                Although eastern Massachusetts teams have historically been given local opportunities to compete in many invitationals, western Massachusetts teams have been underrepresented. We change this by offering a high-quality annual tournament in Amherst, promoting STEM to high schools that would find this opportunity to be unique and impactful. 
-            
-            </li>
-            <li>
-
-                <b>Hands-on</b>: 
-                Many Science Olympiad tournaments and teams have historically focused more on book-knowledge while neglecting the experiential portions of different events. We place special emphasis on the importance of stations and build events in our tournament to promote a hands-on learning process. 
-            
-            </li>
-        </ul>
-        <div class="team-photo">
-            <img src="umasoteampic2024.jpg">
-        </div>
-        <div class="team-photo text">
-            A group picture of the organizing team at the first meeting of the year!
-        </div>
-    </span>
-
-    <span id="team" class="hidden">
-
-        <div class="panel">
-            <div class="profile-pic" id="pfp-1"></div>
-            <div class="pfp-title">Jalal Elsallal</div>
-            <div class="pfp-desc">Neuroscience 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-2"></div>
-            <div class="pfp-title">Ben Kuchma</div>
-            <div class="pfp-desc">Physics + Computer Science 2025</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-7"></div>
-            <div class="pfp-title">Erin Kim</div>
-            <div class="pfp-desc">Biomedical Engineering 2026</div>
-        </div>
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-3"></div>
-            <div class="pfp-title">Nayrie Patel</div>
-            <div class="pfp-desc">Environmental Science, 2026</div>
-        </div> -->
-        <div class="panel">
-            <div class="profile-pic" id="pfp-4"></div>
-            <div class="pfp-title">Larry Jin</div>
-            <div class="pfp-desc">Mechanical Engineering 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-14"></div>
-            <div class="pfp-title">Kiruba Shalin</div>
-            <div class="pfp-desc">Biology 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-5"></div>
-            <div class="pfp-title">Jack Guo</div>
-            <div class="pfp-desc">Electrical + Computer Engineering 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-8"></div>
-            <div class="pfp-title">Victor Chen</div>
-            <div class="pfp-desc">Computer Science + Math 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-12"></div>
-            <div class="pfp-title">Divyesh Biswas</div>
-            <div class="pfp-desc">Computer Engineering + English 2026</div>
-        </div>
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-13"></div>
-            <div class="pfp-title">Gideon Tzafriri</div>
-            <div class="pfp-desc">Chemistry + Physics + Mathematics, 2026</div>
-        </div> -->
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-15"></div>
-            <div class="pfp-title">Robert Li</div>
-            <div class="pfp-desc">Biology 2024</div>
-        </div> -->
-        <div class="panel">
-            <div class="profile-pic" id="pfp-16"></div>
-            <div class="pfp-title">Mari Cornwall-Brady</div>
-            <div class="pfp-desc">Math + Informatics 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-17"></div>
-            <div class="pfp-title">Tiffany Tan</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-18"></div>
-            <div class="pfp-title">Ellen Chan</div>
-            <div class="pfp-desc">Biology 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-21"></div>
-            <div class="pfp-title">Trisha Truong</div>
-            <div class="pfp-desc">Biology 2027</div>
-        </div>
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-22"></div>
-            <div class="pfp-title">Bhavya Agarwal</div>
-            <div class="pfp-desc">Computer Science + Math 2027</div>
-        </div> -->
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-23"></div>
-            <div class="pfp-title">Felix Chen</div>
-            <div class="pfp-desc">Finance 2027</div>
-        </div> -->
-        <div class="panel">
-            <div class="profile-pic" id="pfp-24"></div>
-            <div class="pfp-title">Sruthi Guntupalli</div>
-            <div class="pfp-desc">Biomedical Engineering 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-25"></div>
-            <div class="pfp-title">Zayya Htut</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology 2027</div>
-        </div>
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-26"></div>
-            <div class="pfp-title">Akshara Nair</div>
-            <div class="pfp-desc">Food Science 2027</div>
-        </div> -->
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-27"></div>
-            <div class="pfp-title">Penny Reynolds</div>
-            <div class="pfp-desc">Microbiology 2027</div>
-        </div> -->
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-19"></div>
-            <div class="pfp-title">Felix Manuel Pantoja</div>
-            <div class="pfp-desc">Biology 2026</div>
-        </div> -->
-        <!-- <div class="panel">
-            <div class="profile-pic" id="pfp-20"></div>
-            <div class="pfp-title">Tiffany Zheng</div>
-            <div class="pfp-desc">Biochemistry + Molecular Biology 2026</div>
-        </div> -->
-        <div class="panel">
-            <div class="profile-pic" id="pfp-28"></div>
-            <div class="pfp-title">Emily Larkin</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology + Computer Science 2025</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-29"></div>
-            <div class="pfp-title">Sophia Deligiannidis</div>
-            <div class="pfp-desc">Psychology + Finance 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-30"></div>
-            <div class="pfp-title">Sammy Mounsif</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-31"></div>
-            <div class="pfp-title">Natasha Dalvi</div>
-            <div class="pfp-desc">Biomedical Engineering 2028</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-32"></div>
-            <div class="pfp-title">Selina Yang</div>
-            <div class="pfp-desc">Biology 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-33"></div>
-            <div class="pfp-title">Isha Goyal</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology + Neuroscience 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-34"></div>
-            <div class="pfp-title">Erika Lu</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology + Math 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-35"></div>
-            <div class="pfp-title">Margo Pikulska</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-36"></div>
-            <div class="pfp-title">Vinamra Jain</div>
-            <div class="pfp-desc">Biology 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-37"></div>
-            <div class="pfp-title">Kathleen He</div>
-            <div class="pfp-desc">Biochem. & Molecular Biology + Math 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-0"></div>
-            <div class="pfp-title">Selena Luo</div>
-            <div class="pfp-desc">Informatics 2026</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-0"></div>
-            <div class="pfp-title">Daniel Bartholomew</div>
-            <div class="pfp-desc">Biology 2028</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-0"></div>
-            <div class="pfp-title">Phoenix Chamberlin</div>
-            <div class="pfp-desc">Economics 2027</div>
-        </div>
-        <div class="panel">
-            <div class="profile-pic" id="pfp-0"></div>
-            <div class="pfp-title">Elliott Choi</div>
-            <div class="pfp-desc">Biology 2027</div>
-        </div>
-    </span>
-
-    <span id="volunteers" class="hidden">
-        <div class="text">
-
-            <b>Our 2024 tournament could not have run without our amazing event supervisors and test writers!</b>
-
-        </div>
-
-<table>
-    <thead><tr><th>Event</th>
-        <th>Name</th>
-        </tr></thead>
-        <tbody>
-        <tr>
-        <td style="padding-top: 10px;">Air Trajectory</td>
-        <td style="padding-top: 10px;">Jeffrey Wei</td>
-        </tr>
-        <tr>
-        <td>Anatomy and Physiology</td>
-        <td>Eddie Zhao, Elaine Qu, Sahana Potu</td>
-        </tr>
-        <tr>
-        <td>Astronomy</td>
-        <td>Eric Chen</td>
-        </tr>
-        <tr>
-        <td>Chemistry Lab</td>
-        <td>Alexander Ajouri, Yaozu Chen</td>
-        </tr>
-        <tr>
-        <td>Codebusters</td>
-        <td>Alexander Li, Andrew Weiner</td>
-        </tr>
-        <tr>
-        <td>Detector Building</td>
-        <td>Jay Sahni, Akelan Krishnasamy</td>
-        </tr>
-        <tr>
-        <td>Disease Detectives</td>
-        <td>Penny Reynolds, Vibav Tammisetti</td>
-        </tr>
-        <tr>
-        <td>Dynamic Planet</td>
-        <td>Advikar Ananthkumar, Ishaan Verma</td>
-        </tr>
-        <tr>
-        <td>Ecology</td>
-        <td>Crystal Nguyen, Ellen Chan</td>
-        </tr>
-        <tr>
-        <td>Experimental Design</td>
-        <td>Amy Nguyen</td>
-        </tr>
-        <tr>
-        <td>Fermi Questions</td>
-        <td>Eddy Zhao, Sahil Gandhi</td>
-        </tr>
-        <tr>
-        <td>Forensics</td>
-        <td>Daniel Ren</td>
-        </tr>
-        <tr>
-        <td>Forestry</td>
-        <td>Runyan Zhou, Amy Meng</td>
-        </tr>
-        <tr>
-        <td>Fossils</td>
-        <td>Joanna Li, Advikar Ananthkumar</td>
-        </tr>
-        <tr>
-        <td>Geological Mapping</td>
-        <td>Eric Xiang, Phoebe Han, Raymond Gao</td>
-        </tr>
-        <tr>
-        <td>Microbe Mission</td>
-        <td>Lily Thai, Zayya Htut</td>
-        </tr>
-        <tr>
-        <td>Optics</td>
-        <td>Kevin Alexander, Vidit Pokharna</td>
-        </tr>
-        <tr>
-        <td>Robot Tour</td>
-        <td>Hampton Moore, Anvitha Ramachandran</td>
-        </tr>
-        <tr>
-        <td>Scrambler</td>
-        <td>Meredith Loscar</td>
-        </tr>
-        <tr>
-        <td>Tower</td>
-        <td>Hampton Moore, Anvitha Ramachandran</td>
-        </tr>
-        <tr>
-        <td>Wind Power</td>
-        <td>Eric Chen, Jason Liu, Tamer Srouji</td>
-        </tr>
-        <tr>
-        <td>Write It Do It</td>
-        <td>Rohini Josh, Shafeena Uddin</td>
-        </tr>
-        <tr>
-        <td>Analytical Reasoning*</td>
-        <td>Mari Cornwall-Brady</td>
-        </tr>
-        <tr>
-        <td>Ornithology*</td>
-        <td>Janae Robinson, Erika Lu</td>
-        </tr>
-        <tr>
-        <td>Psychology and Neuroscience*</td>
-        <td>Arien Khan, Jaclyn Nguyen</td>
-        </tr>
-        <tr>
-        <td>Science Quiz Bowl*</td>
-        <td>Jake Rosen, Sharanya Budakoti</td>
-        </tr>
-    <!-- <thead><tr><th>Name</th>
-    <th>Event</th>
-    </tr></thead>
-    <tbody>
-    <tr>
-    <td style="padding-top: 10px;">Advikar Anathkumar</td>
-    <td style="padding-top: 10px;">Dynamic Planet</td>
-    </tr>
-    <tr>
-    <td>Ananya Kodoru</td>
-    <td>Trajectory</td>
-    </tr>
-    <tr>
-    <td>Andrew Ng</td>
-    <td>Disease Detectives</td>
-    </tr>
-    <tr>
-    <td>Andrew Weiner</td>
-    <td>Codebusters</td>
-    </tr>
-    <tr>
-    <td>Annie Wang</td>
-    <td>Fermi Questions</td>
-    </tr>
-    <tr>
-    <td>Brian Lam</td>
-    <td>Cell Biology</td>
-    </tr>
-    <tr>
-    <td>Daniel Zhang</td>
-    <td>Rocks and Minerals</td>
-    </tr>
-    <tr>
-    <td>Eddie Zhao</td>
-    <td>Anatomy and Physiology</td>
-    </tr>
-    <tr>
-    <td>Elaine Qu</td>
-    <td>Anatomy and Physiology</td>
-    </tr>
-    <tr>
-    <td>Hannah Quang</td>
-    <td>Cell Biology</td>
-    </tr>
-    <tr>
-    <td>Isaac Han</td>
-    <td>Fermi Questions</td>
-    </tr>
-    <tr>
-    <td>Jackie Wang</td>
-    <td>Forensics</td>
-    </tr>
-    <tr>
-    <td>Jeffrey Wei</td>
-    <td>It&#39;s About Time</td>
-    </tr>
-    <tr>
-    <td>Kayla Yao</td>
-    <td>Green Generation</td>
-    </tr>
-    <tr>
-    <td>Lily Thai</td>
-    <td>Rocks and Minerals</td>
-    </tr>
-    <tr>
-    <td>Marco Frigo</td>
-    <td>Astronomy</td>
-    </tr>
-    <tr>
-    <td>Pranamya Keshkamat</td>
-    <td>Write It Do It, Forestry</td>
-    </tr>
-    <tr>
-    <td>Robin Pan</td>
-    <td>Green Generation</td>
-    </tr>
-    <tr>
-    <td>Sidarth Krishna</td>
-    <td>Environmental Chemistry</td>
-    </tr>
-    <tr>
-    <td>Tiffany Zheng</td>
-    <td>Bridge</td>
-    </tr>
-    <tr>
-    <td>Yaozu Chen</td>
-    <td>Chemistry Clue</td>
-    </tr> -->
-</tbody></table>
-
-    </span>
-
-    <!-- can't pad sections because it messes up the js -->
-    <span style="display: block; width: 100%; height: 20px;"></span>
-    
-</span>
-
-<ul id="footer">
-    <li>&copy; University of Massachusetts Amherst Science Olympiad 2022-24</li>
-    <li class="privacy-pol"><a href="index.html#privacy-policy">Privacy Policy & Disclosures</a></li>
-</ul>
-
-<script>
-
-    var missionContent = document.getElementById("mission"),
-        teamContent = document.getElementById("team"),
-        volunteersContent = document.getElementById("volunteers");
-
-    var missionButton = document.getElementById("missionButton"),
-        teamButton = document.getElementById("teamButton"),
-        volunteersButton = document.getElementById("volunteersButton");
-
-    function hideAll() {
-        missionContent.classList = teamContent.classList = volunteersContent.classList = "hidden";
-        missionButton.classList = teamButton.classList = volunteersButton.classList = "nav-inactive";
-    }
-
-    function missionDisplay() {
-        hideAll();
-        missionContent.classList="active";
-        missionButton.classList="nav-active";
-    }
-
-    function teamDisplay() {
-        hideAll();
-        teamContent.classList="active";
-        teamButton.classList="nav-active";
-    }
-
-    function volunteersDisplay() {
-        hideAll();
-        volunteersContent.classList="active";
-        volunteersButton.classList="nav-active";
-    }
-
-</script>
 
 </body>
 </html>

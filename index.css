@@ -1,759 +1,156 @@
-/* general */
-
-body, html {
-    margin: 0;
-    height: 100%;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    scroll-behavior: smooth;
-}
-
-.text {
-    text-align: left;
-    padding: 5px;
-    font-size: 18px;
-}
-
-.text a {
-    /* color: rgb(208, 205, 255); */
-    color: rgb(136, 28, 28);
-    transition: 200ms;
-}
-
-.text a:hover {
-    opacity: 50%;
-}
-
-.header {
-    font-size: 24px;
-    font-weight: 500;
-    padding: 5px 0px;
-}
-
-.button {
-    display: inline-block;
-}
-
-.button a {
-    display: inline-block;
-    padding: 20px;
-    width: fit-content;
-    margin-top: 5px;
-    transition: 200ms;
-    
-    cursor: pointer;
-    font-weight: 500;
-    border: solid rgb(33, 39, 33);
-    color: rgb(33, 39, 33);
-}
-
-.button a:hover {
-    background-color: rgb(33, 39, 33);
-    color: white;
-}
-
-/* cover */
-
-div.cover {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-}
-
-div.cover .bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    
-    background-image: url("banner-compressedx2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:rgb(136, 28, 28);
-    filter: brightness(50%);
-
-    z-index: 0;
-}
-
-/* nav bar */
-
-ul.mobile-nav {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    list-style-type: none;
-    overflow: hidden;
-
-    z-index: 1;
-}
-
-ul.mobile-nav li {
-    display: hidden;
-    width: 0;
-    overflow: hidden;
-    transition: 500ms ease-in-out;
-}
-
-ul.mobile-nav li.extend-button {
-    display: none;
-    visibility: hidden;
-    width: 100px;
-}
-
-ul.mobile-nav a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-
-    transition: 100ms;
-}
-
-/* visual bug with unicode &#9776; fix */
-ul.mobile-nav li.extend-button a {
-    padding: 18.6px 20px;
-}
-
-ul.mobile-nav:hover li {
-    background-color: rgb(33, 39, 33);
-    width: 200px;
-    transition: 500ms ease-in-out;
-}
-
-ul.mobile-nav:hover li.extend-button {
-    background-color: rgb(136, 28, 28);
-}
-
-ul.mobile-nav li.extend-button:hover {
-    cursor: pointer;
-}
-
-ul.mobile-nav li.main-button a:hover {
-    background-color: rgb(136, 28, 28);
-    transition: 100ms;
-}
-
-ul.nav {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-
-    z-index: 1;
-}
-
-ul.nav li {
-    float: left;
-}
-
-ul.nav li.pad {
-    display: block;
-    padding: 20px 0 20px 15%;
-}
-
-ul.nav li.right {
-    float: right;
-}
-
-ul.nav li a {
-    display: block;
-    text-align: center;
-    padding: 20px;
-
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-
-    transition: 100ms;
-}
-
-ul.nav li a:hover {
-    opacity: 50%;
-}
-
-#collapsable {
-    display: none;
-}
-
-/* cover title */
-
-div.cover .cv-title {
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-
-    font-size: 0;
-}
-
-div.cover .logo {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-
-    background-image: url("UMASO-wordmark-transparent.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-span.date-loc {
-    position: relative;
-    display: inline-block;
-}
-
-span.date-loc div {
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    font-size: 50px;
-    font-weight: 800;
-    color: white;  
-}
-
-span.cv-buttons {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-span.cv-buttons div {
-    display: inline-block;
-    text-align: center;
-}
-
-span.cv-buttons .b-space {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-span.cv-buttons a {
-    display: inline-block;
-    text-align: center;
-    padding: 20px 80px;
-
-    text-decoration: none;
-    color: white;
-    border: solid 1px;
-    font-size: 20px;
-
-    transition: 200ms;
-}
-
-span.cv-buttons a:hover {
-    opacity: 50%;
-}
-
-/* intro */
-
-span.intro {
-    display: block;
-    text-align: left;
-    background-color: rgb(136, 28, 28);
-    font-size: 0;
-    padding: 4% 0;
-    color: white;
-}
-
-span.intro .half {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 35%;
-}
-
-span.intro .itr-title {
-    text-align: left;
-    margin-left: 15%;
-    width: 180px;
-
-    font-size: 36px;
-    font-weight: 800;
-
-    padding: 0 20px 0 0;
-}
-
-span.intro .itr-desc {
-    text-align: left;  
-    font-size: 18px;
-
-    padding: 0 0 0 20px;
-}
-
-/* tournament */
-
-span.tournament {
-    display: block;
-    padding: 8% 15%;
-}
-
-span.tournament .title {
-    width: 100%;
-    font-weight: 800;
-    text-align: left;
-    font-size: 36px;
-    padding: 15px 0;
-    color: rgb(136, 28, 28);
-    border-bottom: solid 3px gray;
-}
-
-/* sponsors */
-
-span.sponsors {
-    display: block;
-    padding: 0% 15% 4% 15%;
-}
-
-span.sponsors .title {
-    width: 100%;
-    font-weight: 800;
-    text-align: left;
-    font-size: 36px;
-    padding: 15px 0;
-}
-
-span.sponsors .sponsor-logos img {
-    display: inline;
-    vertical-align: middle;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-}
-
-/* interact */
-
-span.interact {
-    display: inline-flex;
-    text-align: center;
-    width: 100%;
-    height: 75%;
-    font-size: 0;
-    color: white;
-    background-color: rgb(136, 28, 28);
-}
-
-span.interact .half {
-    position: relative;
-    font-size: 18px;
-    height: auto;
+main {
     padding: 5%;
-    vertical-align: top;
-    
-    overflow: auto;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;
+    font-size: 13px;
 }
 
-span.interact .half::-webkit-scrollbar {
+.split-30-70 p, .split-70-30 p, .full-width p, .split-30-70 li, .split-70-30 li, .full-width li {
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+header {
+    padding: 0% 5%;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0%;
+    }
+
+    main {
+        padding: 0 5%;
+        font-size: 14px;
+        background-image: linear-gradient(black, #171a54);
+    }
+
+    #footer {
+        background-image: 
+            linear-gradient(#171a54, #000000);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 0 10%;
+        font-size: 15px;
+        background-image: 
+            linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
+            linear-gradient(black, #171a54);
+    }
+
+    #footer {
+        background-image: 
+            linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
+            linear-gradient(#171a54, #000000);
+    }
+
+    .split-30-70 h2, .split-70-30 h2, .full-width h2 {
+        font-size: 30px;
+        margin: 10px 0px 10px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* #sponsors .sponsor-subtitle {
+    color: #808080;
+} */
+
+/* #about .split-30-70 .left {
+    background-color: #ed5053;
+} */
+
+/* #about .split-30-70 .right {
+    background-color: rgb(136, 28, 28);
+    background-color: #b82318;
+    color: white;
+} */
+
+span.blockspam {
     display: none;
 }
 
-span.interact .bg-img1 { 
-    background-image: url("https://cdn.sci.news/images/enlarge2/image_3527_2e-Herbig-Haro-24.jpg"); 
-}
-span.interact .bg-img2 {
-    background-image: url("https://photojournal.jpl.nasa.gov/jpegMod/PIA03708_modest.jpg");
-    left: 50%;
-}
-
-span.interact .bg-img {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    height: 75%;
-
-    filter: brightness(40%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-span.interact .register {
-    display: inline-block;
-    width: 40%;
-    font-size: 18px;
-}
-
-span.interact .volunteer {
-    display: inline-block;
-    width: 40%;
-    font-size: 18px;
-}
-
-span.interact .title {
-    font-size: 36px;
-    font-weight: 800;
-    padding: 5px;
-}
-
-span.interact .bg-img-desc {
-    padding: 20px 0 0 0;
-    display: inline-block;
-    text-align: left;
-    font-size: 10px;
-}
-
-/* carousel */
-.carousel {
-    width: 100%; /* Adjust width as needed */
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-slides {
-    display: flex;
-    animation: slide 10s infinite linear;
-  }
-  
-  .carousel-slides li {
-    width: 100%; /* adjust the width as needed according to the image size */
-  }
-  
-  .carousel-slides img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  @keyframes slide {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-  }
-  
-  .carousel-navigation {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .carousel-navigation button {
-    background-color: transparent;
-    border: none;
+a {
     color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0 10px;
-  }
-  
-  .carousel-navigation button:hover {
-    opacity: 0.7;
-  }
-  
-
-
-/* about */
-
-.about {
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 
-/* contact */
-
-span.contact {
-    position: relative;
-    display: inline-block;
-    padding: 8% 15%;
-    width: 70%;
-
-    background-color: rgb(40, 40, 40);
+#about .split-30-70 {
+    /* background-color: #ed5053; */
+    background-color: #201b44;
+    /* background-image: linear-gradient(-45deg, #201b44, #655f92); */
+    background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%);
     color: white;
-    font-size: 0;
 }
 
-span.contact .title {
-    font-size: 36px;
-    font-weight: 800;
-    padding: 5px;
-}
-
-span.contact .divider {
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid white;
-}
-
-.foot {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-    font-size: 12px;
-}
-
-.foot li {
-    float: left;
-    padding-right: 20px;
-}
-
-.foot a {
-    text-decoration: underline;
+#tournament .split-70-30 {
+    /* background-color: #ed5053; */
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #201b44, #655f92);
     color: white;
-
-    transition: 100ms;
 }
 
-.foot a:hover {
-    opacity: 50%;
+#tournament .split-70-30 h2 {
+    color: #ff3a44;
+    color: white;
 }
 
-#privacy-policy {
-    height: 0;
-    overflow: hidden;
+#about .split-30-70 h2 {
+    color: #ff3a44;
+    color: white;
 }
 
-#privacy-policy:target {
-    height: fit-content;
+/* #tournament .split-70-30 .left {
+    background-color: white;
+    color: rgb(136, 28, 28);
+    color: #b82318;
 }
 
-#privacy-policy .title, #privacy-policy .text {
-    padding-left: 0;
+#tournament .split-70-30 .right {
+    background-color: #9674e1;
+} */
+
+#sponsors .full-width {
+    /* background-color: #595481; */
+    background-image: linear-gradient(45deg, #341a5a, #674489);
+    color: white;
 }
 
-#privacy-policy ul {
-    list-style-type: circle;
-    margin: 0;
+#sponsors .full-width h2 {
+    color: white;
 }
 
-#privacy-policy li {
-    padding: 10px;
+#sponsors .full-width .sponsor-image-grid {
+    background-color: white;
 }
 
-/* learn more buttons */
-
-.learn-more a {
-    display: block;
-    padding: 20px;
-    width: fit-content;
-    height: fit-content;
-
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 1000px;
-
-    transition: 300ms;
+#registration .split-70-30 {
+    background-color: #201b44;
+    /* background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%); */
+    background-image: linear-gradient(-45deg, #154882, #7a70cd 80%);
+    color: white;
 }
 
-    /* intro */
-
-    span.intro .learn-more {
-        margin-left: calc(15% + 220px);
-        margin-top: 20px;
-    }
-
-    span.intro .learn-more a {
-        color: white;
-        border: solid white 2px;
-        text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-    }
-
-    span.intro .learn-more a:hover {
-        text-decoration-color: rgba(255, 255, 255, 1);
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* tournament */
-
-    span.tournament .learn-more {
-        margin-top: 20px;
-    }
-
-    span.tournament .learn-more a {
-        color: black;
-        border: solid black 2px;
-        text-decoration: underline 0.1em rgba(0, 0, 0, 0);
-    }
-
-    span.tournament .learn-more a:hover {
-        text-decoration-color: rgba(0, 0, 0, 1);
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-
-    /* interact */
-
-    div.register .learn-more, div.volunteer .learn-more {
-        margin-top: 20px;
-    }
-
-    div.register .learn-more a, div.volunteer .learn-more a  {
-        color: white;
-        border: solid white 2px;
-        text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-    }
-
-    div.register .learn-more a:hover, div.volunteer .learn-more a:hover {
-        text-decoration-color: rgba(255, 255, 255, 1);
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-/* responsive */
-
-@media only screen and (max-width: 1000px)
-{
-    /* title shorter */
-
-    span.date-loc .divider {
-        display: none;
-    }
-
-    span.date-loc div {
-        display: block;
-        padding: 10px;
-    }
-    
-    span.date-loc {
-        padding: 20px;
-    }
-
-    /* wordmark turns into logo */
-    div.cover .logo {
-        background-image: url("UMASO-logo-color2-resize.png");
-        width: 100%;
-        height: 200px;
-        padding-bottom: 0;
-    }
-
-    /* intro stacks */
-
-    span.intro {
-        padding: 10% 0;
-    }
-    span.intro .half {
-        display: block;
-        width: 70%;
-        padding: 20px 15%;
-    }
-
-    span.intro .itr-title {
-        padding: 0;
-    }
-
-    /* interact stacks */
-
-    span.interact {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 150%;
-    }
-    
-    span.interact .half {
-        display: block;
-        font-size: 18px;
-        width: 100%;
-        height: 50%;
-        padding: 5% 15%;
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;    
-        box-sizing: border-box;         
-
-    }
-
-    span.interact .bg-img {
-        display: block;
-        width: 100%;
-        height: 75%;
-    }
-
-    span.interact .bg-img2 {
-        left: 0;
-        top: 50%;
-    }
-
-    span.interact .title {
-        text-align: left;
-    }
-
-    span.intro .learn-more {
-        font-size: 18px;
-        margin-left: 15%;
-        margin-top: 20px;
-        width: fit-content;
-        height: fit-content;
-    }
-
+#format .split-30-70 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8b5272, #2a2458);
+    color: white;
 }
 
-@media only screen and (max-width: 1000px) {
-    
-    /* hide nav bar */
-
-    ul.nav li a {
-        display: none;
-    }
-
-    ul.mobile-nav li.extend-button {
-        display: block;
-        visibility: visible;
-    }
-
+#merch .split-70-30 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8c215e, #250743);
+    color: white;
 }
 
-@media only screen and (max-width: 600px) {
-
-    /* sponsor logos stack*/
-
-    span.sponsors .sponsor-logos img {
-        width: 50%;
-        padding: 20px;
-    }
-
-    span.cv-buttons div {
-        display: block; 
-        float: none; 
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-}
-
-@media only screen and (max-height: 550px) {
-
-    /* hide nav bar */
-
-    ul.nav li a {
-        display: none;
-    }
-
-
-    ul.mobile-nav li.extend-button {
-        display: block;
-        visibility: visible;
-    }
-
-    /* cover fix */
-
-    div.cover {
-        height: 150%;
-    }
-
-}
-
-@media only screen and (max-height: 300px) {
-
-    /* cover fix */
-
-    div.cover {
-        height: 300%;
-    }
-
-}
+/* color scheme:
+- red: #F5373B
+- blue: #3C9FD9
+- light gray: #f0f0f0
+- gray: #e0e0e0 
+- dark gray: #808080
+- dark navy/purple: #15163B*/

@@ -1,230 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>University of Massachusetts Amherst Science Olympiad</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMASO</title>
+    <link rel="icon" type="image/x-icon" href="img/umaso/Main-Logo-White.svg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="blocks.css">
+    <link rel="stylesheet" href="grids.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,300b,500,800&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-
-<body>
-
-<div class="cover">
-    <div class="bg"></div>
-
-    <ul class="nav">
-        <li class="pad"></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tournament.html">Tournament</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <ul class="mobile-nav" tabindex="0">
-        <li class="extend-button"><a>&#9776;</a></li>
-        <li class="main-button"><a href="about.html">About</a></li>
-        <li class="main-button"><a href="tournament.html">Tournament</a></li>
-        <li class="main-button"><a href="register.html">Register</a></li>
-        <li class="main-button"><a href="volunteer.html">Volunteer</a></li>
-        <li class="main-button"><a href="#contact">Contact</a></li>
-    </ul>
-
-    <span class="cv-title">
-        <div class="logo"></div>
-        <span class="date-loc">
-            <div>Amherst, MA</div>
-            <div class="divider">|</div>
-            <div>February 17th, 2024</div>
-        </span>
-        <span class="cv-buttons">
-            <div><a href="register.html">Register</a></div>
-            <div class="b-space"></div>
-            <div><a href="volunteer.html">Volunteer</a></div>
-        </span>
-        <!-- <span class="cv-buttons">
-            <div><a href="#tournament-info">Final Results</a></div>
-        </span> -->
-    </span>
-</div>
-
-<span class="intro" id="about">
-    <div class="half itr-title">
-        What is <br> UMASO?
-    </div>
-    <div class="half itr-desc">
-
-        The University of Massachusetts Amherst Science Olympiad (UMASO) is a student-run organization based in Amherst, MA. Our mission is to attract high school students to STEM by working year-round to host an annual, hands-on Science Olympiad Invitational Tournament in the New England area for a diverse set of competing teams.
-    
-    </div>
-    <div class="learn-more">
-        <a href="about.html">More about us</a>
-    </div>
-</span>
-
-<span class="tournament" id="tournament-info">
-    <div class="title">
-        Tournament Information
-    </div>
-    <div class="text" style="padding-top: 15px;">
-
-        This year's tournament will be held on <b>February 17th, 2024</b>, on campus at UMass Amherst. We anticipate running all 22 national events. The registration fee for this year’s tournament is <b>$40</b> per team, with no limit on the number of teams per school. We encourage all participating individuals to bring an extra $15 for lunch at UMass Amherst's award-winning dining halls.
-
-    </div>
-    <div class="learn-more">
-        <a href="tournament.html">Learn more</a>
-    </div>
-</span>
-
-<!-- <span class="tournament" id="tournament-info">
-    <div class="title">
-        Tournament Results
-    </div>
-    <div class="text" style="padding-top: 15px;">
-
-        The final placings of all teams participating in the 2023 UMASO Invitational can be found on <a href="https://www.duosmium.org/results/2023-02-18_umaso_invitational_c/">Duosmium</a>.
-
-    </div>
-    <div class="text">
-        Tests for all main events have also been released onto <a href="https://drive.google.com/drive/folders/1FK89x4X796k5EEt44tzOoF__5aDaaFON?usp=share_link">this google drive</a>!
-    </div>
-    <div class="text">
-        Please fill out <a href="https://forms.gle/U2E5ZUA7cyysbrGEA" target="_blank" rel="noopener">this feedback form</a> if you have any comments/suggestions for running this tournament in future years. We're always looking for ways to make the tournament experience more enjoyable for everyone involved.
-    </div>
-    <div class="text" style="padding-top: 15px;">
-
-        <b>Thank you to all participants of UMASO 2023! We hope to see you again next year.</b>
-
-    </div>
-    <div style="margin-top: 15px">
-        <div class="button">
-            <a href="https://www.duosmium.org/results/2023-02-18_umaso_invitational_c/" target="_blank" rel="noopener">Placings</a>
+<body style="visibility: hidden;"> <!-- FOUC -->
+    <script>0</script> <!-- fix for firefox FOUC -->
+<header>
+    <!-- nav bar -->
+    <section id="nav">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-logo grid-item">
+                    <a href="#" class="logo"><img src="img/umaso/Main-Logo-White.svg"></a>
+                </div>
+                <div class="navbar-links grid-item hidden">
+                    <ul id="navbar-link-list" class="horizontal">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="tournament.html">Tournament Info</a></li>
+                        <!-- <li><a href="#">News</a></li> -->
+                        <!-- <li><a href="#">Something Else</a></li> -->
+                    </ul>
+                </div>
+                <div class="navbar-toggle grid-item" onclick="toggle()">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                </div>
+            </div>
+            <div class="navbar-back"></div>
         </div>
-        <div class="button">
-            <a href="https://drive.google.com/drive/folders/1FK89x4X796k5EEt44tzOoF__5aDaaFON?usp=share_link" target="_blank" rel="noopener">Test Release</a>
-        </div>
-        <div class="button">
-            <a href="https://forms.gle/U2E5ZUA7cyysbrGEA" target="_blank" rel="noopener">Feedback</a>
-        </div>
-    </div>
-</span> -->
+    </section>
 
-<span class="sponsors">
-    <div class="title">
-        Our Sponsors
-    </div>
-    <div class="sponsor-logos">
-        <a href="https://www.umass.edu/engineering/"><img src="coe-logo.png"></a>
-        <a href="https://www.umass.edu/physics/"><img src="physics-logo.png"></a>
-        <a href="https://florrent.com/"><img src="florrent-logo.png"></a>
-        <a href="https://www.pse.umass.edu/"><img src="polymer-logo.png"></a>
-        <a href="https://www.umass.edu/chemistry/"><img src="chem-logo.png"></a>
-    </div>
-</span>
+</header>
+<main>
+    <!-- hero banner -->
+    <section id="hero">
+        <div class="hero-banner">
+            <div class="slideshow-container">
+                <div class="slideshow-button-container">
+                    <div class="slideshow-button left-button">
+                        <div class="button-icon"><span class="button-icon material-symbols-outlined">arrow_back_ios</span></div>
+                        <button onclick="slideLeft()"></button>
+                    </div>
+                    <div class="slideshow-button right-button">
+                        <div class="button-icon"><span class="button-icon material-symbols-outlined">arrow_forward_ios</span></div>
+                        <button onclick="slideRight()"></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/banner-compressedx2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/umasoteampic2024.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/awards.jpg">
+                </div>
+            </div>
 
-<span class="interact">
-    <!-- <div class="carousel">
-        <ul class="carousel-slides">
-            <li><img src="umasoteampic2023.jpg" alt="Image 1 Description"></li>
-            <li><img src="umasoteampic2024.jpg" alt="Image 2 Description"></li>
-            <li><img src="UMASO-wordmark-transparent.png" alt="Image 3 Description"></li>
-        </ul>
-        <div class="carousel-navigation">
-            <button class="prev-btn">&lt;</button>
-            <button class="next-btn">&gt;</button>
-        </div>
-    </div> -->
-    <div class="bg-img bg-img1"></div>
-    <div class="bg-img bg-img2"></div>
-    <div class="half register" id="register">
-        <div class="title">
-            Register
-        </div>
-        <div class="text">
+            <div class="hero-content">
+                <div class="logo">
+                    <img src="img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+                </div>
+                <p>February 15th, 2025</p>
+                <div class="cta">
+                    <a href="#" class="cta-button" id="cta-btn">Register</a>
+                </div>
 
-            Interested in competing? Our invitational offers you and your team a unique chance to visit the UMass Amherst campus, explore facilities, build lasting connections with other teams, and enjoy one of the best college dining experiences in the nation!
-
+            </div>
         </div>
-        <div class="learn-more">
-            <a href="register.html">Register here</a>
-        </div>
-        <div class="bg-img-desc">
-            Background Image: Herbig-Haro Object 24, a deep space object featured in the 2022 Science Olympiad Astronomy event. Image credit to NASA / Digitized Sky Survey 2.
-        </div>
-    </div>
-    <div class="half volunteer" id="volunteer">
-        <div class="title">
-            Volunteer
-        </div>
-        <div class="text">
-        
-            Passionate about science education, giving back to the Science Olympiad community, or just want to see what’s happening? The University of Massachusetts Amherst Science Olympiad encourages volunteers of all ages and backgrounds to join our team! 
-        
-        </div>
-        <div class="learn-more">
-            <a href="volunteer.html">Volunteer here</a>
-        </div>
-        <div class="bg-img-desc">
-            Background Image: The Yarlung Tsangpo River in Tibet, an example of dendritic drainage seen in the 2022 Science Olympiad Dynamic Planet event. Image credit to NASA Photojournal.
-        </div>
-    </div>
-</span>
+    </section>
 
-<span class="contact" id="contact">
-    <div class="title">
-        Contact
-    </div>
-    <div class="text">
-
-        For any clarifications, comments, questions, or requests about our tournament or this website, please email us at umassamherst<span style="display:none;">1bt#9571Sbtv=1#T8a</span>scioly@gmail.com. <br>
-        <br>
-        We are also active on Instagram–follow us at <a href="https://www.instagram.com/umass.scioly/" target="_blank" rel="noopener noreferrer">@umass.scioly</a>!
-
-
-    </div>
-    <div class="divider"></div>
-    <ul class="foot">
-        <li>&copy; University of Massachusetts Amherst Science Olympiad 2022-24</li>
-        <li><a href="#privacy-policy">Privacy Policy & Disclosures</a></li>
-    </ul>
-    <div id="privacy-policy">
-        <div class="title" style="padding-top: 20px">Privacy Policy</div>
-        <div class="header" style="padding-top: 15px">Information Collected</div>
-        <div class="text">
-            <ul>
-                <li>Our website does not use cookies or collect data through analytics.</li>
-                <li>We only collect information on this website through Google Forms, specifically for registered teams and volunteers. </li>
-                <li>Only Google and UMASO will have full access to the information provided through Google Forms. Google’s privacy policy regarding their forms can be found 
-                    <a href="https://policies.google.com/" target="_blank" rel="noopener" style="color: white;">here</a>.
-                </li>
-                <li>We may disclose the names of the schools participating towards the public, but we will keep each individual’s identity private unless given explicit permission.</li>
-            </ul>
+    <!-- what is umaso -->
+    <section id="about">
+        <div class="split-30-70">
+            <div class="left">
+                <img src="img/umass_pond.jpg" alt="something">
+            </div>
+            <div class="right">
+                <div class="spaced-content">
+                    <h2>What is UMASO?</h2>
+                    <p>The University of Massachusetts Amherst Science Olympiad (UMASO) is a student-run organization based in Amherst, MA. Our mission is to attract high school students to STEM by working year-round to host an annual, hands-on Science Olympiad Invitational Tournament in the New England area for a diverse set of competing teams.</p>
+                </div>
+            </div>
         </div>
-        <div class="text">
+    </section>
 
-            Any usage of information not outlined above will be addressed towards registered teams through email. Any questions or concerns with our privacy policy can be directed towards umassamherstscioly@gmail.com. 
-        
+    <!-- tournament info -->
+    <section id="tournament">
+        <div class="split-70-30">
+            <div class="left">
+                <div class="spaced-content">
+                    <h2>Tournament</h2>
+                    <p>This year's tournament will be held on February 15th, 2025, on campus at UMass Amherst. The registration fee for this year's tournament is $40 per team, with each school being allowed to bring at most 2 teams. We encourage all participating individuals to bring an extra $15 for lunch at UMass Amherst's award-winning dining halls.</p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="img/volunteer-min.png" alt="hi">
+            </div>
         </div>
-        <div class="text" style="font-weight: 800;">
+    </section>
 
-            Our website is entirely open source. The link to the source code can be found 
-            <a href="https://github.com/SMBHair/SMBHair.github.io" target="_blank" rel="noopener" style="color:white;">here</a>.
-
+    <!-- sponsors -->
+    <section id="sponsors">
+        <div class="full-width">
+            <div class="section-header">
+                <h2>
+                    OUR EPIC SPONSORS
+                </h2>
+                <p class="sponsor-subtitle">
+                    If you are interested in sponsoring UMASO, <span class="blockspam" aria-hidden="true"><a href="fakeemail@gmail.com">fakeemail@gmail.com</a> fake-email2@umass.edu</span> <a href="mailto:umaso-rso@umass.edu">please contact us here</a><!-- fakemailthree@umaso.org -->!
+                </p>
+            </div>
+            <div class="sponsor-image-grid">
+                <div class="grid-item"><img src="img/sponsor/coe-logo.png" alt="1" loading="lazy"></div>
+                <div class="grid-item"><img src="img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
+                <div class="grid-item"><img src="img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
+                <!-- <div class="grid-item"><img src="img/sponsor/polymer-logo.png" alt="3" loading="lazy"></div> -->
+                <!-- <div class="grid-item"><img src="img/sponsor/chem-logo.png" alt="4" loading="lazy"></div> -->
+                <!-- <div class="grid-item"><img src="img/sponsor/florrent-logo.png" alt="5" loading="lazy"></div> -->
+                <!-- <div class="grid-item"><img src="img/sponsor/coe-logo.png" alt="6" loading="lazy"></div> -->
+            </div>
         </div>
-        <div class="header" style="padding: 15px 0">Other Disclosures</div>
-        <div class="text">
+    </section>
 
-            All registration fees go directly towards supporting this year’s tournament in the form of event materials, trophies, medals, and per team printing costs. A detailed budget summary can be made available upon request at umassamherstscioly@gmail.com.
-
+</main>
+<footer>
+    <!-- footer -->
+     <section id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+            </div>
+            <div class="footer-links">
+                <div class="page-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="tournament.html">Tournament Info</a>
+                    <!-- <a href="#">Among us section</a> -->
+                </div>
+                <div class="social-links">
+                    <!-- <a href="#">Discord</a> -->
+                    <a href="https://www.instagram.com/umass.scioly/">Instagram</a>
+                    <!-- <a href="#">LinkedIn</a> -->
+                </div>
+            </div>
         </div>
-        <div class="text">
-
-            University of Massachusetts Amherst Science Olympiad is an official Registered Student Organization at UMass Amherst. The actions and views of student organizations at UMass do not necessarily represent the views of the University.
-        
+        <div class="copyright">
+            <!-- <p>made with unsatiable hatred and anger by the umaso team &#129505;</p> -->
+            <p>© University of Massachusetts Amherst Science Olympiad 2022-2025</p>
         </div>
-    </div>
+     </section>
 
-</span>
+</footer>
+
+<script src="js/slides.js"></script>
+<script src="js/script.js"></script>
+<script src="js/FOUC.js"></script>
+<noscript><style>body { visibility: visible; }</style></noscript>
 
 </body>
 </html>
