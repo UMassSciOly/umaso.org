@@ -9,8 +9,8 @@ const btnText = [
 ];
 
 const btnHref = [
-    "tournament.html#registration",
-    "about.html",
+    "/tournament/#registration",
+    "/about",
     "https://www.instagram.com/umass.scioly/"
 ];
 
