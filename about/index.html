@@ -21,30 +21,13 @@
 <header>
     <!-- nav bar -->
     <section id="nav">
-        <div class="navbar">
-            <div class="navbar-content">
-                <div class="navbar-logo grid-item">
-                    <a href="/" class="logo"><img src="/img/umaso/Main-Logo-White.svg"></a>
-                </div>
-                <div class="navbar-links grid-item hidden">
-                    <ul id="navbar-link-list" class="horizontal">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/tournament">Tournament Info</a></li>
-                        <!-- <li><a href="#">News</a></li> -->
-                        <!-- <li><a href="#">Something Else</a></li> -->
-                    </ul>
-                </div>
-                <div class="navbar-toggle grid-item" onclick="toggle()">
-                    <div id="bar1"></div>
-                    <div id="bar2"></div>
-                    <div id="bar3"></div>
-                </div>
-            </div>
-            <div class="navbar-back"></div>
-        </div>
+        <div id="navbar" class="navbar"></div>
+        <script>
+            fetch("../navbar.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("navbar").innerHTML = data);
+        </script>
     </section>
-
 </header>
 <main>
     <section id="mission">

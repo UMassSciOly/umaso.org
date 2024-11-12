@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
-
+<header>
+  <!-- nav bar -->
+  <section id="nav">
+      <div id="navbar" class="navbar"></div>
+      <script>
+          fetch("../navbar.html")
+              .then(response => response.text())
+              .then(data => document.getElementById("navbar").innerHTML = data);
+      </script>
+  </section>
+</header>
 <body>
-    <nav>
-      <ul style="display: flex; justify-content: center; gap:2rem;">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Tournament</a></li>
-      </ul>
-    </nav>
     <div class="container">
       <div>
       <section class="main-content">
