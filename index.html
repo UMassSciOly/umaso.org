@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
-    <link rel="icon" type="image/x-icon" href="../img/umaso/favicon2.png">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./blocks.css">
-    <link rel="stylesheet" href="./grids.css">
-    <link rel="stylesheet" href="./hero.css">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/blocks.css">
+    <link rel="stylesheet" href="/styles/grids.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
@@ -22,30 +22,8 @@
 <header>
     <!-- nav bar -->
     <section id="nav">
-        <div class="navbar">
-            <div class="navbar-content">
-                <div class="navbar-logo grid-item">
-                    <a href="/" class="logo"><img src="./img/umaso/Main-Logo-White.svg"></a>
-                </div>
-                <div class="navbar-links grid-item hidden">
-                    <ul id="navbar-link-list" class="horizontal">
-                        <li><a href="./">Home</a></li>
-                        <li><a href="./about">About</a></li>
-                        <li><a href="./tournament">Tournament Info</a></li>
-                        <!-- <li><a href="#">News</a></li> -->
-                        <!-- <li><a href="#">Something Else</a></li> -->
-                    </ul>
-                </div>
-                <div class="navbar-toggle grid-item" onclick="toggle()">
-                    <div id="bar1"></div>
-                    <div id="bar2"></div>
-                    <div id="bar3"></div>
-                </div>
-            </div>
-            <div class="navbar-back"></div>
-        </div>
+        <div id="navbar" class="navbar"></div>
     </section>
-
 </header>
 <main>
     <!-- hero banner -->
@@ -107,7 +85,11 @@
             <div class="left">
                 <div class="spaced-content">
                     <h2>Tournament</h2>
-                    <p>This year's tournament will be held on February 15th, 2025, on campus at UMass Amherst. The registration fee for this year's tournament is $40 per team, with each school being allowed to bring at most 2 teams. We encourage all participating individuals to bring an extra $15 for lunch at UMass Amherst's award-winning dining halls.</p>
+                    <p>
+                        This year's tournament will be held on February 15th, 2025, on campus at UMass Amherst. The registration fee for this year's tournament is $40 per team, with each school being allowed to bring at most 2 teams. We encourage all participating individuals to bring an extra $15 for lunch at UMass Amherst's award-winning dining halls.
+                        <br><br>
+                        Please see the Tournament Info page for more details.
+                    </p>
                 </div>
             </div>
             <div class="right">
@@ -132,7 +114,7 @@
                 <div class="grid-item"><img src="./img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
                 <div class="grid-item"><img src="./img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/polymer-logo.png" alt="3" loading="lazy"></div> -->
-                <!-- <div class="grid-item"><img src="img/sponsor/chem-logo.png" alt="4" loading="lazy"></div> -->
+                <div class="grid-item"><img src="img/sponsor/chem-logo.png" alt="4" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/florrent-logo.png" alt="5" loading="lazy"></div> -->
                 <!-- <div class="grid-item"><img src="img/sponsor/coe-logo.png" alt="6" loading="lazy"></div> -->
             </div>
@@ -143,35 +125,19 @@
 <footer>
     <!-- footer -->
      <section id="footer">
-        <div class="footer-content">
-            <div class="logo">
-                <img src="./img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
-            </div>
-            <div class="footer-links">
-                <div class="page-links">
-                    <a href="./">Home</a>
-                    <a href="./about">About Us</a>
-                    <a href="./tournament">Tournament Info</a>
-                    <!-- <a href="#">Among us section</a> -->
-                </div>
-                <div class="social-links">
-                    <!-- <a href="#">Discord</a> -->
-                    <a href="https://www.instagram.com/umass.scioly/">Instagram</a>
-                    <!-- <a href="#">LinkedIn</a> -->
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>made with lots of sleep by the umaso team &#129505;</p>
-            <p>© University of Massachusetts Amherst Science Olympiad 2022-2025</p>
-        </div>
+        <div id="footer" class="footer-content"></div>
+        <script>
+            fetch("/footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer").innerHTML = data);
+        </script>
      </section>
 
 </footer>
 
-<script src="./js/slides.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/FOUC.js"></script>
+<script src="/js/slides.js"></script>
+<script src="/js/FOUC.js"></script>
+<script src="/js/page_load.js"></script>
 <noscript><style>body { visibility: visible; }</style></noscript>
 
 </body>

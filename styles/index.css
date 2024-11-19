@@ -1,0 +1,156 @@
+main {
+    padding: 0% 5%;
+    font-size: 14px;
+}
+
+.split-30-70 p, .split-70-30 p, .full-width p, .split-30-70 li, .split-70-30 li, .full-width li {
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+header {
+    padding: 0% 5%;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0%;
+    }
+
+    main {
+        padding: 0 5%;
+        font-size: 14.5px;
+        background-image: linear-gradient(black, #171a54);
+    }
+
+    #footer {
+        background-image: 
+            linear-gradient(#171a54, #000000);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 0 10%;
+        font-size: 15px;
+        background-image: 
+            linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
+            linear-gradient(black, #171a54);
+    }
+
+    #footer {
+        background-image: 
+            linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
+            linear-gradient(#171a54, #000000);
+    }
+
+    .split-30-70 h2, .split-70-30 h2, .full-width h2 {
+        font-size: 30px;
+        margin: 10px 0px 10px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+/* #sponsors .sponsor-subtitle {
+    color: #808080;
+} */
+
+/* #about .split-30-70 .left {
+    background-color: #ed5053;
+} */
+
+/* #about .split-30-70 .right {
+    background-color: rgb(136, 28, 28);
+    background-color: #b82318;
+    color: white;
+} */
+
+span.blockspam {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+#about .split-30-70 {
+    /* background-color: #ed5053; */
+    background-color: #201b44;
+    /* background-image: linear-gradient(-45deg, #201b44, #655f92); */
+    background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%);
+    color: white;
+}
+
+#tournament .split-70-30 {
+    /* background-color: #ed5053; */
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #201b44, #655f92);
+    color: white;
+}
+
+#tournament .split-70-30 h2 {
+    color: #ff3a44;
+    color: white;
+}
+
+#about .split-30-70 h2 {
+    color: #ff3a44;
+    color: white;
+}
+
+/* #tournament .split-70-30 .left {
+    background-color: white;
+    color: rgb(136, 28, 28);
+    color: #b82318;
+}
+
+#tournament .split-70-30 .right {
+    background-color: #9674e1;
+} */
+
+#sponsors .full-width {
+    /* background-color: #595481; */
+    background-image: linear-gradient(45deg, #341a5a, #674489);
+    color: white;
+}
+
+#sponsors .full-width h2 {
+    color: white;
+}
+
+#sponsors .full-width .sponsor-image-grid {
+    background-color: white;
+}
+
+#registration .split-70-30 {
+    background-color: #201b44;
+    /* background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%); */
+    background-image: linear-gradient(-45deg, #154882, #7a70cd 80%);
+    color: white;
+}
+
+#format .split-30-70 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8b5272, #2a2458);
+    color: white;
+}
+
+#merch .split-70-30 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8c215e, #250743);
+    color: white;
+}
+
+/* color scheme:
+- red: #F5373B
+- blue: #3C9FD9
+- light gray: #f0f0f0
+- gray: #e0e0e0 
+- dark gray: #808080
+- dark navy/purple: #15163B*/

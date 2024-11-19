@@ -1,0 +1,196 @@
+.full-width {
+    width: 100%;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px 0px;
+}
+
+.img-block {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.img-block img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transform: none;
+}
+
+/* shared styles for flexboxes */
+.split-30-70, .split-70-30, .split-50-50{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+/**********************************************ADDED CSS*****************************************************************/
+.split-50-50 .inner-div{
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #201b44, #655f92);
+    color: white;
+    width: 100%;
+}
+.split-50-50 .left,
+.split-50-50 .right {
+    flex: 1 0 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: 3px 0px; */
+    order: 1;
+}
+.accordion-item{
+    --bs-accordion-bg:#201b44;
+    --bs-accordion-btn-color: white;
+	--bs-accordion-btn-bg: #201b44;
+	--bs-accordion-active-color: violet;
+	--bs-accordion-active-bg: #201b44;
+    border-color: #655f92;
+    outline: none;
+}
+.accordion-body, .accordion{
+    background-color: #C772C7;
+    color: #201b44;
+}
+/**********************************************COMPLETED CSS*****************************************************************/
+
+.split-30-70 img, .split-70-30 img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transform: none;
+}
+
+.spaced-content {
+    padding: 25px;
+}
+
+.spaced-content h2 {
+    margin-bottom: 10px;
+}
+
+/* all split section */
+.split-30-70 .left,
+.split-30-70 .right,
+.split-70-30 .left,
+.split-70-30 .right{
+    flex: 1 0 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: 3px 0px; */
+    order: 1;
+}
+
+.split-30-70 .left {
+    box-shadow: 0 -2px 40px rgba(0,0,0, 0.6);
+}
+
+.split-70-30 .right {
+    box-shadow: 0 -2px 40px rgba(0,0,0, 0.6);
+}
+
+/*smaller sections*/
+.split-30-70 .left, .split-70-30 .right {
+    order: 2;
+}
+
+.section-header {
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+}
+
+/* small banner for about, tournament */
+
+.small-banner {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.small-banner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    filter: brightness(50%);
+    
+}
+
+.small-banner h1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+}
+
+.small-banner .banner-img {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 -2px 20px rgba(0,0,0, 0.6);
+    background-color: black;
+    object-fit: cover;
+}
+
+/* .small-banner h3 {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-weight: 400;
+} */
+
+@media screen and (min-width: 768px) {
+    .split-30-70, .split-70-30 {
+        margin: 30px 0px 0px;
+    }
+
+    .full-width {
+        margin: 30px 0px 0px;
+    }
+
+    .split-30-70 .left, .split-70-30 .right {
+        flex: 0 0 42.5%;
+        order: 1;
+    }
+    
+    .split-30-70 .right, .split-70-30 .left {
+        flex: 0 0 55%;
+        order: 1;
+    }
+
+    .split-30-70 img, .split-70-30 img {
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .spaced-content {
+        padding: 40px;
+    }
+}
+
+.split-30-70 p, .split-70-30 p, .full-width p {
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+@media screen and (min-width: 1024px) {
+    .split-30-70 h2, .split-70-30 h2, .full-width h2 {
+        font-size: 30px;
+        margin: 40px 0px 10px;
+    }
+}
