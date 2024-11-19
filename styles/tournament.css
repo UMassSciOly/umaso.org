@@ -20,14 +20,14 @@
     margin-bottom: 0;
 }
 
-.register-button {
+.centered-btn {
     text-align: center;
 }
 
-#register-btn {
+.tournament-btn {
     display: inline-block;
     padding: 12px 24px;
-    margin: 20px 0px 10px;
+    margin: 20px 0px 0px;
     border: 2px solid #f0f0f0;
     color: white;
     text-decoration: none;
@@ -37,7 +37,7 @@
     /* margin: 24px; */
 }
 
-#register-btn:hover {
+.tournament-btn:hover {
     background-color: rgba(10, 10, 10, 0.2);
 }
 
