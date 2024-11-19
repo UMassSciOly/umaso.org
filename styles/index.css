@@ -1,6 +1,6 @@
 main {
     padding: 0% 5%;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .split-30-70 p, .split-70-30 p, .full-width p, .split-30-70 li, .split-70-30 li, .full-width li {
@@ -19,7 +19,7 @@ header {
 
     main {
         padding: 0 5%;
-        font-size: 14px;
+        font-size: 15px;
         background-image: linear-gradient(black, #171a54);
     }
 
@@ -32,7 +32,7 @@ header {
 @media screen and (min-width: 1024px) {
     main {
         padding: 0 10%;
-        font-size: 15px;
+        font-size: 16px;
         background-image: 
             linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
             linear-gradient(black, #171a54);
