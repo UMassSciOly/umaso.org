@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
-    <link rel="icon" type="image/x-icon" href="../img/umaso/favicon2.png">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../blocks.css">
-    <link rel="stylesheet" href="../grids.css">
-    <link rel="stylesheet" href="../navbar.css">
-    <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../about.css">
+    <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/blocks.css">
+    <link rel="stylesheet" href="/styles/grids.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
@@ -21,30 +21,8 @@
 <header>
     <!-- nav bar -->
     <section id="nav">
-        <div class="navbar">
-            <div class="navbar-content">
-                <div class="navbar-logo grid-item">
-                    <a href="/" class="logo"><img src="../img/umaso/Main-Logo-White.svg"></a>
-                </div>
-                <div class="navbar-links grid-item hidden">
-                    <ul id="navbar-link-list" class="horizontal">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="../about">About</a></li>
-                        <li><a href="../tournament">Tournament Info</a></li>
-                        <!-- <li><a href="#">News</a></li> -->
-                        <!-- <li><a href="#">Something Else</a></li> -->
-                    </ul>
-                </div>
-                <div class="navbar-toggle grid-item" onclick="toggle()">
-                    <div id="bar1"></div>
-                    <div id="bar2"></div>
-                    <div id="bar3"></div>
-                </div>
-            </div>
-            <div class="navbar-back"></div>
-        </div>
+        <div id="navbar" class="navbar"></div>
     </section>
-
 </header>
 <main>
     <section id="mission">
@@ -314,9 +292,8 @@
     </section>
 </footer>
 
-<script src="../js/script.js"></script>
-<script src="../js/about.js"></script>
-
+<script src="/js/about.js"></script>
+<script src="/js/page_load.js"></script>
 
 </body>
 </html>
