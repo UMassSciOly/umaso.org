@@ -59,6 +59,82 @@
     background-color: #C772C7;
     color: #201b44;
 }
+.faq-question{
+    margin-bottom: 1rem;
+}
+.faq-question h3{
+    color: #C772C7;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    padding-bottom: 15px;
+}
+.faq-question p{
+    margin-left: 2px;
+    padding-left: 15px;
+    border-left: 5px solid #E2B6E2;
+    word-spacing: 3px;
+    color: #F9F0F9;
+    background-color: #676293;
+    border-top-right-radius: 15px;
+    padding: 10px;
+}
+.faq-question a{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: #EEA6F2;
+}
+.border_everything{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin-bottom: 2rem;
+    flex-basis: 50%;
+}
+.border_everything *{
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+
+}
+.event-image{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/61e877d7287f1a21357d5b08/93edd94b-eee1-4b0a-80b0-dacbdbe9442c/flat-colorful-design-concept-for-assessment-infographic-idea-of-vector-id1089162344.jpeg');
+    background-position: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    flex-basis: 50%;
+    /* border: 1px solid gray; */
+}
+.event-memebers{
+    text-align: left;
+}
+.event-memebers h3{
+    color: #201b44;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    /* text-decoration: underline;
+    text-underline-offset: 6px; */
+}
+.event-name {
+    padding: 0.6rem 0rem;
+}
+.event-memebers hr{
+    margin-top: 5px;
+    border: 2.5px solid #201b44;
+    /* color: #201b44;
+    height: 5px; */
+}
+.event-memebers p{
+    border-left: 5px solid #9F9DE9;
+    padding: 0px 5px;
+    margin-bottom: 5px;
+}
+.event-memebers a{
+    color: rgb(174, 174, 174);
+    margin-left: 1rem;
+}
 /**********************************************COMPLETED CSS*****************************************************************/
 
 .split-30-70 img, .split-70-30 img {
