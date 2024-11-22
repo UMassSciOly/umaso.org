@@ -41,19 +41,19 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="./img/banner-compressedx2.jpg" alt="umass-banner">
+                    <img src="/img/banner-compressedx2.jpg" alt="umass-banner">
                 </div>
                 <div class="slide">
-                    <img src="./img/umasoteampic2024.jpg" alt="umaso-team-pic">
+                    <img src="/img/umasoteampic2024.jpg" alt="umaso-team-pic">
                 </div>
                 <div class="slide">
-                    <img src="./img/awards.jpg" alt="umaso-awards">
+                    <img src="/img/awards.jpg" alt="umaso-awards">
                 </div>
             </div>
 
             <div class="hero-content">
                 <div class="logo">
-                    <img src="./img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+                    <img src="/img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
                 </div>
                 <p>February 15th, 2025</p>
                 <div class="cta">
@@ -68,7 +68,7 @@
     <section id="about">
         <div class="split-30-70">
             <div class="left">
-                <img src="./img/umass_pond.jpg" alt="something">
+                <img src="/img/umass_pond.jpg" alt="something">
             </div>
             <div class="right">
                 <div class="spaced-content">
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="./img/volunteer-min.png" alt="hi">
+                <img src="/img/volunteer-min.png" alt="hi">
             </div>
         </div>
     </section>
@@ -110,11 +110,11 @@
                 </p>
             </div>
             <div class="sponsor-image-grid">
-                <div class="grid-item"><img src="./img/sponsor/coe-logo.png" alt="1" loading="lazy"></div>
-                <div class="grid-item"><img src="./img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
-                <div class="grid-item"><img src="./img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/coe-logo.png" alt="1" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/polymer-logo.png" alt="3" loading="lazy"></div> -->
-                <div class="grid-item"><img src="img/sponsor/chem-logo.png" alt="4" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/chem-logo.png" alt="4" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/florrent-logo.png" alt="5" loading="lazy"></div> -->
                 <!-- <div class="grid-item"><img src="img/sponsor/coe-logo.png" alt="6" loading="lazy"></div> -->
             </div>
@@ -124,14 +124,17 @@
 </main>
 <footer>
     <!-- footer -->
-     <section id="footer">
-        <div id="footer" class="footer-content"></div>
-        <script>
-            fetch("/footer.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
-        </script>
-     </section>
+    <section id="foot">
+        <div id="footer"></div>
+    </section>
+    <!-- <section id="footer">
+    <div id="footer" class="footer-content"></div>
+    <script>
+        fetch("/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    </section> -->
 
 </footer>
 
