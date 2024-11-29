@@ -4,7 +4,7 @@
     padding: 20px 40px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0px 0px;
+    margin: 20px 0px 0px;
 }
 
 .img-block {
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between;
-    margin: 20px 0px;
+    margin: 20px 0px 0px;
     border-radius: 10px;
 }
 
@@ -232,8 +232,18 @@
 
 .three-column {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.three-column div {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
