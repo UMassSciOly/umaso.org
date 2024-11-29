@@ -1,11 +1,10 @@
 /* mission */
 
-.mission-statement {
-    overflow: hidden;
-    transition: height 0.4s ease-out;
+.about-mission {
+    margin-bottom: 20px;
 }
 
-#mission .full-width {
+.about-mission .title.full-width {
     padding: 0;
     margin: 0px 0px;
     border-radius: 20px;
@@ -13,83 +12,70 @@
     background-image: linear-gradient(transparent, white, white, white, white, white); /* eheheh ehhehehhhhhhehehe hhehehehhe -Larry */
 }
 
-.mission-statement p {
+.about-mission .mission-statement {
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+}
+
+.about-mission .mission-statement p {
     margin: 10px 0px 0px;
 }
 
-#mission-details.active {
-    margin-bottom: 20px;
-}
-
-/* .mission-statement .img-block h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-} */
-
-.section-title {
+.about-mission .section-title {
     margin-top: 10px;
     font-size: 30px;
 }
 
-.mission-text {
-    padding: 10px 40px;
-}
-
-#mission {
-    margin-bottom: 20px;
-}
-
-#mission-toggle {
+.about-mission .mission-toggle {
     margin: 0px auto;
     width: fit-content;
     color: black;
     transition: 0.2s;
     font-size: 20px;
     opacity: 1;
+    z-index: 2;
+    position: relative;
 }
 
-#mission-toggle:hover {
+.about-mission .mission-toggle:hover {
     cursor: pointer;
 }
 
-#mission-toggle.active {
-    /* transform: fade(180deg); */
-    /* opacity: 0; */
-    transition: 0.2s;
+.about-mission .mission-toggle.active, .about-mission .mission-toggle:hover {
     color: #ed5053;
 }
 
-.mission-statement ul {
-    /* display: inline-block; */
-    transition: 0.4s ease-out;
+.about-mission .mission-details {
+    position: relative;
+    z-index: 1;
     margin-left: 20px;
     opacity: 0;
     max-height: 0;
     transition: 0.4s ease-out;
+    margin: 10px 0px 10px 20px;
 }
 
-.mission-statement ul.active {
+.about-mission .mission-details li {
+    margin-top: 10px;
+}
+
+.about-mission .mission-details.active {
     opacity: 1;
     max-height: 500px;
     transition: 0.4s ease-in;
+    margin-bottom: 20px;
 }
 
 /* profiles menu buttons */
 
-.profile-btns {
+.about-people .profile-btns {
     width: 100%;
     display: flex;
     justify-content: center;
     /* justify-items: center; */
 }
 
-.profile-btns button {
+.about-people .profile-btns button {
     all: unset;
     margin: 0px 10px;
     padding: 5px 10px;
@@ -98,27 +84,27 @@
     background-color: white;
 }
 
-.profile-btns button:hover {
+.about-people .profile-btns button:hover {
     background-color: #d9d8f9;
     cursor:pointer;
 }
 
-.profile-btns button.active {
+.about-people .profile-btns button.active {
     background-color: #a29ef1;
     color: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3), 0 1px 5px 0 rgba(0,0,0,0.29);
 }
 
 /* profile grid */
-.profiles {
+.about-people .profiles {
     text-align: center;
 }
 
-.profiles h2 {
+.about-people .profiles h2 {
     margin-bottom: 25px;
 }
 
-.profile {
+.about-people .profile {
     width: 150px;
     display: flex;
     opacity: 0;
@@ -131,21 +117,21 @@
     margin: 20px;
 }
 
-.profile img {
+.about-people .profile img {
     border-radius: 50%;
     pointer-events: none;
 }
 
-.profile h3 {
+.about-people .profile h3 {
     font-weight: 500;
     margin-top: 10px;
 }
 
-.profile p {
+.about-people .profile p {
     font-size: 14px;
 }
 
-.event-profile {
+.about-people .event-profile {
     width: 300px;
     display: flex;
     justify-content: center;
@@ -161,7 +147,7 @@
     align-content: flex-start;
 }
 
-.event-profile2 {
+.about-people .event-profile2 {
     /* width: 300px; */
     width: 100%;
     display: flex;
@@ -182,12 +168,12 @@
     transition: 0.5s;
 }
 
-.event-profile2 h1 {
+.about-people .event-profile2 h1 {
     font-size: 24px;
     margin: 10px 0px;
 }
 
-.event-profile2 .event-title {
+.about-people .event-profile2 .event-title {
     flex: 0 0 40%;
     display: flex;
     justify-content: left;
@@ -196,7 +182,7 @@
     padding: 20px;
 }
 
-.event-profile2 .ES-section,  .event-profile2 .TR-section{
+.about-people .event-profile2 .ES-section, .about-people .event-profile2 .TR-section{
     flex: 0 0 50%;
     display: flex;
     justify-content: right;
@@ -204,7 +190,7 @@
     flex-wrap: wrap;
 }
 
-.event-profile .ES-section, .event-profile .TR-section{
+.about-people .event-profile .ES-section, .about-people .event-profile .TR-section{
     /* width: 100%; */
     display: flex;
     justify-content: center;
@@ -214,87 +200,87 @@
     align-content: flex-start;
 }
 
-.event-member {
+.about-people .event-member {
     margin: 7px 5px;
     flex-flow: wrap;
     padding: 4px 7px;
     border-radius: 4px;
 }
 
-.ES-section .event-member {
+.about-people .ES-section .event-member {
     background-color: #f87f81;
 }
 
-.TR-section .event-member {
+.about-people .TR-section .event-member {
     background-color: #bab7f0;
 }
 
-.profile-grid {
+.about-people .profile-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.profile-grid .hidden {
+.about-people .profile-grid .hidden {
     display: none;
 }
 
-.profile-grid .visible {
+.about-people .profile-grid .visible {
     opacity: 1;
 }
 
-.small-banner h1 {
+.about-mission .small-banner h1 {
     font-size: 40px;
 }
 
-.title .small-banner{
+.about-mission .title .small-banner{
     margin-bottom: 0px;
     padding: 0;
 }
 
-#mission .mission-statement {
+.about-mission .mission-statement {
     margin-top: 20px;
     background-image: none;
     background-color: white;
 }
 
 @media screen and (min-width: 768px) {
-    .profile-btns button {
+    .about-people .profile-btns button {
         padding: 7px 15px;
         margin: 0px 15px;
 
     }
 
-    #mission-toggle {
+    .about-mission .mission-toggle {
         display: none;
     }
 
-    .mission-statement ul {
+    .about-mission .mission-statement ul {
         max-height: 500px;
         opacity: 1;
     }
 
-    #mission-details {
-        margin: 20px 30px;
+    .about-mission .mission-details {
+        margin: 10px 30px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .profile-btns button {
+    .about-people .profile-btns button {
         padding: 10px 20px;
         margin: 0px 20px;
     }
 
-    .mission-statement p {
+    .about-mission .mission-statement p {
         margin: 10px 0px 0px;
     }
 
-    #mission-details {
+    .about-mission .mission-details {
         margin: 10px 30px 40px;
     }
 
-    .small-banner h1 {
+    .about-mission .small-banner h1 {
         font-size: 50px;
     }
 

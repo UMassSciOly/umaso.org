@@ -1,4 +1,4 @@
-#title .full-width {
+.tournament-title .full-width {
     /* background-image: url("img/banner-compressedx2.jpg"); */
     /* object-fit: cover; */
     /* background-position: center;
@@ -6,47 +6,69 @@
     /* padding: 30px 50px; */
 
     padding: 0;
-    margin: 0px 0px;
+    margin: 0px;
     border-radius: 20px;
     background-color: transparent;
     background-image: linear-gradient(transparent, white, white, white, white, white); /* eheheh ehhehehhhhhhehehe hhehehehhe -Larry */
 }
 
-#title .full-width h1 {
+.tournament-title .full-width h1 {
     font-size: 40px;
 }
 
-#title .small-banner {
+.tournament-title .small-banner {
     margin-bottom: 0;
 }
 
 .centered-btn {
     text-align: center;
+    padding: 20px 20px 0px;
 }
 
 .tournament-btn {
     display: inline-block;
-    padding: 12px 24px;
-    margin: 20px 0px 0px;
-    border: 2px solid #f0f0f0;
-    color: white;
+    padding: 16px 32px;
+    background-color: white;
+    /* margin: 20px 0px 0px; */
+    /* border: 2px solid #f0f0f0; */
+    color: black;
     text-decoration: none;
+    font-weight: 500;
     /* padding: 12px 24px;
     border: 2px solid white;*/
-    border-radius: 10px;
+    border-radius: 100px;
+    /* box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3), 0 3px 7px 0 rgba(0,0,0,0.29); */
     /* margin: 24px; */
 }
 
 .tournament-btn:hover {
-    background-color: rgba(10, 10, 10, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-#faqs {
+.tournament-registration .split-70-30 {
+    background-color: #201b44;
+    background-image: linear-gradient(-45deg, #154882, #7a70cd 80%);
+    color: white;
+}
+
+.tournament-format .split-30-70 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8b5272, #2a2458);
+    color: white;
+}
+
+.tournament-merch .split-70-30 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #8c215e, #250743);
+    color: white;
+}
+
+.tournament-faqs {
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
-    #title .small-banner h1{
+    .tournament-title .small-banner h1{
         font-size: 50px;
     }
 }

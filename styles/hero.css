@@ -1,4 +1,4 @@
-.hero-banner {
+.home-hero .hero-banner {
     position: relative;
     height: 70vh;
     min-height: 500px;
@@ -8,19 +8,16 @@
     border-radius: 10px;
     overflow: hidden;
 }
-
-.slideshow-container {
+.home-hero .slideshow-container {
     width: 100%;
     height: 100%;
     position: relative;
 }
-
-.slideshow-button-container {
+.home-hero .slideshow-button-container {
     z-index: 1;
     color: white;
 }
-
-.slideshow-button button {
+.home-hero .slideshow-button button {
     position: absolute;
     height: 100%;
     background: none;
@@ -30,37 +27,30 @@
     transition: 0.5s;
     z-index: 2;
 }
-
-.slideshow-button-container .slideshow-button button:hover {
+.home-hero .slideshow-button-container .slideshow-button button:hover {
     opacity: 1;
     cursor: pointer;
 }
-
-.left-button button {
+.home-hero .left-button button {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), transparent);
     left: 0;
 }
-
-.right-button button {
+.home-hero .right-button button {
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), transparent);
     right: 0;
 }
-
-.slideshow-button span {
+.home-hero .slideshow-button span {
     position: absolute;
     top: 50%;
     z-index: 2;
 }
-
-.left-button span {
+.home-hero .left-button span {
     left: 2%;
 }
-
-.right-button span {
+.home-hero .right-button span {
     right: 2%;
 }
-
-.slide {
+.home-hero .slide {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -72,75 +62,81 @@
     transition: 0.5s ease-in-out;
     transform: translateX(-100%);
 }
-
-.slide.initial {
+.home-hero .slide.initial {
     opacity: 0.5;
     transform: translateX(0);
     transition: none;
 }
-
-.slide.active {
+.home-hero .slide.active {
     opacity: 0.5;
     transform: translateX(0);
 }
-
-.slide.previous {
+.home-hero .slide.previous {
     transform: translateX(100%);
 }
-
-.slide img {
+.home-hero .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.hero-content {
+.home-hero .hero-content {
     position: absolute;
     text-align: center;
     color: white;
     z-index: 1;
     padding: 0 20px;
 }
-
-.hero-content .logo {
+.home-hero .hero-content .logo {
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
-
-.hero-content p {
+.home-hero .hero-content p {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-
-.hero-content .cta {
+.home-hero .hero-content .cta {
     text-align: center;
     z-index: 1;
 }
-
-.hero-content .cta-button {
+.home-hero .hero-content .cta-button {
     display: inline-block;
     padding: 12px 24px;
     margin: 4px;
-    border: 2px solid #f0f0f0;
+    border: 3px solid #f0f0f0;
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 400;
     transition: 0.5s ease;
     border-radius: 10px;
+    /* background-image: linear-gradient(-45deg, rgba(21, 72, 130, 0.9), rgba(122, 112, 205, 0.9) 80%); */
+    background: linear-gradient(-45deg, rgb(79, 69, 170, 0.6), rgb(103, 68, 137, 0.8), rgb(140, 33, 94, 0.7), rgb(139, 82, 114, 0.9));
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    background-color: rgba(240, 240, 240, 1);
 }
 
-.hero-content .cta-button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+.home-hero .hero-content .cta-button:hover {
+    animation: gradient 4s ease infinite;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media screen and (min-width: 768px) {
     .hero-content {
-        /* position: absolute;
-        top: auto;
-        bottom: 100px;
-        left: 0;
-        right: 0; */
         text-align: center;
         z-index: 1;
     }

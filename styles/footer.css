@@ -1,6 +1,6 @@
-#footer {
+.footer {
     background-color: none;
-    padding: 20px 40px;
+    padding: 40px 40px;
     margin-top: auto;
     display: flex; 
     justify-content: center;
@@ -9,7 +9,7 @@
     /* margin: auto; */
 }
 
-#footer .copyright {
+.footer .copyright {
     width: 100%;
     text-align: center;
     margin-top: 20px;
