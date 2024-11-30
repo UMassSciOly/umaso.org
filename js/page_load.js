@@ -47,9 +47,11 @@ function handle_desktop(jmediaquery) {
         navbar_links.classList.add("hidden");
         setTimeout(() => {
             console.log("eeeeee");
-            navbar_links.classList.remove("hidden");
+            if (jmediaquery.matches) {
+                navbar_links.classList.remove("hidden");
+            }
         }, 100);
-        console.log("desktop")
+        console.log("desktop");
 
         if (navbar_links.classList.contains("navbar-active-menu")) {
             toggle();
