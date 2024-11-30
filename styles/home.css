@@ -5,7 +5,7 @@
 
     main {
         padding: 0 5%;
-        font-size: 14.5px;
+        font-size: 15px;
         background-image: linear-gradient(black, #171a54);
     }
 
@@ -18,7 +18,7 @@
 @media screen and (min-width: 1024px) {
     main {
         padding: 0 10%;
-        font-size: 15px;
+        font-size: 15.5px;
         background-image: 
             linear-gradient(to right, black 0%, transparent 7.5%, transparent 92.5%, black 100%),
             linear-gradient(black, #171a54);

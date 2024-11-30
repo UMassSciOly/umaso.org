@@ -1,3 +1,4 @@
+/* styles that apply by default to all pages */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ header {
 
 main {
     padding: 0% 5%;
-    font-size: 14px;
+    font-size: 14.5px;
 }
 
 body {
