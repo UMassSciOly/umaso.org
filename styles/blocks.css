@@ -135,6 +135,43 @@
     color: rgb(174, 174, 174);
     margin-left: 1rem;
 }
+.news-feed{
+    margin: 1rem 0rem;
+    width: 70%;
+}
+.news-thumbnail{
+    background-image: url("../img/volunteer-min.png");
+    background-position: center;
+    background-size: cover;
+    /* width: 50px;
+    height: 50px; */
+    flex-basis: 20%;
+}
+.news-description{
+    flex-basis: 78%;
+    font-size: 0.8rem;
+    color: rgb(83, 80, 84);
+    position: relative;
+}
+.news-description span{
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    color: gray;
+}
+.news-post{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e9e8ed;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.news-post:hover{
+    background-color: #eeeef3;
+}
 /**********************************************COMPLETED CSS*****************************************************************/
 
 .split-30-70 img, .split-70-30 img {
