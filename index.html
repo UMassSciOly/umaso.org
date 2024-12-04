@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
     <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/blocks.css">
     <link rel="stylesheet" href="/styles/grids.css">
     <link rel="stylesheet" href="/styles/hero.css">
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
@@ -21,13 +22,13 @@
     <script>0</script> <!-- fix for firefox FOUC -->
 <header>
     <!-- nav bar -->
-    <section id="nav">
-        <div id="navbar" class="navbar"></div>
+    <section class="home-navbar">
+        <div id="navbar-container" class="navbar"></div>
     </section>
 </header>
 <main>
     <!-- hero banner -->
-    <section id="hero">
+    <section class="home-hero">
         <div class="hero-banner">
             <div class="slideshow-container">
                 <div class="slideshow-button-container">
@@ -41,23 +42,23 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="./img/banner-compressedx2.jpg">
+                    <img src="/img/banner-compressedx2.jpg" alt="umass-banner">
                 </div>
                 <div class="slide">
-                    <img src="./img/umasoteampic2024.jpg">
+                    <img src="/img/umasoteampic2024.jpg" alt="umaso-team-pic">
                 </div>
                 <div class="slide">
-                    <img src="./img/awards.jpg">
+                    <img src="/img/awards.jpg" alt="umaso-awards">
                 </div>
             </div>
 
             <div class="hero-content">
                 <div class="logo">
-                    <img src="./img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
+                    <img src="/img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
                 </div>
                 <p>February 15th, 2025</p>
                 <div class="cta">
-                    <a href="#" class="cta-button" id="cta-btn">Register</a>
+                    <a href="#" class="cta-button cta-button-fill" id="cta-btn">Register</a>
                 </div>
 
             </div>
@@ -65,10 +66,10 @@
     </section>
 
     <!-- what is umaso -->
-    <section id="about">
+    <section class="home-about">
         <div class="split-30-70">
             <div class="left">
-                <img src="./img/umass_pond.jpg" alt="something">
+                <!-- <img src="/img/umass_pond.jpg" alt="something"> -->
             </div>
             <div class="right">
                 <div class="spaced-content">
@@ -80,7 +81,7 @@
     </section>
 
     <!-- tournament info -->
-    <section id="tournament">
+    <section class="home-tournament">
         <div class="split-70-30">
             <div class="left">
                 <div class="spaced-content">
@@ -88,18 +89,18 @@
                     <p>
                         This year's tournament will be held on February 15th, 2025, on campus at UMass Amherst. The registration fee for this year's tournament is $40 per team, with each school being allowed to bring at most 2 teams. We encourage all participating individuals to bring an extra $15 for lunch at UMass Amherst's award-winning dining halls.
                         <br><br>
-                        Please see the Tournament Info page for more details.
+                        Please see the <a href="/tournament/">Tournament Info</a> page for more details.
                     </p>
                 </div>
             </div>
             <div class="right">
-                <img src="./img/volunteer-min.png" alt="hi">
+                <!-- <img src="/img/volunteer-min.png" alt="hi"> -->
             </div>
         </div>
     </section>
 
     <!-- sponsors -->
-    <section id="sponsors">
+    <section class="home-sponsors">
         <div class="full-width">
             <div class="section-header">
                 <h2>
@@ -110,11 +111,11 @@
                 </p>
             </div>
             <div class="sponsor-image-grid">
-                <div class="grid-item"><img src="./img/sponsor/coe-logo.png" alt="1" loading="lazy"></div>
-                <div class="grid-item"><img src="./img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
-                <div class="grid-item"><img src="./img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/coe-logo.png" alt="1" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/physics-logo.png" alt="2" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/bio-logo.png" alt="2" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/polymer-logo.png" alt="3" loading="lazy"></div> -->
-                <div class="grid-item"><img src="img/sponsor/chem-logo.png" alt="4" loading="lazy"></div>
+                <div class="grid-item"><img src="/img/sponsor/chem-logo.png" alt="4" loading="lazy"></div>
                 <!-- <div class="grid-item"><img src="img/sponsor/florrent-logo.png" alt="5" loading="lazy"></div> -->
                 <!-- <div class="grid-item"><img src="img/sponsor/coe-logo.png" alt="6" loading="lazy"></div> -->
             </div>
@@ -123,16 +124,9 @@
 
 </main>
 <footer>
-    <!-- footer -->
-     <section id="footer">
-        <div id="footer" class="footer-content"></div>
-        <script>
-            fetch("/footer.html")
-                .then(response => response.text())
-                .then(data => document.getElementById("footer").innerHTML = data);
-        </script>
-     </section>
-
+    <section class="home-footer">
+        <div id="footer-container" class="footer"></div>
+    </section>
 </footer>
 
 <script src="/js/slides.js"></script>

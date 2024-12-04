@@ -1,9 +1,10 @@
 const profile_grid = document.getElementsByClassName("profile-grid")[0];
 const profile_btns = document.getElementsByClassName("profile-btns")[0];
+const mission_details = document.getElementsByClassName("mission-details")[0];
+const mission_toggle = document.getElementsByClassName("mission-toggle")[0];
+console.log(mission_toggle)
 
 function toggle_mission() {
-    mission_details = document.getElementById("mission-details");
-    mission_toggle = document.getElementById("mission-toggle");
     const mission_icon = mission_toggle.children[0];
     mission_toggle.style.opacity = 0;
 

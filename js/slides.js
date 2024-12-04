@@ -15,7 +15,8 @@ const btnHref = [
 ];
 
 let lastSlideTime = 0;
-const slideDelay = 500;
+const slideDelay = 600;
+const slideTime = 5000;
 
 function showSlide(n, initial = false) {
     if (n >= slides.length) {slideIndex = 0}
@@ -55,7 +56,7 @@ function startSlideshow() {
     slideInterval = setInterval(() => {
         slideIndex++;
         showSlide(slideIndex);
-    }, 3000);
+    }, slideTime);
 }
 
 function slideLeft() {
