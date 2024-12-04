@@ -3,19 +3,22 @@ const slides = document.getElementsByClassName("slide");
 const btn = document.getElementById("cta-btn");
 
 const btnText = [
-    "Register",
+    // "Register",
+    "Pre-Order Merch!",
     "Who We Are",
     "Follow Us on Insta!"
 ];
 
 const btnHref = [
-    "/tournament/#registration",
+    // "/tournament/#registration",
+    "/tournament/#merch",
     "/about",
     "https://www.instagram.com/umass.scioly/"
 ];
 
 let lastSlideTime = 0;
-const slideDelay = 500;
+const slideDelay = 600;
+const slideTime = 5500;
 
 function showSlide(n, initial = false) {
     if (n >= slides.length) {slideIndex = 0}
@@ -55,7 +58,7 @@ function startSlideshow() {
     slideInterval = setInterval(() => {
         slideIndex++;
         showSlide(slideIndex);
-    }, 3000);
+    }, slideTime);
 }
 
 function slideLeft() {

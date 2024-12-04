@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
     <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/blocks.css">
     <link rel="stylesheet" href="/styles/grids.css">
     <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/about.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
@@ -20,17 +21,17 @@
 <body>
 <header>
     <!-- nav bar -->
-    <section id="nav">
-        <div id="navbar" class="navbar"></div>
+    <section class="about-navbar">
+        <div id="navbar-container" class="navbar"></div>
     </section>
 </header>
 <main>
-    <section id="mission">
+    <section class="about-mission">
         <div class="title full-width">
             <div class="small-banner">
                 <h1>About Us</h1>
                 <div class="banner-img">
-                    <img src="/img/team_photo_2024.jpg">
+                    <img src="../img/team_photo_2024.jpg">
                 </div>
             </div>
         </div>
@@ -38,20 +39,20 @@
             <div class="mission-text">
                 <h2 class="section-title">Our Mission</h2>
                 <p>Having competed in and volunteered at regional, invitational, state, and national level Science Olympiad competitions, the impassioned members of UMASO understand the intricacies of different styles of tournaments and what makes an event memorable. We aim to draw on these experiences to bring a novel Science Olympiad experience to high school teams in New England through a tournament that is inclusive and hands-on.</p>
-                <div id="mission-toggle" onclick="toggle_mission()">
+                <ul class="mission-details">
+                    <li><b>Inclusive</b>: Although eastern Massachusetts teams have historically been given local opportunities to compete in many invitationals, western Massachusetts teams have been underrepresented. We change this by offering a high-quality annual tournament in Amherst, promoting STEM to high schools that would find this opportunity to be unique and impactful.</li>
+                    <li><b>Hands-on</b>: Many Science Olympiad tournaments and teams have historically focused more on book-knowledge while neglecting the experiential portions of different events. We place special emphasis on the importance of stations and build events in our tournament to promote a hands-on learning process.</li>
+                </ul>
+                <div class="mission-toggle" onclick="toggle_mission()">
                     <span class="material-symbols-outlined">
                         keyboard_arrow_down
                     </span>
                 </div>
                 <!-- <div id="mission-toggle" onclick="toggle_mission()">See more</div> -->
-                <ul id="mission-details">
-                    <li><b>Inclusive</b>: Although eastern Massachusetts teams have historically been given local opportunities to compete in many invitationals, western Massachusetts teams have been underrepresented. We change this by offering a high-quality annual tournament in Amherst, promoting STEM to high schools that would find this opportunity to be unique and impactful.</li>
-                    <li><b>Hands-on</b>: Many Science Olympiad tournaments and teams have historically focused more on book-knowledge while neglecting the experiential portions of different events. We place special emphasis on the importance of stations and build events in our tournament to promote a hands-on learning process.</li>
-                </ul>
             </div>
         </div>
     </section>
-    <section id="people">
+    <section class="about-people">
         <div class="profiles full-width">
             <h2 class="section-title">Our Team</h2>
             <div class="profile-btns">
@@ -61,41 +62,6 @@
             </div>
             <div class="profile-grid">
                 <!-- <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
-                    <img src="img/pfp/Ben_Kuchma.jpg">
-                    <h3>Ben Kuchma</h3>
-                    <p>Physics + Computer Science 2025</p>
-                </div>
-                <div class="profile grid-item">
                     <img src="img/pfp/Ben_Kuchma.jpg">
                     <h3>Ben Kuchma</h3>
                     <p>Physics + Computer Science 2025</p>
@@ -151,34 +117,121 @@
                         </div>
                     </div>
                 </div> -->
+
+
             </div>
+            <!------WORK IN PROGRESS-->
+            <!-- <div style="display: flex; justify-content: space-between;"> 
+                <div class="border_everything">
+                    <div class="event-image">
+                    </div>
+                    <div class="event-memebers">
+                        <h3>Disease Detectives</h3>
+                        <hr>
+                        <br>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_everything">
+                    <div class="event-image">
+                    </div>
+                    <div class="event-memebers">
+                        <h3>Disease Detectives</h3>
+                        <hr>
+                        <br>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                    </div>
+                </div>
+            </div><div style="display: flex; justify-content: space-between;"> 
+                <div class="border_everything">
+                    <div class="event-image">
+                    </div>
+                    <div class="event-memebers">
+                        <h3>Disease Detectives</h3>
+                        <hr>
+                        <br>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_everything">
+                    <div class="event-image">
+                    </div>
+                    <div class="event-memebers">
+                        <h3>Disease Detectives</h3>
+                        <hr>
+                        <br>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p>John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                        <div class="event-name">
+                            <p style="border-color: purple;">John Doe</p>
+                            <a href="mailto:jdoe@umass.edu">jdoe@umass.edu</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!--------------------------------->
         </div>
     </section>
+
 </main>
 <footer>
-    <section id="footer">
-        <div class="footer-content">
-            <div class="logo">
-                <img src="/img/umaso/UMASO-wordmark-transparent.png" alt="University of Massachusetts Science Olympiad">
-            </div>
-            <div class="footer-links">
-                <div class="page-links">
-                    <a href="/">Home</a>
-                    <a href="/about">About Us</a>
-                    <a href="/tournament">Tournament Info</a>
-                    <!-- <a href="#">Among us section</a> -->
-                </div>
-                <div class="social-links">
-                    <!-- <a href="#">Discord</a> -->
-                    <a href="https://www.instagram.com/umass.scioly/">Instagram</a>
-                    <!-- <a href="#">LinkedIn</a> -->
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>made with lots of sleep by the umaso team &#129505;</p>
-            <p>© University of Massachusetts Amherst Science Olympiad 2022-2025</p>
-        </div>
+    <section class="about-footer">
+        <div id="footer-container" class="footer"></div>
     </section>
 </footer>
 

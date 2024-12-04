@@ -1,24 +1,25 @@
+localStorage.clear();
 const navbar = localStorage.getItem("navbar");
 if (navbar) {
-    document.getElementById("navbar").innerHTML = navbar;
+    document.getElementById("navbar-container").innerHTML = navbar;
 } else {
     fetch("/navbar.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("navbar").innerHTML = data
+            document.getElementById("navbar-container").innerHTML = data
             localStorage.setItem("navbar", data);
         })
         .then(handle_layouts);
 }
 
-const footer = localStorage.getItem("footer");
+const footer = localStorage.getItem("footer-container");
 if (footer) {
-    document.getElementById("footer").innerHTML = footer;
+    document.getElementById("footer-container").innerHTML = footer;
 } else {
     fetch("/footer.html")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("footer").innerHTML = data
+            document.getElementById("footer-container").innerHTML = data
             localStorage.setItem("footer", data);
         });
 }
@@ -35,7 +36,7 @@ function handle_layouts() {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (navbar && footer) {
-        handle_layouts();
+        // handle_layouts();
     }
 });
 
@@ -46,11 +47,13 @@ function handle_desktop(jmediaquery) {
         navbar_links.classList.add("hidden");
         setTimeout(() => {
             console.log("eeeeee");
-            navbar_links.classList.remove("hidden");
-        }, 400);
-        console.log("desktop")
+            if (jmediaquery.matches) {
+                navbar_links.classList.remove("hidden");
+            }
+        }, 100);
+        console.log("desktop");
 
-        if (navbar_links.classList.contains("active-menu")) {
+        if (navbar_links.classList.contains("navbar-active-menu")) {
             toggle();
         }
     }
@@ -71,23 +74,23 @@ function toggle() {
     }, 400);
 
     const navbar_container = document.getElementsByClassName("navbar-content")[0];
-    navbar_container.classList.toggle("active-menu");
+    navbar_container.classList.toggle("navbar-active-menu");
 
     const navbar_back = document.getElementsByClassName("navbar-back");
     for (const element of navbar_back) {
-        element.classList.toggle("active-menu")
+        element.classList.toggle("navbar-active-menu")
     }
     const navbar_fade = document.getElementsByClassName("navbar-fade");
     for (const element of navbar_fade) {
-        element.classList.toggle("active-menu")
+        element.classList.toggle("navbar-active-menu")
     }
     const navbar_links = document.getElementsByClassName("navbar-links");
     for (const element of navbar_links) {
-        element.classList.toggle("active-menu")
+        element.classList.toggle("navbar-active-menu")
     }
     const navbar_toggle = document.getElementsByClassName("navbar-toggle");
     for (const element of navbar_toggle) {
-        element.classList.toggle("active-menu")
+        element.classList.toggle("navbar-active-menu")
     }
     document.body.style.overflow = document.body.style.overflow == "hidden" ? "visible" : "hidden";
 }

@@ -1,38 +1,30 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMASO Archive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
 <header>
-  <!-- nav bar -->
   <section id="nav">
       <div id="navbar" class="navbar"></div>
-      <script>
-          fetch("/navbar.html")
-              .then(response => response.text())
-              .then(data => document.getElementById("navbar").innerHTML = data);
-      </script>
   </section>
 </header>
 <body>
     <div class="container">
       <div>
       <section class="main-content">
-        <h1 class="hero-small-title"><span>UMASO ARCHIVES</span></h1>
+        <h1 class="hero-small-title"><span>ARCHIVE</span></h1>
         <div class="year-img img1">
           <div class="overlay">
             <h1 style="font-size: 3rem;">UMASO 2023</h1>
           </div>
         </div> 
         <br>
-        <!--<h2 class="hero-small-title"><span>UMASO 2024</span></h2>-->
         <p> 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -65,7 +57,6 @@
           </div>
         </div> 
         <br>
-        <!--<h2 class="hero-small-title"><span>UMASO 2024</span></h2>-->
         <p> 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -96,5 +87,143 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="/js/page_load.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMASO</title>
+    <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!-- <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/blocks.css">
+    <link rel="stylesheet" href="/styles/grids.css">
+    <link rel="stylesheet" href="/styles/archive.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/index.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <section class="archive-navbar">
+            <div id="navbar-container" class="navbar"></div>
+        </section>
+    </header>
+<main>
+    <section class="archive-title">
+        <div class="banner full-width">
+            <div class="small-banner">
+                <h1>Archive</h1>
+                <div class="banner-img">
+                    <img src="/img/umass_sunset.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="archive-main">
+        <div class="archive-block full-width">
+            <div class="small-banner">
+                <h1>UMASO 2024</h1>
+                <div class="banner-img">
+                    <img src="/img/team_photo_2024.jpg">
+                </div>
+            </div>
+            <p>
+                Despite the miraculous success of the first invitational, we knew we had a lot to improve on for UMASO 2024. To start, our organizing team grew to around 17 people, allowing us to achieve more than we had before. In the fall, we coordinated our first-ever outreach events, where we performed exciting science demos at local high schools. With our outreach initiatives, we hope to inspire a love for STEM in students and mentor them in preparation for higher education.
+            </p>
+            <p>
+                The fall also marked when Hasbrouck Laboratories became UMASO's unofficial headquarters thanks to the Physics Department. Although this was no longer the first time we had run a tournament, this did not reduce the number of challenges and complications we faced. From arguing with an online Lithuanian vendor to hunting down a package at a UPS warehouse in Springfield the day before the tournament, the months leading up to UMASO 2024 were filled with unexpected events.
+            </p>
+            <p>
+                Thank you to our outstanding Event Supervisors and volunteers for dedicating their time and support to our competition. Thank you to our generous sponsors and their faith in our organization's mission. And of course, thank you to the 33 teams and 492 competitors who attended UMASO 2024. You all are what inspires us to continue improving our tournament each year.
+            </p>
+            <div class="three-column">
+                <div class="exams column">
+                    <h2>Exams & Keys</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1oZCbJrUGCSDP5Ri06ZwxoEFziysMNAb5?usp=sharing">
+                            View
+                        </a>
+                    </div>
+                </div>
+                <div class="scores column">
+                    <h2>Final Scores</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://www.duosmium.org/results/2024-02-17_umaso_invitational_c/">
+                            View
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery column">
+                    <h2>Gallery</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://photos.app.goo.gl/BN5Ebs4AUAA48zNMA">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="archive-block full-width">
+            <div class="small-banner">
+                <h1>UMASO 2023</h1>
+                <div class="banner-img">
+                    <img src="/img/volunteer-min.png">
+                </div>
+            </div>
+            <p>
+                Where it all began. At the start of the 2022 fall semester, UMASO did not officially exist. But a month later, UMASO became a Registered Student Organization and grew to a team of 10. Then, within six months of its formation, UMASO held its inaugural invitational at UMass Amherst on February 18th, 2023. Although every step was uncharted territory and numerous unexpected setbacks occurred, our dedicated organizers worked tirelessly to accomplish something we admittedly thought was too ambitious.
+            </p>
+            <p>
+                Thank you to our wonderful Event Supervisors, volunteers, and sponsors; your support was crucial to the success of our first-ever invitational. And lastly, thank you to the 30 teams and 422 competitors who attended our competition. Your interest and faith in our competition gave us the opportunity to run our inaugural tournament. We sincerely hope you enjoyed the tournament as much as we did.
+            </p>
+            <div class="three-column">
+                <div class="exams column">
+                    <h2>Exams & Keys</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1FK89x4X796k5EEt44tzOoF__5aDaaFON?usp=sharing">
+                            View
+                        </a>
+                    </div>
+                </div>
+                <div class="scores column">
+                    <h2>Final Scores</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://www.duosmium.org/results/2023-02-18_umaso_invitational_c/">
+                            View
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery column">
+                    <h2>Gallery</h2>
+                    <div class="centered-btn">
+                        <a class="archive-btn" target="_blank" rel="noopener noreferrer" href="https://photos.app.goo.gl/SEHgYvK1zzngRb5p6">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="archive-footer">
+        <div id="footer-container" class="footer"></div>
+    </section>
+</footer>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
+<script src="/js/page_load.js"></script>
+
 </body>
 </html>
