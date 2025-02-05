@@ -5,68 +5,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMASO</title>
     <link rel="icon" type="image/x-icon" href="/img/umaso/favicon3.png">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/blocks.css">
-    <link rel="stylesheet" href="/styles/grids.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .news-banner{
+            width: 100%;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .news-banner h6{
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+        .news-banner h2{
+            padding-top: 1rem;
+            width: 60%;
+            font-weight: 600;
+            /* text-align: center; */
+            /* border: 1px solid red; */
+        }
+        .news-banner span{
+            background: -webkit-linear-gradient(#FF5CCC, #512889);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .news-section{
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            /* text-decoration-color: #FF85D8; */
+            text-decoration-thickness: 3px;
+            text-align: center;
+        }
+        .important-announcements{
+            padding: 3rem 0;
+        }
+        .important-announcements .news-grid{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap:2rem;
+        } 
+        .normal-news{
+            margin-bottom: 3rem;
+        }
+        .normal-news .news-grid{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
+            gap:2rem;
+        }
+        .normal-news .news-head{
+            height: 10vh;
+        }
+        .normal-news .news-head h3{
+            font-size: 1rem;
+        }
+        .normal-news .news-body .date{
+            background-color: #9947A5;
+            padding: 2px;
+        }
+        .news-head{
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 25vh;
+            width: 100%;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .news-head h3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+        }
+        .news-head h3 a{
+            text-decoration: none;
+        }
+        .news-head h3 a:hover{
+            color: #F3DAD8;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .news-body{
+            background: #F5F5F5;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 1rem 2rem;
+        }
+        .news-body .date, .newsContent span{
+            background-color: #512889;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            width: fit-content;
+            margin-bottom: 1rem;
+        }
+        .pinned-icon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 50%;
+            background-color: #512889;
+            padding: 0.5rem;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .pinned-icon:hover{
+            background-color:#FF5CCC;
+            cursor: pointer;
+        }
+
+        /* NEWS ARTICLE STYLES */
+        #articleContent a{
+            color: #512889;
+            text-decoration: none;
+            padding:1rem 0rem;
+            display:inline-flex;
+            align-items:center;
+            gap:0rem;
+        }
+        .articleContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            width: 100%;
+        }
+        .coverImage{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 25vh;
+            position: relative;
+        }
+        .coverImage .overlay{
+            background-color: rgba(0, 0, 0, 0.25);
+            height: 25vh;
+            position: relative;
+        }
+        .coverImage .overlay h1{
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 7px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .newsContent p{
+            padding: 1rem 0rem;
+            line-height: 1.6rem;
+        }
+        @media only screen and (max-width: 768px) {
+            .important-announcements .news-grid{
+                grid-template-columns: 1fr;
+            }
+            .normal-news .news-grid{
+                grid-template-columns:1fr 1fr;
+            }
+        }
+    </style>
 </head>
-<body>
-<header>
-    <!-- nav bar -->
-    <section id="nav">
-        <div id="navbar" class="navbar"></div>
-    </section>
-</header>
+<body onload="loadNews()">
+    <header>
+        <section class="archive-navbar">
+            <div id="navbar-container" class="navbar"></div>
+        </section>
+    </header>
 <main>
-    <section id="news">
-        <div class="title full-width">
-            <div>
-            <h2> NEWS FEED</h2>
-            <div class="news-feed">
-                <div class="news-post">
-                    <div class="news-thumbnail"> </div>
-                    <div class="news-description"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab a temporibus aliquam blanditiis, nostrum ex maxime. Quia soluta pariatur vitae distinctio necessitatibus fdsjkfsifeoiroer voluptatum ut! Hic quas aspernatur laudantium vitae!</p>
-                        <span>Dec 3, 2025</span>
-                    </div>
-                </div>
-                <div class="news-post">
-                    <div class="news-thumbnail"> </div>
-                    <div class="news-description"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab a temporibus aliquam blanditiis, nostrum ex maxime. Quia soluta pariatur vitae distinctio necessitatibus fdsjkfsifeoiroer voluptatum ut! Hic quas aspernatur laudantium vitae!</p>
-                        <span>Dec 3, 2025</span>
-                    </div>
-                </div>
-                <div class="news-post">
-                    <div class="news-thumbnail"> </div>
-                    <div class="news-description"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab a temporibus aliquam blanditiis, nostrum ex maxime. Quia soluta pariatur vitae distinctio necessitatibus fdsjkfsifeoiroer voluptatum ut! Hic quas aspernatur laudantium vitae!</p>
-                        <span>Dec 3, 2025</span>
-                    </div>
-                </div>
-                <div class="news-post">
-                    <div class="news-thumbnail"> </div>
-                    <div class="news-description"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab a temporibus aliquam blanditiis, nostrum ex maxime. Quia soluta pariatur vitae distinctio necessitatibus fdsjkfsifeoiroer voluptatum ut! Hic quas aspernatur laudantium vitae!</p>
-                        <span>Dec 3, 2025</span>
-                    </div>
-                </div>
-                <div class="news-post">
-                    <div class="news-thumbnail"> </div>
-                    <div class="news-description"> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab a temporibus aliquam blanditiis, nostrum ex maxime. Quia soluta pariatur vitae distinctio necessitatibus fdsjkfsifeoiroer voluptatum ut! Hic quas aspernatur laudantium vitae!</p>
-                        <span>Dec 3, 2025</span>
-                    </div>
+    <section class="archive-title">
+        <div class="banner full-width">
+            <div class="small-banner">
+                <h1 id="articleTitle">News</h1>
+                <div class="banner-img">
+                    <img id="articleImage" src="/img/umass_pond.jpg">
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="news-main">
+        <div class="news-block full-width">
+            <article id="newsBlock">
+            <div class="news-banner">
+                <h6>Welcome to UMASO News</h6>
+                <h2>Learn more about our <span>operations</span> here in <span>UMASO</span> headquarters!</h2>
+            </div>
+            
+            <div class="important-announcements">
+                <h3 class="news-section">Important Announcements</h3>
+                <div class="news-grid" id="importantNews">
+                    
+        
+                </div>
+            </div>
+            <div class="normal-news">
+                <h3 class="news-section">Regular Announcements</h3>
+                <div class="news-grid" id="regularNews">
+                    
+                <div class="single-news">
+                    <div class="news-head" style="background-image: url('/img/umass_pond.jpg');">
+                        <div class="overlay"> </div>
+                        <h3><a href="#">New Tournament Information!</a></h3>
+                    </div>
+                    <div class="news-body">
+                        <div class="news-content">
+                            <div class="date">05 Jan, 2020</div>
+                            <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="single-news">
+                <div class="news-head" style="background-image: url('/img/umass_pond.jpg');">
+                    <div class="overlay"> </div>
+                    <h3><a href="#">New Tournament Information!</a></h3>
+                </div>
+                <div class="news-body">
+                    <div class="news-content">
+                        <div class="date">05 Jan, 2020</div>
+                        <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-news">
+                <div class="news-head" style="background-image: url('/img/umass_pond.jpg');">
+                    <div class="overlay"> </div>
+                    <h3><a href="#">New Tournament Information!</a></h3>
+                </div>
+                <div class="news-body">
+                    <div class="news-content">
+                        <div class="date">05 Jan, 2020</div>
+                        <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+    </article>
+
+    <div id="articleContent">
+
+    </div>
     </div>
     </section>
 
@@ -100,6 +305,7 @@
 
 <script src="/js/about.js"></script>
 <script src="/js/page_load.js"></script>
+<script src="news.js"></script>
 
 </body>
 </html>

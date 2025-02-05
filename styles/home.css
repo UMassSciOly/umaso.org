@@ -70,6 +70,124 @@
     background-image: url("/img/volunteer-min.png");
 }
 
+/* ******************************* ADDED CSS ************************************ */
+.home-stats{
+    /* background: #42275a;  
+    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  
+    background: linear-gradient(to right, #734b6d, #42275a);  */
+
+    /* background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    /* background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%); */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    color: white;
+    text-align: center;
+    margin: 20px 0px 0px;
+    border-radius: 10px;
+}
+.stats-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+}
+.single-stat{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+/* .single-stat:hover{
+    color: #4f45aa;
+} */
+.stat-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.stat{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.stat-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.stat-icon svg{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+.stat-icon svg:hover{
+    color: white;
+    /* background-color: #4f45aa; */
+    /* border-radius: 50%; */
+}
+.stat-icon:hover{
+    background-color: #4f45aa;
+    border: 2px solid #4f45aa;
+}
+@media only screen and (max-width: 1000px) {
+    .stats-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+    .single-stat{
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .stats-container{
+        display: block;
+    }
+    .single-stat{
+        margin-bottom: 1rem;
+    }
+}
+
+.home-announcements{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    color: white;
+    margin: 20px 0px 0px;
+    border-radius: 10px;
+}
+.announcement-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.announcement{
+    background-color: #4f45aa;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.announcement-content{
+    flex-basis: 50%;
+}
+.announcement-content p{
+    /* font-size: 0.75rem; */
+    margin-top: 0.5rem;
+}
+.announcement-image{
+    background-position: center;
+    background-size: cover;
+    /* width: 50%; */
+    flex-basis: 50%;
+
+    height: 100%;
+}
+/* ******************************* END CSS ************************************ */
+
+
 /* .home-tournament .split-70-30 h2 {
     color: white;
 }
