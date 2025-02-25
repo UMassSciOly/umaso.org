@@ -87,13 +87,27 @@
     padding: 0 40px;
 }
 .home-hero .hero-content .logo {
-    margin-bottom: 1rem;
+    width: 60%;
+    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
+/* **************************ADDED CSS******************************************* */
+
+.home-hero .hero-content span{
+font-size:1.75rem;
+/* background: #642B73;   */
+padding: 5px;
+border-radius: 10px;
+margin-top: 0.5rem;
+/* background: -webkit-linear-gradient(to right, #C6426E, #642B73);  
+background: linear-gradient(to right, #C6426E, #642B73);  */
+}
+/* ***************************COMPLETED CSS************************************* */
+
 .home-hero .hero-content p {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
 }
 .home-hero .hero-content .cta {
     text-align: center;
