@@ -187,6 +187,12 @@
 
     height: 100%;
 }
+
+.home-video .split-70-30 {
+    color: white;
+    background-image: linear-gradient(to right top, #4f45aa, #433a8f, #372f75, #2b255c, #201b44);
+    /* padding: 2rem; */
+}
 /* ******************************* END CSS ************************************ */
 
 
