@@ -63,8 +63,15 @@ async function load_organizer_profiles() {
     const organizer_list = await organizers;
     for (const organizer of organizer_list) {
         let img_path = "/img/pfp/default.png";
+        console.log(organizer.file_name);
+        if(organizer.file_name === "Grace_von Zabern"){
+            // organizer.file_name === "Grace_von_Zabern";
+             img_path = `/img/pfp/${"Grace_von_Zabern"}.png`;
+            // console.log(img_path);
+        }
         if (organizer.file_name in pfp_extension_map) {
             img_path = `/img/pfp/${organizer.file_name}.png`;
+            console.log(img_path);
         }
         create_organizer_profile(organizer, img_path, false);
     }
