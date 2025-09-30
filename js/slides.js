@@ -3,15 +3,15 @@ const slides = document.getElementsByClassName("slide");
 const btn = document.getElementById("cta-btn");
 
 const btnText = [
-    // "Register",
-    "Pre-Order Merch!",
+    "Register here!",
+    // "Pre-Order Merch!",
     "Who We Are",
     "Follow Us on Insta!"
 ];
 
 const btnHref = [
     // "/tournament/#registration",
-    "/tournament/#merch",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdp4QUHASh5eK-_ephU0mlGck7JZWFujB7jLAFiqchZe74ZDw/viewform?usp=dialog",
     "/about",
     "https://www.instagram.com/umass.scioly/"
 ];
