@@ -4,7 +4,7 @@ const btn = document.getElementById("cta-btn");
 
 const btnText = [
     "Register here!",
-    // "Pre-Order Merch!",
+    "Pre-Order Merch!",
     "Who We Are",
     "Follow Us on Insta!"
 ];
@@ -12,6 +12,7 @@ const btnText = [
 const btnHref = [
     // "/tournament/#registration",
     "https://docs.google.com/forms/d/e/1FAIpQLSdp4QUHASh5eK-_ephU0mlGck7JZWFujB7jLAFiqchZe74ZDw/viewform?usp=dialog",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdcIWciSvAUjbWkW9IGvGeQ3_FvLUE3WBW_IJZI_ue1WaPd6g/viewform",
     "/about",
     "https://www.instagram.com/umass.scioly/"
 ];
