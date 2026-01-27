@@ -245,6 +245,11 @@
     background-color: white;
 }
 
+.alumni-position{
+    color: gray;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
     .about-people .profile-btns button {
         padding: 7px 15px;
