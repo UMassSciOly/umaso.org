@@ -177,3 +177,68 @@ async function toggle_profiles(curr_btn) {
     }
 }
 
+
+// Code for Alumni 
+
+class Alumni {
+    constructor(name, major, year, position) {
+        this.name = name;
+        this.file_name = name.replace(" ", "_");
+        this.info = `${major} ${year}`;
+        this.position = position;
+        // this.teams = teams.split(", ");
+    }
+}
+
+async function load_alumni(){
+    const response = await fetch("/alumni_info.csv");
+    const response_text = await response.text();
+
+    const alumnis = response_text.split("\n").map(row => new Alumni(...row.trim().split(",")));
+    // console.log(alumnis);
+    return alumnis.slice(1);
+}
+
+async function load_alumni_profiles() {
+    const pfp_extension_map = await load_pfp_extension_map();
+    const alumni_list = await alumnis;
+    let img_path = "/img/pfp/default.png";
+    for (const alumni of alumni_list){
+        // create custom file path to image
+        if (alumni.file_name in pfp_extension_map) {
+            img_path = `/img/pfp/${alumni.file_name}.png`;
+        }
+        create_alumni_profile(alumni, img_path, true);
+    }
+}
+
+function create_alumni_profile(alumni, img_path, is_hidden){
+    const profile_container = document.createElement("div");
+    const profile_img = document.createElement("img");
+    const profile_title = document.createElement("h3");
+    const profile_position = document.createElement("p");
+    const profile_text = document.createElement("p");
+
+    // <p class="alumni-position">Former President</p>
+
+    profile_container.classList.add("profile", "grid-item");
+    if (is_hidden) {
+        profile_container.classList.add("hidden");
+    }
+    profile_container.dataset.id = "alumni";
+    profile_img.src = img_path;
+    profile_title.innerHTML = alumni.name;
+    profile_position.innerHTML = alumni.position;
+        profile_position.classList.add("alumni-position")
+    profile_text.innerHTML = alumni.info;
+    // append into file
+    profile_container.appendChild(profile_img);
+    profile_container.appendChild(profile_title);
+    profile_container.appendChild(profile_position);
+    profile_container.appendChild(profile_text);
+    profile_grid.appendChild(profile_container);
+}
+
+const alumnis = load_alumni();
+load_alumni_profiles();
+
