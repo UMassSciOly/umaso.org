@@ -65,11 +65,15 @@
 }
 
 .tournament-registration .split-70-30 .right {
-    background-image: url("/img/builds_2025.jpg");
+    background-image: url("/img/Winchester_Study.JPG");
 }
 
 .tournament-format .split-30-70 .left {
-    background-image: url("/img/Winchester_Study.JPG");
+    background-image: url("/img/Tournament Schedule.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+
 }
 
 .tournament-merch .split-70-30 .right {
