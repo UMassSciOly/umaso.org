@@ -54,8 +54,28 @@
 
 .tournament-format .split-30-70 {
     background-color: #201b44;
+    background-image: linear-gradient(-45deg, #0f2640, #4f45aa 80%);
+
+
+    color: white;
+}
+
+.tournament-enrichment .split-70-30 {
+    background-color: #201b44;
+    /* background-image: linear-gradient(45deg, #8b5272, #2a2458); */
     background-image: linear-gradient(45deg, #8b5272, #2a2458);
     color: white;
+}
+
+.tournament-more-enrichment .split-30-70 {
+    background-color: #201b44;
+    background-image: linear-gradient(45deg, #341a5a, #674489);
+
+    color: white;
+}
+
+.tournament-more-enrichment .split-30-70 .left {
+    background-image: url("/img/enrichment_opp.JPG");
 }
 
 .tournament-merch .split-70-30 {
@@ -75,6 +95,11 @@
     background-color: white;
 
 }
+
+.tournament-enrichment .split-70-30 .right {
+    background-image: url("/img/2024-labTour.jpg");
+}
+
 
 .tournament-merch .split-70-30 .right {
     background-image: url("/img/UMASO_2024_fall.jpeg");
