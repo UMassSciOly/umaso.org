@@ -202,8 +202,8 @@ async function load_alumni(){
 async function load_alumni_profiles() {
     const pfp_extension_map = await load_pfp_extension_map();
     const alumni_list = await alumnis;
-    let img_path = "/img/pfp/default.png";
     for (const alumni of alumni_list){
+        let img_path = "/img/pfp/default.png";
         // create custom file path to image
         if (alumni.file_name in pfp_extension_map) {
             img_path = `/img/pfp/${alumni.file_name}.png`;
